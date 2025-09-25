@@ -153,48 +153,42 @@ PHONE_RE = re.compile(r"((?:\+84|84|0)[\s.-]?\d{2,3}[\s.-]?\d{3}[\s.-]?\d{3,4})"
 
 
 # Parse a listing page to extract details
-def parse_listing_page(html, url):
+
+
+def parse_listing_page(html, url, download_images=False, img_dir="images"):
     soup = BeautifulSoup(html, "lxml")
     text = soup.get_text("\n")
-    # Title
+
+    # Title + tách giá
     title_tag = soup.find(["h1", "h2"])
-    title = title_tag.get_text(separator=" ", strip=True) if title_tag else ""
-    title = re.sub(r"[\n\t]+", " ", title).strip()
-    # Listing id: try "Mã tin : <id>" or from URL
+    raw_title = title_tag.get_text(separator=" ", strip=True) if title_tag else ""
+    raw_title = re.sub(r"[\n\t]+", " ", raw_title).strip()
+
+    # Tìm giá trong title
+    mprice = re.search(r"(-\s*[\d\s\.,]*\s*(Tỷ|Triệu|VNĐ|đ|VND))", raw_title, re.I)
+    price = mprice.group(0).lstrip("-").strip() if mprice else None
+
+    # Loại bỏ giá khỏi title
+    title = re.sub(
+        r"(-\s*[\d\s\.,]*\s*(Tỷ|Triệu|VNĐ|đ|VND))", "", raw_title, flags=re.I
+    ).strip()
+
+    # Listing id
     m = re.search(r"Mã tin\s*[:：]?\s*(\d+)", text)
     if m:
         listing_id = m.group(1)
     else:
         m2 = re.search(r"-([0-9]{5,10})$", url)
         listing_id = m2.group(1) if m2 else None
+
     # Date
     mdate = re.search(r"Đăng ngày\s*([\d/]{6,12})", text)
     posted_date = mdate.group(1) if mdate else None
-    # Price - try to find a price-like piece in title or page
-    price = None
-    mprice = re.search(
-        r"(\d[\d\.,\s]*\d?)\s*(Tỷ|Triệu|VNĐ|đ|VND)", title + "\n" + text, re.I
-    )
-    if mprice:
-        price = mprice.group(0).strip()
-    # Images - collect img tags likely in article (filter small icons)
-    # imgs = []
-    # for img in soup.find_all("img"):
-    #     src = img.get("data-src") or img.get("src") or ""
-    #     if not src:
-    #         continue
-    #     if len(src) < 10:
-    #         continue
-    #     # filter out site icons
-    #     if re.search(r"avatar|icon|logo|loading|spinner", src, re.I):
-    #         continue
-    #     imgs.append(urljoin(url, src))
-    # imgs = list(dict.fromkeys(imgs))  # unique preserve order
-    # Spec section: find "Technical Specifications"
+
+    # Spec section
     spec_text = ""
     if "Thông số kỹ thuật" in text:
         start = text.find("Thông số kỹ thuật")
-        # try to find end marker "Description" or "Contact seller"
         end_candidates = []
         for marker in ["Thông tin mô tả", "Liên hệ người bán", "Liên hệ"]:
             idx = text.find(marker, start + 1)
@@ -203,39 +197,48 @@ def parse_listing_page(html, url):
         end = min(end_candidates) if end_candidates else None
         spec_text = text[start : (end if end else start + 2000)]
     specs = parse_key_values_from_section(spec_text) if spec_text else {}
-    # Description: extract text between "Description" and next header
+
+    # Description
     desc = ""
     if "Thông tin mô tả" in text:
         s = text.find("Thông tin mô tả")
-        # end at "Contact seller" or other
         endc = text.find("Liên hệ người bán", s + 1)
         end = endc if endc != -1 else s + 800
         desc = text[s:end].replace("Thông tin mô tả", "").strip()
         desc = re.sub(r"[\n\t]+", " ", desc).strip()
-    # Contact: parse name/phone/address heuristically
-    contact = {"name": None, "phone": None, "address": None}
-    if "Liên hệ người bán" in text:
-        s = text.find("Liên hệ người bán")
-        snippet = text[s : s + 400]
-        # find phone
-        mphone = PHONE_RE.search(snippet)
-        if mphone:
-            contact["phone"] = mphone.group(1)
-        # name: often the next non-empty line after header
-        lines = [ln.strip() for ln in snippet.splitlines() if ln.strip()]
-        if len(lines) >= 2:
-            # lines[0] == 'Contact seller', try lines[1..3]
-            for ln in lines[1:4]:
-                if re.search(r"\d", ln) and len(ln) > 6:
-                    # likely phone or address
-                    continue
-                contact["name"] = ln
-                break
-        # address: look for common separators or 'Address'
-        maddr = re.search(r"Địa chỉ[:\s]*(.+)", snippet)
-        if maddr:
-            contact["address"] = maddr.group(1).strip()
-    # Return structure
+
+    # Images
+    imgs = []
+    for img in soup.find_all("img"):
+        src = img.get("data-src") or img.get("src") or ""
+        if not src or len(src) < 10:
+            continue
+        if re.search(
+            r"avatar|icon|logo|loading|spinner|pixel|approved2|bct|reg_i", src, re.I
+        ):
+            continue
+        full_src = urljoin(url, src)
+        imgs.append(full_src)
+    imgs = list(dict.fromkeys(imgs))  # unique, preserve order
+
+    # Download images nếu bật
+    if download_images:
+        os.makedirs(img_dir, exist_ok=True)
+        for i, src in enumerate(imgs, 1):
+            ext = os.path.splitext(urlparse(src).path)[1]
+            if not ext or len(ext) > 5:
+                ext = ".jpg"
+            fname = f"{listing_id}_{i}{ext}"
+            fpath = os.path.join(img_dir, fname)
+            try:
+                r = requests.get(src, headers=HEADERS, timeout=15)
+                if r.status_code == 200:
+                    with open(fpath, "wb") as f:
+                        f.write(r.content)
+            except Exception as e:
+                logging.warning("Could not download image %s: %s", src, e)
+
+    # Return structure, bỏ contact
     return {
         "url": url,
         "id": listing_id,
@@ -244,8 +247,7 @@ def parse_listing_page(html, url):
         "posted_date": posted_date,
         "specs": specs,
         "description": desc,
-        # "images": imgs,
-        "contact": contact,
+        "images": imgs,
     }
 
 
