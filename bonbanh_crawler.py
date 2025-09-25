@@ -152,6 +152,24 @@ def parse_key_values_from_section(text):
 PHONE_RE = re.compile(r"((?:\+84|84|0)[\s.-]?\d{2,3}[\s.-]?\d{3}[\s.-]?\d{3,4})")
 
 
+def save_to_csv(results, out_csv="results.csv"):
+    if not results:
+        return
+    # Lấy tất cả key ở cấp 1 (url, id, title, price, ...)
+    keys = list(results[0].keys())
+
+    with open(out_csv, "w", newline="", encoding="utf-8") as f:
+        writer = csv.DictWriter(f, fieldnames=keys)
+        writer.writeheader()
+        for row in results:
+            # Với trường images (list), nối lại thành chuỗi
+            row_copy = row.copy()
+            if isinstance(row_copy.get("images"), list):
+                row_copy["images"] = ", ".join(row_copy["images"])
+            writer.writerow(row_copy)
+    print(f"[DONE] Saved {len(results)} listings to {out_csv}")
+
+
 # Parse a listing page to extract details
 
 
@@ -159,21 +177,18 @@ def parse_listing_page(html, url, download_images=False, img_dir="images"):
     soup = BeautifulSoup(html, "lxml")
     text = soup.get_text("\n")
 
-    # Title + tách giá
+    # --- Title + Price ---
     title_tag = soup.find(["h1", "h2"])
     raw_title = title_tag.get_text(separator=" ", strip=True) if title_tag else ""
     raw_title = re.sub(r"[\n\t]+", " ", raw_title).strip()
 
-    # Tìm giá trong title
-    mprice = re.search(r"(-\s*[\d\s\.,]*\s*(Tỷ|Triệu|VNĐ|đ|VND))", raw_title, re.I)
-    price = mprice.group(0).lstrip("-").strip() if mprice else None
+    # Tách thành 2 phần ngăn bởi dấu '-' (title và price)
+    parts = [p.strip() for p in raw_title.split("-", 1)]
+    title = parts[0] if parts else raw_title
+    title = " ".join(title.split())  # normalize spaces
+    price = parts[1] if len(parts) > 1 else None
 
-    # Loại bỏ giá khỏi title
-    title = re.sub(
-        r"(-\s*[\d\s\.,]*\s*(Tỷ|Triệu|VNĐ|đ|VND))", "", raw_title, flags=re.I
-    ).strip()
-
-    # Listing id
+    # --- Listing id ---
     m = re.search(r"Mã tin\s*[:：]?\s*(\d+)", text)
     if m:
         listing_id = m.group(1)
@@ -181,11 +196,11 @@ def parse_listing_page(html, url, download_images=False, img_dir="images"):
         m2 = re.search(r"-([0-9]{5,10})$", url)
         listing_id = m2.group(1) if m2 else None
 
-    # Date
+    # --- Date ---
     mdate = re.search(r"Đăng ngày\s*([\d/]{6,12})", text)
     posted_date = mdate.group(1) if mdate else None
 
-    # Spec section
+    # --- Specs ---
     spec_text = ""
     if "Thông số kỹ thuật" in text:
         start = text.find("Thông số kỹ thuật")
@@ -198,36 +213,28 @@ def parse_listing_page(html, url, download_images=False, img_dir="images"):
         spec_text = text[start : (end if end else start + 2000)]
     specs = parse_key_values_from_section(spec_text) if spec_text else {}
 
-    # Description
-    desc = ""
-    if "Thông tin mô tả" in text:
-        s = text.find("Thông tin mô tả")
-        endc = text.find("Liên hệ người bán", s + 1)
-        end = endc if endc != -1 else s + 800
-        desc = text[s:end].replace("Thông tin mô tả", "").strip()
-        desc = re.sub(r"[\n\t]+", " ", desc).strip()
+    # --- Description ---
+    # desc = ""
+    # if "Thông tin mô tả" in text:
+    #     s = text.find("Thông tin mô tả")
+    #     endc = text.find("Liên hệ người bán", s + 1)
+    #     end = endc if endc != -1 else s + 800
+    #     desc = text[s:end].replace("Thông tin mô tả", "").strip()
+    #     desc = re.sub(r"[\n\t]+", " ", desc).strip()
 
-    # Images
+    # --- Images: chỉ lấy đúng pattern ---
     imgs = []
     for img in soup.find_all("img"):
         src = img.get("data-src") or img.get("src") or ""
-        if not src or len(src) < 10:
-            continue
-        if re.search(
-            r"avatar|icon|logo|loading|spinner|pixel|approved2|bct|reg_i", src, re.I
-        ):
-            continue
-        full_src = urljoin(url, src)
-        imgs.append(full_src)
+        if re.match(r"https://s\.bonbanh\.com/uploads/users/.+/m_\d+\.\d+\.jpg", src):
+            imgs.append(src)
     imgs = list(dict.fromkeys(imgs))  # unique, preserve order
 
-    # Download images nếu bật
+    # --- Download images nếu bật ---
     if download_images:
         os.makedirs(img_dir, exist_ok=True)
         for i, src in enumerate(imgs, 1):
-            ext = os.path.splitext(urlparse(src).path)[1]
-            if not ext or len(ext) > 5:
-                ext = ".jpg"
+            ext = os.path.splitext(urlparse(src).path)[1] or ".jpg"
             fname = f"{listing_id}_{i}{ext}"
             fpath = os.path.join(img_dir, fname)
             try:
@@ -238,7 +245,6 @@ def parse_listing_page(html, url, download_images=False, img_dir="images"):
             except Exception as e:
                 logging.warning("Could not download image %s: %s", src, e)
 
-    # Return structure, bỏ contact
     return {
         "url": url,
         "id": listing_id,
@@ -246,7 +252,7 @@ def parse_listing_page(html, url, download_images=False, img_dir="images"):
         "price": price,
         "posted_date": posted_date,
         "specs": specs,
-        "description": desc,
+        # "description": desc,
         "images": imgs,
     }
 
@@ -323,6 +329,7 @@ def crawl_category(
     # Save JSON
     with open(out_json, "w", encoding="utf-8") as f:
         json.dump(results, f, ensure_ascii=False, indent=2)
+    save_to_csv(results, out_csv=out_json.replace(".json", ".csv"))
     print(f"[DONE] Saved {len(results)} listings to {out_json}")
     return results
 
