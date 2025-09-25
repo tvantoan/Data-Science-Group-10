@@ -48,6 +48,10 @@ HEADERS = {
     "Accept-Language": "vi,en-US;q=0.9,en;q=0.8",
 }
 
+YEAR_NOW = current_year = (
+    time.localtime().tm_year
+)  # filter out cars older than this year
+
 
 # Sleep random time between requests to not overload server and get blocked
 # If you want faster crawling, reduce SLEEP_MIN/SLEEP_MAX but be polite.
@@ -154,7 +158,8 @@ def parse_listing_page(html, url):
     text = soup.get_text("\n")
     # Title
     title_tag = soup.find(["h1", "h2"])
-    title = title_tag.get_text(strip=True) if title_tag else ""
+    title = title_tag.get_text(separator=" ", strip=True) if title_tag else ""
+    title = re.sub(r"[\n\t]+", " ", title).strip()
     # Listing id: try "Mã tin : <id>" or from URL
     m = re.search(r"Mã tin\s*[:：]?\s*(\d+)", text)
     if m:
@@ -173,18 +178,18 @@ def parse_listing_page(html, url):
     if mprice:
         price = mprice.group(0).strip()
     # Images - collect img tags likely in article (filter small icons)
-    imgs = []
-    for img in soup.find_all("img"):
-        src = img.get("data-src") or img.get("src") or ""
-        if not src:
-            continue
-        if len(src) < 10:
-            continue
-        # filter out site icons
-        if re.search(r"avatar|icon|logo|loading|spinner", src, re.I):
-            continue
-        imgs.append(urljoin(url, src))
-    imgs = list(dict.fromkeys(imgs))  # unique preserve order
+    # imgs = []
+    # for img in soup.find_all("img"):
+    #     src = img.get("data-src") or img.get("src") or ""
+    #     if not src:
+    #         continue
+    #     if len(src) < 10:
+    #         continue
+    #     # filter out site icons
+    #     if re.search(r"avatar|icon|logo|loading|spinner", src, re.I):
+    #         continue
+    #     imgs.append(urljoin(url, src))
+    # imgs = list(dict.fromkeys(imgs))  # unique preserve order
     # Spec section: find "Technical Specifications"
     spec_text = ""
     if "Thông số kỹ thuật" in text:
@@ -206,6 +211,7 @@ def parse_listing_page(html, url):
         endc = text.find("Liên hệ người bán", s + 1)
         end = endc if endc != -1 else s + 800
         desc = text[s:end].replace("Thông tin mô tả", "").strip()
+        desc = re.sub(r"[\n\t]+", " ", desc).strip()
     # Contact: parse name/phone/address heuristically
     contact = {"name": None, "phone": None, "address": None}
     if "Liên hệ người bán" in text:
@@ -238,7 +244,7 @@ def parse_listing_page(html, url):
         "posted_date": posted_date,
         "specs": specs,
         "description": desc,
-        "images": imgs,
+        # "images": imgs,
         "contact": contact,
     }
 
@@ -305,6 +311,9 @@ def crawl_category(
         try:
             r = fetch(url, session)
             data = parse_listing_page(r.text, url)
+            year = int(data["specs"].get("Năm sản xuất", 0))
+            if year < YEAR_NOW - 3:  # filter out car older than 3 years
+                continue
             results.append(data)
         except Exception as e:
             logging.warning("Lỗi khi crawl %s: %s", url, e)
