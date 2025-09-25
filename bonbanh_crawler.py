@@ -14,9 +14,9 @@ Requires: requests, beautifulsoup4, lxml, tqdm
 pip install requests beautifulsoup4 lxml tqdm
 
 Sample script:
-- Category python bonbanh_crawler.py category https://bonbanh.com/oto --pages 3 --max-listings 100 --out oto_sample.json
+- Category : python bonbanh_crawler.py category https://bonbanh.com/oto --pages 3 --max-listings 100 --out oto_sample.json
 Replace with your desired category URL, pages, max listings, and output file.
-- ID range python bonbanh_crawler.py idrange 6433596 6433600 "https://bonbanh.com/xe-{}" --out idrange_sample.json
+- ID range : python bonbanh_crawler.py idrange 6433596 6433600 "https://bonbanh.com/xe-{}" --out idrange_sample.json
 
 """
 
