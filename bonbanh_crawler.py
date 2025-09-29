@@ -1,23 +1,14 @@
 #!/usr/bin/env python3
 """
-Filename:
-bonbanh_crawler.py
+Filename: bonbanh_crawler.py
 
-- Two modes:
-  1) category mode: given a category URL (e.g. https://bonbanh.com/oto or https://bonbanh.com/oto/lexus)
-     and max pages to find listing links and crawl each listing. (RECOMMENDED))
-  2) idrange mode: given start_id and end_id, try to access each /<slug>-<id> (many 404). (NOT RECOMMENDED, cannot customize cars input)
-
-Results saved as JSON/CSV; option to download images.
+Modes:
+  1) category: crawl listing URLs from a category and parse details
+  2) idrange:  crawl listing details from an ID range
 
 Requires: requests, beautifulsoup4, lxml, tqdm
-pip install requests beautifulsoup4 lxml tqdm
 
-Sample script:
-- Category : python bonbanh_crawler.py category https://bonbanh.com/oto --pages 3 --max-listings 100 --out oto_sample.json
-Replace with your desired category URL, pages, max listings, and output file.
-- ID range : python bonbanh_crawler.py idrange 6433596 6433600 "https://bonbanh.com/xe-{}" --out idrange_sample.json
-
+python bonbanh_crawler.py category https://bonbanh.com/oto-tu-nam-2022-cu-da-qua-su-dung --pages 30 --max-listings 500 --out oto_sample.json
 """
 
 import argparse
@@ -41,28 +32,41 @@ DEFAULT_USER_AGENT = (
     "AppleWebKit/537.36 (KHTML, like Gecko) "
     "Chrome/120.0 Safari/537.36"
 )
-SLEEP_MIN = 1.0
-SLEEP_MAX = 2.5
-HEADERS = {
-    "User-Agent": DEFAULT_USER_AGENT,
-    "Accept-Language": "vi,en-US;q=0.9,en;q=0.8",
-}
 
-YEAR_NOW = current_year = (
-    time.localtime().tm_year
-)  # filter out cars older than this year
+# tốc độ hợp lý: ~0.5s/request
+SLEEP_MIN = 0.3
+SLEEP_MAX = 0.8
+
+USER_AGENTS = [
+    DEFAULT_USER_AGENT,
+    "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) "
+    "AppleWebKit/605.1.15 (KHTML, like Gecko) Version/16.0 Safari/605.1.15",
+    "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 "
+    "(KHTML, like Gecko) Chrome/118.0 Safari/537.36",
+    "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:120.0) "
+    "Gecko/20100101 Firefox/120.0",
+]
+
+YEAR_NOW = time.localtime().tm_year  # filter cars older than this year
 
 
-# Sleep random time between requests to not overload server and get blocked
-# If you want faster crawling, reduce SLEEP_MIN/SLEEP_MAX but be polite.
 def polite_sleep():
     time.sleep(random.uniform(SLEEP_MIN, SLEEP_MAX))
 
 
-# Check robots.txt for allowed paths
-def check_robots(base_url, path="/"):
+def rotate_headers(session):
+    ua = random.choice(USER_AGENTS)
+    session.headers.update(
+        {
+            "User-Agent": ua,
+            "Accept-Language": "vi,en-US;q=0.9,en;q=0.8",
+        }
+    )
+
+
+def check_robots(base_url, path="/", session=None):
     """
-    Try to parse robots.txt; return True if allowed or unknown.
+    Check robots.txt, return (allowed, robots_url, reason)
     """
     parsed = urlparse(base_url)
     robots_url = f"{parsed.scheme}://{parsed.netloc}/robots.txt"
@@ -70,59 +74,100 @@ def check_robots(base_url, path="/"):
     try:
         rp.set_url(robots_url)
         rp.read()
-        allowed = rp.can_fetch(DEFAULT_USER_AGENT, path)
-        return allowed, robots_url
+        ua = (
+            session.headers.get("User-Agent", DEFAULT_USER_AGENT)
+            if session
+            else DEFAULT_USER_AGENT
+        )
+        allowed = rp.can_fetch(ua, path)
+        reason = None if allowed else f"Blocked by robots.txt for UA={ua}"
+        return allowed, robots_url, reason
     except Exception as e:
-        # If can't read robots, assume allowed but warn
-        logging.warning("Could not query robots.txt (%s). Assuming allowed.", e)
-        return True, robots_url
+        logging.warning("Could not read robots.txt (%s). Assuming allowed.", e)
+        return True, robots_url, None
 
 
-# Fetch URL with session and raise for status
-def fetch(url, session, timeout=18):
-    r = session.get(url, timeout=timeout)
-    r.raise_for_status()
-    return r
+def fetch_with_retry(session, url, timeout=18, max_retries=6, backoff_base=2.0):
+    last_exc = None
+    for attempt in range(1, max_retries + 1):
+        rotate_headers(session)
+        try:
+            r = session.get(url, timeout=timeout)
+        except requests.RequestException as e:
+            last_exc = e
+            wait = min(backoff_base**attempt, 60)
+            logging.warning(
+                "RequestException on %s (attempt %d): %s — retrying in %.1fs",
+                url,
+                attempt,
+                e,
+                wait,
+            )
+            time.sleep(wait)
+            continue
+
+        status = r.status_code
+        if status == 200:
+            return r
+        if status == 404:
+            return r
+        if status == 429:
+            wait = min(backoff_base**attempt, 120)
+            logging.warning("429 on %s (attempt %d). Backoff %.1fs", url, attempt, wait)
+            time.sleep(wait)
+            last_exc = Exception("429 Too Many Requests")
+            continue
+        if status in (403, 451):
+            wait = min((backoff_base**attempt) * 2, 300)
+            logging.warning(
+                "%s on %s (attempt %d). Possible block. Backoff %.1fs",
+                status,
+                url,
+                attempt,
+                wait,
+            )
+            time.sleep(wait)
+            last_exc = Exception(f"{status} Forbidden")
+            continue
+        if 500 <= status < 600:
+            wait = min(backoff_base**attempt, 120)
+            logging.warning(
+                "Server error %s on %s (attempt %d). Retry in %.1fs",
+                status,
+                url,
+                attempt,
+                wait,
+            )
+            time.sleep(wait)
+            last_exc = Exception(f"Server error {status}")
+            continue
+        return r
+
+    raise Exception(
+        f"Failed to fetch {url} after {max_retries} retries. Last error: {last_exc}"
+    )
 
 
-# Extract listing links from category page
 def extract_listing_links_from_category(html, base_url):
-    """
-    Find all links of the form /xe-...-<id> in the category page.
-    Return a complete list of absolute URLs (unique).
-    """
     soup = BeautifulSoup(html, "lxml")
     anchors = soup.find_all("a", href=True)
     patt = re.compile(r"(?:/)?xe-[\w\-_]+-\d+", re.I)
-    # Filter links that match the pattern like /xe-<slug>-<id>
     urls = set()
-
     for a in anchors:
         href = a.get("href")
         if not href:
             continue
         href = href.strip()
-        # skip non-URL anchors
-        if (
-            href.startswith("#")
-            or href.lower().startswith("javascript:")
-            or href.lower().startswith("mailto:")
-        ):
+        if href.startswith("#") or href.lower().startswith(("javascript:", "mailto:")):
             continue
-
         path = urlparse(href).path or href
-
         if patt.search(path):
             full = urljoin(base_url, href)
             urls.add(full.split("?")[0])
     return sorted(urls)
 
 
-# Parse key:value pairs from 'Technical Specifications' section
 def parse_key_values_from_section(text):
-    """
-    Based on the text of the 'Technical Specifications' section, extract key:value pairs heuristically.
-    """
     lines = [ln.strip() for ln in text.splitlines() if ln.strip()]
     kv = {}
     i = 0
@@ -131,10 +176,8 @@ def parse_key_values_from_section(text):
         if line.endswith(":"):
             key = line.rstrip(":").strip()
             val = ""
-            # take the next non-empty line as value if reasonable
             if i + 1 < len(lines):
                 next_line = lines[i + 1]
-                # if next_line has a colon, it's the next key -> value is empty
                 if ":" not in next_line or re.search(r"\d", next_line):
                     val = next_line
                     i += 1
@@ -142,27 +185,18 @@ def parse_key_values_from_section(text):
         elif ":" in line:
             parts = line.split(":", 1)
             kv[parts[0].strip()] = parts[1].strip()
-        else:
-            # line without ':', may be a value based on previous key (skip)
-            pass
         i += 1
     return kv
-
-
-PHONE_RE = re.compile(r"((?:\+84|84|0)[\s.-]?\d{2,3}[\s.-]?\d{3}[\s.-]?\d{3,4})")
 
 
 def save_to_csv(results, out_csv="results.csv"):
     if not results:
         return
-    # Lấy tất cả key ở cấp 1 (url, id, title, price, ...)
     keys = list(results[0].keys())
-
     with open(out_csv, "w", newline="", encoding="utf-8") as f:
         writer = csv.DictWriter(f, fieldnames=keys)
         writer.writeheader()
         for row in results:
-            # Với trường images (list), nối lại thành chuỗi
             row_copy = row.copy()
             if isinstance(row_copy.get("images"), list):
                 row_copy["images"] = ", ".join(row_copy["images"])
@@ -170,67 +204,37 @@ def save_to_csv(results, out_csv="results.csv"):
     print(f"[DONE] Saved {len(results)} listings to {out_csv}")
 
 
-# Parse a listing page to extract details
-
-
 def parse_listing_page(html, url, download_images=False, img_dir="images"):
     soup = BeautifulSoup(html, "lxml")
     text = soup.get_text("\n")
-
-    # --- Title + Price ---
     title_tag = soup.find(["h1", "h2"])
-    raw_title = title_tag.get_text(separator=" ", strip=True) if title_tag else ""
+    raw_title = title_tag.get_text(" ", strip=True) if title_tag else ""
     raw_title = re.sub(r"[\n\t]+", " ", raw_title).strip()
-
-    # Tách thành 2 phần ngăn bởi dấu '-' (title và price)
     parts = [p.strip() for p in raw_title.split("-", 1)]
     title = parts[0] if parts else raw_title
-    title = " ".join(title.split())  # normalize spaces
+    title = " ".join(title.split())
     price = parts[1] if len(parts) > 1 else None
-
-    # --- Listing id ---
     m = re.search(r"Mã tin\s*[:：]?\s*(\d+)", text)
-    if m:
-        listing_id = m.group(1)
-    else:
-        m2 = re.search(r"-([0-9]{5,10})$", url)
-        listing_id = m2.group(1) if m2 else None
-
-    # --- Date ---
+    listing_id = m.group(1) if m else re.search(r"-([0-9]{5,10})$", url).group(1)
     mdate = re.search(r"Đăng ngày\s*([\d/]{6,12})", text)
     posted_date = mdate.group(1) if mdate else None
-
-    # --- Specs ---
     spec_text = ""
     if "Thông số kỹ thuật" in text:
         start = text.find("Thông số kỹ thuật")
-        end_candidates = []
-        for marker in ["Thông tin mô tả", "Liên hệ người bán", "Liên hệ"]:
-            idx = text.find(marker, start + 1)
-            if idx != -1:
-                end_candidates.append(idx)
+        end_candidates = [
+            text.find(marker, start + 1)
+            for marker in ["Thông tin mô tả", "Liên hệ người bán", "Liên hệ"]
+            if text.find(marker, start + 1) != -1
+        ]
         end = min(end_candidates) if end_candidates else None
         spec_text = text[start : (end if end else start + 2000)]
     specs = parse_key_values_from_section(spec_text) if spec_text else {}
-
-    # --- Description ---
-    # desc = ""
-    # if "Thông tin mô tả" in text:
-    #     s = text.find("Thông tin mô tả")
-    #     endc = text.find("Liên hệ người bán", s + 1)
-    #     end = endc if endc != -1 else s + 800
-    #     desc = text[s:end].replace("Thông tin mô tả", "").strip()
-    #     desc = re.sub(r"[\n\t]+", " ", desc).strip()
-
-    # --- Images: chỉ lấy đúng pattern ---
     imgs = []
     for img in soup.find_all("img"):
         src = img.get("data-src") or img.get("src") or ""
         if re.match(r"https://s\.bonbanh\.com/uploads/users/.+/m_\d+\.\d+\.jpg", src):
             imgs.append(src)
-    imgs = list(dict.fromkeys(imgs))  # unique, preserve order
-
-    # --- Download images nếu bật ---
+    imgs = list(dict.fromkeys(imgs))
     if download_images:
         os.makedirs(img_dir, exist_ok=True)
         for i, src in enumerate(imgs, 1):
@@ -238,13 +242,12 @@ def parse_listing_page(html, url, download_images=False, img_dir="images"):
             fname = f"{listing_id}_{i}{ext}"
             fpath = os.path.join(img_dir, fname)
             try:
-                r = requests.get(src, headers=HEADERS, timeout=15)
+                r = fetch_with_retry(requests.Session(), src)
                 if r.status_code == 200:
                     with open(fpath, "wb") as f:
                         f.write(r.content)
             except Exception as e:
                 logging.warning("Could not download image %s: %s", src, e)
-
     return {
         "url": url,
         "id": listing_id,
@@ -252,12 +255,10 @@ def parse_listing_page(html, url, download_images=False, img_dir="images"):
         "price": price,
         "posted_date": posted_date,
         "specs": specs,
-        # "description": desc,
         "images": imgs,
     }
 
 
-# --- Crawler flows ---
 def crawl_category(
     session,
     base_category_url,
@@ -269,64 +270,55 @@ def crawl_category(
     base_root = (
         f"{urlparse(base_category_url).scheme}://{urlparse(base_category_url).netloc}"
     )
-    allowed, robots_url = check_robots(
-        base_category_url, urlparse(base_category_url).path
+    allowed, robots_url, reason = check_robots(
+        base_category_url, urlparse(base_category_url).path, session
     )
     if not allowed:
         print(
-            f"[WARN] robots.txt ({robots_url}) may block this path. Stopping for ethical reasons."
+            f"[WARN] robots.txt ({robots_url}) may block this path: {reason}. Stopping."
         )
         return
     found_links = []
     for page in range(1, max_pages + 1):
-        # bonbanh uses pagination like /page%2C{n} in some pages
         if page == 1:
             page_url = base_category_url
         else:
-            # try two common forms
-            page_url = base_category_url.rstrip("/") + f"/page%2C{page}"
+            page_url = base_category_url.rstrip("/") + f"/page,{page}"
         try:
-            r = fetch(page_url, session)
+            r = fetch_with_retry(session, page_url)
         except Exception as e1:
-            # try an alternative pattern ?page=
             try:
                 page_url2 = base_category_url + (
                     ("&" if "?" in base_category_url else "?") + f"page={page}"
                 )
-                r = fetch(page_url2, session)
+                r = fetch_with_retry(session, page_url2)
             except Exception as e2:
                 logging.warning(
-                    "Could not load page %s (%s / %s). Stopping page loop.",
-                    page_url,
-                    e1,
-                    e2,
+                    "Could not load page %s (%s / %s). Stopping.", page_url, e1, e2
                 )
                 break
         links = extract_listing_links_from_category(r.text, base_root)
         new = [u for u in links if u not in found_links]
         if not new:
-            # no new links -> may be finished
             break
         found_links.extend(new)
-        print(f"[INFO] Page {page}: found {len(new)} links, total {len(found_links)}")
+        print(f"[INFO] Page {page}: {len(new)} new links, total {len(found_links)}")
         if max_listings and len(found_links) >= max_listings:
             found_links = found_links[:max_listings]
             break
         polite_sleep()
-    # Crawl each listing
     results = []
     for url in tqdm(found_links, desc="Crawl listings"):
         try:
-            r = fetch(url, session)
+            r = fetch_with_retry(session, url)
             data = parse_listing_page(r.text, url)
             year = int(data["specs"].get("Năm sản xuất", 0))
-            if year < YEAR_NOW - 3:  # filter out car older than 3 years
+            if year < YEAR_NOW - 3:
                 continue
             results.append(data)
         except Exception as e:
-            logging.warning("Lỗi khi crawl %s: %s", url, e)
+            logging.warning("Error crawling %s: %s", url, e)
         polite_sleep()
-    # Save JSON
     with open(out_json, "w", encoding="utf-8") as f:
         json.dump(results, f, ensure_ascii=False, indent=2)
     save_to_csv(results, out_csv=out_json.replace(".json", ".csv"))
@@ -334,7 +326,6 @@ def crawl_category(
     return results
 
 
-# Crawl by ID range
 def crawl_id_range(
     session,
     id_start,
@@ -343,29 +334,21 @@ def crawl_id_range(
     download_images=False,
     out_json="results_idrange.json",
 ):
-    """
-    url_template: e.g. "https://bonbanh.com/xe-bmw-4_series-{}" or better "https://bonbanh.com/xe-some-slug-{}"
-    If slug unknown, user can use pattern: "https://bonbanh.com/xe-{}" but many URLs will 404.
-    """
     base_root = f"{urlparse(url_template).scheme}://{urlparse(url_template).netloc}"
-    allowed, robots_url = check_robots(base_root, "/")
+    allowed, robots_url, reason = check_robots(base_root, "/", session)
     if not allowed:
-        print(f"[WARN] robots.txt ({robots_url}) may block. Stopping.")
+        print(f"[WARN] robots.txt ({robots_url}) may block: {reason}. Stopping.")
         return
     results = []
     for idn in tqdm(range(id_start, id_end + 1), desc="ID range"):
-        # try to construct url
         url = url_template.format(idn)
         try:
-            r = session.get(url, timeout=12)
+            r = fetch_with_retry(session, url, timeout=12)
             if r.status_code == 404:
                 polite_sleep()
                 continue
-            r.raise_for_status()
             data = parse_listing_page(r.text, url)
             results.append(data)
-        except requests.HTTPError as he:
-            logging.debug("HTTPError %s for %s", he, url)
         except Exception as e:
             logging.warning("Error fetching %s: %s", url, e)
         polite_sleep()
@@ -375,33 +358,27 @@ def crawl_id_range(
     return results
 
 
-# category mode sample: python bonbanh_crawler.py category https://bonbanh.com/oto --pages 3 --max-listings 100 --out oto_sample.json
-# id range mode sample: python bonbanh_crawler.py idrange 6433596 6448777 "https://bonbanh.com/xe-{}" --out idrange_sample.json
 def main():
-    parser = argparse.ArgumentParser(description="Crawler bonbanh.com (simple, polite)")
+    parser = argparse.ArgumentParser(
+        description="Crawler bonbanh.com (with retry & UA rotation)"
+    )
     sub = parser.add_subparsers(dest="mode", required=True, help="category or idrange")
     p_cat = sub.add_parser("category", help="crawl from category URL")
-    p_cat.add_argument(
-        "category_url",
-        help="e.g. https://bonbanh.com/oto or https://bonbanh.com/oto/lexus",
-    )
+    p_cat.add_argument("category_url")
     p_cat.add_argument("--pages", type=int, default=3, help="max pages (default 3)")
-    p_cat.add_argument(
-        "--max-listings", type=int, default=200, help="limit total listings"
-    )
+    p_cat.add_argument("--max-listings", type=int, default=500)
     p_cat.add_argument("--out", default="bonbanh_category.json")
     p_id = sub.add_parser("idrange", help="crawl by id range")
     p_id.add_argument("start_id", type=int)
     p_id.add_argument("end_id", type=int)
-    p_id.add_argument(
-        "url_template",
-        help="URL template containing {} for id, e.g. 'https://bonbanh.com/xe-bmw--{}' or 'https://bonbanh.com/xe-{}'",
-    )
+    p_id.add_argument("url_template")
     p_id.add_argument("--out", default="bonbanh_idrange.json")
-
     args = parser.parse_args()
+
     session = requests.Session()
-    session.headers.update(HEADERS)
+    session.headers.update(
+        {"User-Agent": DEFAULT_USER_AGENT, "Accept-Language": "vi,en-US;q=0.9,en;q=0.8"}
+    )
 
     if args.mode == "category":
         crawl_category(
@@ -417,4 +394,5 @@ def main():
         )
 
 
-main()
+if __name__ == "__main__":
+    main()
