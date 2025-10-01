@@ -11,6 +11,7 @@ python crawler.py category https://oto.com.vn/mua-ban-xe/f02255 --pages 3 --max-
 """
 
 import argparse
+import csv
 import json
 import logging
 import random
@@ -102,117 +103,18 @@ def normalize_model_name(raw_title: str) -> str:
 
 def parse_specs_from_soup(soup, page_text):
     specs = {}
-
-    # 1) dạng list-info (nếu có)
-    for row in soup.select(".list-info__item"):
-        label_el = row.select_one(".list-info__label") or row.select_one("label")
-        value_el = row.select_one(".list-info__value")
-        if not label_el:
-            continue
-
-        label = label_el.get_text(strip=True).rstrip(":")
-
-        # nếu có value_el thì lấy
-        if value_el:
-            value = value_el.get_text(strip=True)
-        else:
-            # lấy text sibling ngay sau label
-            value = label_el.next_sibling.strip() if label_el.next_sibling else ""
-
-        if label and value:
-            specs[label] = value
-
-    # 2) fallback tìm block 'Thông số'
-    header = None
-    for htag in ["h2", "h3", "h4", "div", "strong"]:
-        header = soup.find(
-            lambda tag: tag.name == htag and "Thông số" in tag.get_text()
-        )
-        if header:
-            break
-
-    def parse_table(node):
-        kv = {}
-        for tr in node.find_all("tr"):
-            tds = tr.find_all(["td", "th"])
-            if len(tds) >= 2:
-                k = tds[0].get_text(" ", strip=True).rstrip(":")
-                v = tds[1].get_text(" ", strip=True)
-                if k:
-                    kv[k] = v
-        return kv
-
-    def parse_list(node):
-        kv = {}
-        for li in node.find_all("li"):
-            # xử lý lại: nếu có <label> thì tách label và value
-            lbl = li.select_one("label")
-            if lbl:
-                k = lbl.get_text(strip=True).rstrip(":")
-                v = lbl.next_sibling.strip() if lbl.next_sibling else ""
-                if k and v:
-                    kv[k] = v
-                    continue
-            txt = li.get_text(" ", strip=True)
-            if not txt:
-                continue
-            if ":" in txt:
-                parts = [p.strip() for p in txt.split(":", 1)]
-                kv[parts[0]] = parts[1]
-                continue
-            if "km" in txt.lower() or re.search(r"\d+\s*km", txt.lower()):
-                kv.setdefault("Km đã đi", txt)
-            elif "máy" in txt.lower() or "nhiên liệu" in txt.lower():
-                kv.setdefault("Nhiên liệu", txt)
-            elif "số tự động" in txt.lower() or "hộp số" in txt.lower():
-                kv.setdefault("Hộp số", txt)
-            elif "xe cũ" in txt.lower() or "xe mới" in txt.lower():
-                kv.setdefault("Tình trạng", txt)
-            else:
-                kv.setdefault("Thông số khác", []).append(txt)
-        if "Thông số khác" in kv:
-            kv["Thông số khác"] = "; ".join(kv["Thông số khác"])
-        return kv
-
-    if header:
-        block = header.find_next_sibling()
-        if block:
-            table = block.find("table")
-            if table:
-                specs.update(parse_table(table))
-            else:
-                ul = block.find("ul") or block.find("ol")
-                if ul:
-                    specs.update(parse_list(ul))
-                else:
-                    dl = block.find("dl")
-                    if dl:
-                        items = dl.find_all(["dt", "dd"])
-                        key = None
-                        for it in items:
-                            if it.name == "dt":
-                                key = it.get_text(" ", strip=True)
-                            else:
-                                if key:
-                                    specs[key] = it.get_text(" ", strip=True)
-                                    key = None
-
-    # 3) fallback bằng regex trong text
-    if not specs:
-        candidates = {
-            "Năm sản xuất": r"(Năm sản xuất[:\s]*|Năm SX[:\s]*|Năm[:\s]*)(\d{4})",
-            "Số Km đã đi": r"(\d[\d\.,]*\s*km)",
-            "Nhiên liệu": r"(Máy xăng|Máy dầu|Nhiên liệu[:\s]*[^\n,;]+)",
-            "Hộp số": r"(Số tự động|Số sàn|Hộp số[:\s]*[^\n,;]+)",
-            "Tình trạng": r"(Xe cũ|Xe mới|Tình trạng[:\s]*[^\n,;]+)",
-        }
-        for k, pat in candidates.items():
-            m = re.search(pat, page_text, re.I)
-            if m:
-                val = (
-                    m.group(2) if m.lastindex and m.lastindex >= 2 else m.group(0)
-                ).strip()
-                specs[k] = val
+    rows = soup.select("ul.list-info > li")
+    for li in rows:
+        label_el = li.select_one("label.label")
+        if label_el:
+            key = label_el.get_text(strip=True).rstrip(":")
+            val = (
+                li.get_text(" ", strip=True)
+                .replace(label_el.get_text(strip=True), "")
+                .strip()
+            )
+            if key and val:
+                specs[key] = val
 
     return specs
 
@@ -236,7 +138,15 @@ def parse_listing_page(html: str, url: str):
         listing_id = m2.group(1) if m2 else None
 
     specs = parse_specs_from_soup(soup, page_text)
-
+    imgs = []
+    for img in soup.find_all("img"):
+        src = img.get("data-src") or img.get("src") or ""
+        if re.match(
+            r"^https:\/\/img1\.oto\.com\.vn\/crop\/640x480\/[A-Za-z0-9\/\-\_]+\.webp$",
+            src,
+        ):
+            imgs.append(src)
+    imgs = list(dict.fromkeys(imgs))
     return {
         "url": url,
         "id": listing_id,
@@ -244,7 +154,23 @@ def parse_listing_page(html: str, url: str):
         "title": model_name,
         "price": price,
         "specs": specs,
+        "images": imgs,
     }
+
+
+def save_to_csv(results, out_csv="results.csv"):
+    if not results:
+        return
+    keys = list(results[0].keys())
+    with open(out_csv, "w", newline="", encoding="utf-8") as f:
+        writer = csv.DictWriter(f, fieldnames=keys)
+        writer.writeheader()
+        for row in results:
+            row_copy = row.copy()
+            if isinstance(row_copy.get("images"), list):
+                row_copy["images"] = ", ".join(row_copy["images"])
+            writer.writerow(row_copy)
+    print(f"[DONE] Saved {len(results)} listings to {out_csv}")
 
 
 def crawl_detail_links(
@@ -272,6 +198,7 @@ def crawl_detail_links(
         polite_sleep(sleep_min, sleep_max)
     with open(out_json, "w", encoding="utf-8") as f:
         json.dump(results, f, ensure_ascii=False, indent=2)
+    save_to_csv(results, out_csv=out_json.replace(".json", ".csv"))
     logging.info("Saved %d listings to %s", len(results), out_json)
     return results
 
@@ -380,7 +307,6 @@ def crawl_category_playwright(
 
             total_anchors = len(anchors)
             unique_hrefs = len(set(hrefs))
-            logging.info(set(hrefs))
             logging.info(
                 "length anchors with /mua-ban-xe-: %d (unique hrefs %d)",
                 total_anchors,
