@@ -1,0 +1,3248 @@
+
+Mapping cho cột 'Hãng xe':
+  Acura                → 0
+  Audi                 → 1
+  Baic                 → 2
+  Bmw                  → 3
+  Byd                  → 4
+  Changan              → 5
+  Chevrolet            → 6
+  Chrysler             → 7
+  Citroen              → 8
+  Daewoo               → 9
+  Dodge                → 10
+  Dongben              → 11
+  Fiat                 → 12
+  Ford                 → 13
+  Gaz                  → 14
+  Honda                → 15
+  Hyundai              → 16
+  Infiniti             → 17
+  Isuzu                → 18
+  Iveco                → 19
+  Jaguar               → 20
+  Jeep                 → 21
+  Jrd                  → 22
+  Kenbo                → 23
+  Kia                  → 24
+  Landrover            → 25
+  Lexus                → 26
+  Luxgen               → 27
+  Lynk & Co            → 28
+  Maserati             → 29
+  Mazda                → 30
+  Mercedes Benz        → 31
+  Mg                   → 32
+  Mini                 → 33
+  Mitsubishi           → 34
+  Mooc                 → 35
+  Nissan               → 36
+  Omoda                → 37
+  Peugeot              → 38
+  Porsche              → 39
+  Renault              → 40
+  Samsung              → 41
+  Scion                → 42
+  Smart                → 43
+  Ssangyong            → 44
+  Subaru               → 45
+  Suzuki               → 46
+  Sym                  → 47
+  Teraco               → 48
+  Thaco                → 49
+  Tobe                 → 50
+  Toyota               → 51
+  Vinfast              → 52
+  Volkswagen           → 53
+  Volvo                → 54
+  Zotye                → 55
+
+Mapping cho cột 'Dòng xe':
+  01 Hyper Pro 2023    → 0
+  01 Hyper Pro 2024    → 1
+  06 1 5 Turbo 2025    → 2
+  1 Series 116I 2013   → 3
+  1 Series 116I 2014   → 4
+  1 Series 118I 2015   → 5
+  1 Series 118I 2018   → 6
+  2 1 5 At 2010        → 7
+  2 1 5 At 2012        → 8
+  2 1 5 At 2015        → 9
+  2 1 5 At 2016        → 10
+  2 1 5 At 2017        → 11
+  2 1 5 At 2018        → 12
+  2 1 5 At 2020        → 13
+  2 1 5 At 2021        → 14
+  2 1 5 At 2022        → 15
+  2 1 5 At 2023        → 16
+  2 1 5 At 2024        → 17
+  2 Deluxe 2019        → 18
+  2 Deluxe 2020        → 19
+  2 Deluxe 2021        → 20
+  2 Luxury 2019        → 21
+  2 Luxury 2020        → 22
+  2 Luxury 2021        → 23
+  2 Luxury 2022        → 24
+  2 Luxury 2023        → 25
+  2 Luxury 2024        → 26
+  2 Premium 2018       → 27
+  2 Premium 2019       → 28
+  2 Premium 2020       → 29
+  2 S 2013             → 30
+  2 S 2014             → 31
+  2 Series 218I Active Tourer 2015 → 32
+  2 Series 218I Gran Tourer 2016 → 33
+  2 Sport Luxury 2019  → 34
+  2 Sport Luxury 2020  → 35
+  2 Sport Luxury 2021  → 36
+  2 Sport Luxury 2022  → 37
+  2 Sport Luxury 2023  → 38
+  2 Sport Luxury 2024  → 39
+  2 Sport Premium 2020 → 40
+  2 Sport Premium 2021 → 41
+  2 Sport Premium 2022 → 42
+  2008 Active 1 2 At 2020 → 43
+  2008 Active 1 2 At 2021 → 44
+  2008 Active 1 2 At 2022 → 45
+  2008 Active 1 2 At 2023 → 46
+  2008 Allure 1 2 At 2025 → 47
+  2008 Gt Line 1 2 At 2021 → 48
+  2008 Gt Line 1 2 At 2022 → 49
+  2008 Gt Line 1 2 At 2023 → 50
+  2008 Gt Line 1 2 At 2024 → 51
+  2010                 → 52
+  2019                 → 53
+  2023                 → 54
+  208 1 6 At 2013      → 55
+  208 1 6 At 2015      → 56
+  208 1 6 At 2016      → 57
+  3 1 5 At 2014        → 58
+  3 1 5 At 2015        → 59
+  3 1 5 At 2016        → 60
+  3 1 5 At 2017        → 61
+  3 1 5 At 2018        → 62
+  3 1 5L Deluxe 2019   → 63
+  3 1 5L Deluxe 2020   → 64
+  3 1 5L Deluxe 2021   → 65
+  3 1 5L Deluxe 2022   → 66
+  3 1 5L Deluxe 2023   → 67
+  3 1 5L Deluxe 2024   → 68
+  3 1 5L Luxury 2019   → 69
+  3 1 5L Luxury 2020   → 70
+  3 1 5L Luxury 2021   → 71
+  3 1 5L Luxury 2022   → 72
+  3 1 5L Luxury 2023   → 73
+  3 1 5L Luxury 2024   → 74
+  3 1 5L Luxury 2025   → 75
+  3 1 5L Premium 2019  → 76
+  3 1 5L Premium 2020  → 77
+  3 1 5L Premium 2021  → 78
+  3 1 5L Premium 2022  → 79
+  3 1 5L Premium 2023  → 80
+  3 1 5L Sport Luxury 2019 → 81
+  3 1 5L Sport Luxury 2020 → 82
+  3 1 5L Sport Luxury 2021 → 83
+  3 1 5L Sport Luxury 2022 → 84
+  3 1 5L Sport Luxury 2024 → 85
+  3 1 5L Sport Premium 2019 → 86
+  3 1 5L Sport Premium 2020 → 87
+  3 1 5L Sport Premium 2021 → 88
+  3 1 5L Sport Premium 2022 → 89
+  3 1 5L Sport Premium 2023 → 90
+  3 1 6 At 2009        → 91
+  3 1 6 At 2010        → 92
+  3 2 0 At 2009        → 93
+  3 2 0 At 2015        → 94
+  3 2 0 At 2016        → 95
+  3 2 0 At 2017        → 96
+  3 2 0 At 2018        → 97
+  3 2 0L Premium 2019  → 98
+  3 2 0L Signature Premium 2019 → 99
+  3 2 0L Signature Premium 2021 → 100
+  3 2 0L Sport Signature Premium 2019 → 101
+  3 Luxury 2020        → 102
+  3 S 1 6 At 2012      → 103
+  3 S 1 6 At 2013      → 104
+  3 S 1 6 At 2014      → 105
+  3 S 2 0 At 2009      → 106
+  3 Series 320I 2007   → 107
+  3 Series 320I 2009   → 108
+  3 Series 320I 2010   → 109
+  3 Series 320I 2011   → 110
+  3 Series 320I 2012   → 111
+  3 Series 320I 2013   → 112
+  3 Series 320I 2014   → 113
+  3 Series 320I 2015   → 114
+  3 Series 320I 2016   → 115
+  3 Series 320I 2017   → 116
+  3 Series 320I 2018   → 117
+  3 Series 320I 2019   → 118
+  3 Series 320I Gt 2014 → 119
+  3 Series 320I Gt 2015 → 120
+  3 Series 320I Gt 2016 → 121
+  3 Series 320I Gt 2017 → 122
+  3 Series 320I M Sport 2022 → 123
+  3 Series 320I M Sport 2024 → 124
+  3 Series 320I M Sport 2025 → 125
+  3 Series 320I Sport Line 2020 → 126
+  3 Series 320I Sport Line 2021 → 127
+  3 Series 320I Sport Line 2022 → 128
+  3 Series 320I Sport Line 2023 → 129
+  3 Series 320I Sport Line 2024 → 130
+  3 Series 320I Sport Line 2025 → 131
+  3 Series 320I Sport Line Plus 2021 → 132
+  3 Series 325I 2011   → 133
+  3 Series 328I 2012   → 134
+  3 Series 328I 2013   → 135
+  3 Series 328I 2014   → 136
+  3 Series 328I Convertible 2007 → 137
+  3 Series 328I Gt 2016 → 138
+  3 Series 330I M Sport 2020 → 139
+  3 Series 330I M Sport 2021 → 140
+  3 Series 330I M Sport 2023 → 141
+  3 Series 330I M Sport 2024 → 142
+  3 Series 335I Convertible 2009 → 143
+  3008 1 6 At 2014     → 144
+  3008 1 6 At 2015     → 145
+  3008 1 6 At 2016     → 146
+  3008 1 6 At 2017     → 147
+  3008 1 6 At 2018     → 148
+  3008 1 6 At 2019     → 149
+  3008 Al 2021         → 150
+  3008 Al 2022         → 151
+  3008 Allure 1 6 At 2020 → 152
+  3008 Allure 1 6 At 2021 → 153
+  3008 Allure 2025     → 154
+  3008 At 2022         → 155
+  3008 Gt 2022         → 156
+  3008 Gt 2023         → 157
+  3008 Gt 2024         → 158
+  3008 Premium 2024    → 159
+  300C 2 7 V6 2008     → 160
+  300C 3 5 V6 2008     → 161
+  300C 3 5 V6 2010     → 162
+  308 Gt Line 1 6 At 2015 → 163
+  4 Series 420I Convertible 2015 → 164
+  4 Series 420I Convertible 2019 → 165
+  4 Series 420I Gran Coupe 2015 → 166
+  4 Series 420I Gran Coupe 2017 → 167
+  4 Series 420I Gran Coupe 2018 → 168
+  4 Series 428I Convertible 2016 → 169
+  4 Series 428I Gran Coupe 2014 → 170
+  4 Series 430I Gran Coupe M Sport 2022 → 171
+  40 Feet 32 Tan 2016  → 172
+  408 Allure 1 6 At 2023 → 173
+  408 Allure 1 6 At 2024 → 174
+  408 Gt 1 6 At 2023   → 175
+  408 Gt 1 6 At 2024   → 176
+  408 Gt 1 6 At 2025   → 177
+  408 Premium 1 6 At 2023 → 178
+  408 Premium 2 0 At 2013 → 179
+  408 Premium 2 0 At 2016 → 180
+  5 1 5 Cvt Std 2023   → 181
+  5 1 5 Cvt Std 2024   → 182
+  5 1 5 Mt 2023        → 183
+  5 1 5 Mt 2024        → 184
+  5 1 5 Mt 2025        → 185
+  5 Luxury 1 5 At 2022 → 186
+  5 Luxury 1 5 At 2023 → 187
+  5 Luxury 1 5 At 2024 → 188
+  5 Series 520I 2012   → 189
+  5 Series 520I 2013   → 190
+  5 Series 520I 2014   → 191
+  5 Series 520I 2015   → 192
+  5 Series 520I 2016   → 193
+  5 Series 520I 2018   → 194
+  5 Series 520I 2022   → 195
+  5 Series 520I 2023   → 196
+  5 Series 520I Luxury 2021 → 197
+  5 Series 520I Luxury Line 2022 → 198
+  5 Series 520I M Sport 2022 → 199
+  5 Series 523I 2009   → 200
+  5 Series 523I 2010   → 201
+  5 Series 523I 2011   → 202
+  5 Series 528I 2011   → 203
+  5 Series 528I 2015   → 204
+  5 Series 528I Gt 2013 → 205
+  5 Series 528I Gt 2014 → 206
+  5 Series 528I Gt 2015 → 207
+  5 Series 528I Gt 2017 → 208
+  5 Series 530I 2008   → 209
+  5 Series 530I 2019   → 210
+  5 Series 530I Luxury Line 2019 → 211
+  5 Series 530I M Sport 2022 → 212
+  5 Series 535I 2015   → 213
+  5 Series 535I Gt 2010 → 214
+  5 Standard 1 5 At 2022 → 215
+  5 Standard 1 5 At 2023 → 216
+  5 Standard 1 5 At 2024 → 217
+  500 0 9 At 2009      → 218
+  500 1 2 At 2009      → 219
+  5008 1 6 At 2018     → 220
+  5008 1 6 At 2019     → 221
+  5008 Active 1 6 At 2020 → 222
+  5008 Al 1 6 At 2021  → 223
+  5008 Al 1 6 At 2022  → 224
+  5008 Allure 1 6 At 2020 → 225
+  5008 Gt 1 6 At 2021  → 226
+  5008 Gt 1 6 At 2022  → 227
+  5008 Gt 1 6 At 2024  → 228
+  508 1 6 At 2015      → 229
+  6 2 0 At 2014        → 230
+  6 2 0 At 2015        → 231
+  6 2 0 At 2016        → 232
+  6 2 0L 2016          → 233
+  6 2 0L 2018          → 234
+  6 2 0L Premium 2017  → 235
+  6 2 0L Premium 2018  → 236
+  6 2 5 At 2015        → 237
+  6 2 5 At 2016        → 238
+  6 2 5L Premium 2016  → 239
+  6 2 5L Premium 2017  → 240
+  6 2 5L Premium 2018  → 241
+  6 Luxury 2 0 At 2019 → 242
+  6 Luxury 2 0 At 2020 → 243
+  6 Ppremium 2 0 At 2020 → 244
+  6 Premium 2 0 At 2019 → 245
+  6 Premium 2 0 At 2020 → 246
+  6 Premium 2 0 At 2021 → 247
+  6 Premium 2 0 At 2022 → 248
+  6 Premium 2 0 At 2023 → 249
+  6 Premium 2 0 At 2024 → 250
+  6 Premium 2 5 At 2019 → 251
+  6 Premium 2 5 At 2020 → 252
+  6 Series 640I Gran Coupe 2012 → 253
+  6 Series 640I Gran Coupe 2013 → 254
+  6 Series 640I Gran Coupe 2014 → 255
+  6 Signature Premium 2 5 At 2021 → 256
+  6 Signature Premium 2 5 At 2022 → 257
+  6 Signature Premium 2 5 At 2023 → 258
+  7 Series 730Li 2010  → 259
+  7 Series 730Li 2011  → 260
+  7 Series 730Li 2013  → 261
+  7 Series 730Li 2016  → 262
+  7 Series 730Li 2018  → 263
+  7 Series 730Li 2019  → 264
+  7 Series 740Li 2008  → 265
+  7 Series 740Li 2016  → 266
+  7 Series 740Li 2017  → 267
+  7 Series 740Li 2018  → 268
+  86 2 0 At 2012       → 269
+  A Class A170 2009    → 270
+  A Class A200 2013    → 271
+  A Class A200 2014    → 272
+  A Class A200 2016    → 273
+  A Class A35 Amg 4Matic 2020 → 274
+  A Class A35 Amg 4Matic 2022 → 275
+  A Class A45 Amg 2014 → 276
+  A1 1 4 Tfsi 2010     → 277
+  A1 1 4 Tfsi 2012     → 278
+  A1 2 0T S            → 279
+  A3 1 4 At 2011       → 280
+  A3 1 8 At 2013       → 281
+  A3 2 0 Tdi At 2010   → 282
+  A4 1 8 Tfsi 2013     → 283
+  A4 1 8 Tfsi 2014     → 284
+  A4 1 8 Tfsi 2015     → 285
+  A4 2 0 Tfsi 2016     → 286
+  A4 2 0 Tfsi 2017     → 287
+  A4 2 0T 2011         → 288
+  A4 2 0T Quattro 2008 → 289
+  A4 2 0T Quattro 2010 → 290
+  A4 40 Tfsi Advanced 2019 → 291
+  A4 40 Tfsi Advanced 2020 → 292
+  A4 40 Tfsi Advanced 2022 → 293
+  A5 2 0 T Quattro 2010 → 294
+  A5 Sportback 2 0 2012 → 295
+  A5 Sportback 2 0 2015 → 296
+  A5 Sportback 2 0 2017 → 297
+  A6 1 8 Tfsi 2015     → 298
+  A6 1 8 Tfsi 2016     → 299
+  A6 1 8 Tfsi 2017     → 300
+  A6 2 0 Tfsi 2014     → 301
+  A6 2 0 Tfsi 2015     → 302
+  A6 2 0T 2013         → 303
+  A6 45 Tfsi 2020      → 304
+  A6 45 Tfsi 2021      → 305
+  A6 45 Tfsi 2022      → 306
+  A7 3 0 Tfsi 2011     → 307
+  A7 3 0 Tfsi 2012     → 308
+  A7 3 0 Tfsi 2013     → 309
+  A7 3 0 Tfsi 2014     → 310
+  A7 3 0 Tfsi 2015     → 311
+  A8 L 3 0 Quattro 2010 → 312
+  A8 L V6 3 0 Tfsi 2014 → 313
+  A8 L V6 3 0 Tfsi 2016 → 314
+  Accent 1 4 At 2011   → 315
+  Accent 1 4 At 2012   → 316
+  Accent 1 4 At 2013   → 317
+  Accent 1 4 At 2014   → 318
+  Accent 1 4 At 2015   → 319
+  Accent 1 4 At 2016   → 320
+  Accent 1 4 At 2018   → 321
+  Accent 1 4 At 2019   → 322
+  Accent 1 4 At 2020   → 323
+  Accent 1 4 At 2021   → 324
+  Accent 1 4 At 2022   → 325
+  Accent 1 4 At 2023   → 326
+  Accent 1 4 At 2024   → 327
+  Accent 1 4 At Dac Biet 2020 → 328
+  Accent 1 4 At Dac Biet 2021 → 329
+  Accent 1 4 At Dac Biet 2022 → 330
+  Accent 1 4 At Dac Biet 2023 → 331
+  Accent 1 4 At Dac Biet 2024 → 332
+  Accent 1 4 Ath 2018  → 333
+  Accent 1 4 Ath 2019  → 334
+  Accent 1 4 Ath 2020  → 335
+  Accent 1 4 Mt 2011   → 336
+  Accent 1 4 Mt 2012   → 337
+  Accent 1 4 Mt 2014   → 338
+  Accent 1 4 Mt 2016   → 339
+  Accent 1 4 Mt 2018   → 340
+  Accent 1 4 Mt 2019   → 341
+  Accent 1 4 Mt 2020   → 342
+  Accent 1 4 Mt 2021   → 343
+  Accent 1 4 Mt 2022   → 344
+  Accent 1 4 Mt 2023   → 345
+  Accent 1 4 Mt 2024   → 346
+  Accent 1 4 Mt Base 2018 → 347
+  Accent 1 4 Mt Base 2019 → 348
+  Accent 1 4 Mt Base 2020 → 349
+  Accent 1 4 Mt Tieu Chuan 2021 → 350
+  Accent 1 4 Mt Tieu Chuan 2022 → 351
+  Accent 1 4 Mt Tieu Chuan 2023 → 352
+  Accent 1 4 Mt Tieu Chuan 2024 → 353
+  Accent 1 5 At 2025   → 354
+  Accent 1 5 Mt 2024   → 355
+  Accent Cao Cap 1 5 At 2024 → 356
+  Accent Cao Cap 1 5 At 2025 → 357
+  Accent Dac Biet 1 5 At 2024 → 358
+  Accord 1 5 At 2019   → 359
+  Accord 1 5 At 2022   → 360
+  Accord 2 0 At 2009   → 361
+  Accord 2 4 At 2007   → 362
+  Accord 2 4 At 2008   → 363
+  Accord 2 4 At 2014   → 364
+  Accord 2 4 At 2017   → 365
+  Accord 2 4 At 2018   → 366
+  Accord 3 5 At 2012   → 367
+  Almera 1 0 Mt 2021   → 368
+  Almera El 1 0 Cvt 2023 → 369
+  Almera Vl 1 0 Cvt Cao Cap 2021 → 370
+  Almera Vl 1 0 Cvt Cao Cap 2022 → 371
+  Almera Vl 1 0 Cvt Cao Cap 2023 → 372
+  Apv Glx 1 6 At 2007  → 373
+  Arkana 1 6 At 2019   → 374
+  Attrage 1 2 At 2015  → 375
+  Attrage 1 2 Cvt 2018 → 376
+  Attrage 1 2 Cvt 2019 → 377
+  Attrage 1 2 Cvt 2020 → 378
+  Attrage 1 2 Cvt 2021 → 379
+  Attrage 1 2 Cvt 2022 → 380
+  Attrage 1 2 Cvt 2023 → 381
+  Attrage 1 2 Cvt Eco 2018 → 382
+  Attrage 1 2 Cvt Eco 2019 → 383
+  Attrage 1 2 Mt 2015  → 384
+  Attrage 1 2 Mt 2016  → 385
+  Attrage 1 2 Mt 2018  → 386
+  Attrage 1 2 Mt 2019  → 387
+  Attrage 1 2 Mt 2020  → 388
+  Attrage 1 2 Mt 2021  → 389
+  Attrage 1 2 Mt 2022  → 390
+  Attrage 1 2 Mt 2023  → 391
+  Attrage 1 2 Mt 2024  → 392
+  Attrage 1 2 Mt Eco 2019 → 393
+  Attrage 1 2Cvt 2017  → 394
+  Attrage 1 2Mt 2017   → 395
+  Attrage Premium 1 2 Cvt 2021 → 396
+  Attrage Premium 1 2 Cvt 2022 → 397
+  Attrage Premium 1 2 Cvt 2023 → 398
+  Attrage Premium 1 2 Cvt 2024 → 399
+  Attrage Premium 1 2 Cvt 2025 → 400
+  Avalon Limited Hybrid 2014 → 401
+  Avante 1 6 At 2011   → 402
+  Avante 1 6 At 2012   → 403
+  Avante 1 6 At 2013   → 404
+  Avante 1 6 At 2014   → 405
+  Avante 1 6 Mt 2012   → 406
+  Avante 1 6 Mt 2013   → 407
+  Avante 1 6 Mt 2014   → 408
+  Avante 1 6 Mt 2015   → 409
+  Avante 1 6 Mt 2016   → 410
+  Avanza 1 3 Mt 2018   → 411
+  Avanza 1 5 At 2019   → 412
+  Avanza 1 5 At 2020   → 413
+  Avanza Premio 1 5 At 2022 → 414
+  Avanza Premio 1 5 At 2023 → 415
+  Avanza Premio 1 5 Mt 2022 → 416
+  Avanza Premio 1 5 Mt 2023 → 417
+  Aveo 1 5 Mt 2011     → 418
+  Aveo 1 5 Mt 2012     → 419
+  Aveo 1 5 Mt 2013     → 420
+  Aveo Lt 1 4 Mt 2017  → 421
+  Aveo Lt 1 4 Mt 2018  → 422
+  Aveo Lt 1 5 Mt 2014  → 423
+  Aveo Lt 1 5 Mt 2015  → 424
+  Aveo Lt 1 5 Mt 2016  → 425
+  Aveo Ltz 1 4 At 2017 → 426
+  Aveo Ltz 1 4 At 2018 → 427
+  Aveo Ltz 1 5 At 2014 → 428
+  Aveo Ltz 1 5 At 2015 → 429
+  Aveo Ltz 1 5 At 2016 → 430
+  Aygo 1 0 At 2007     → 431
+  Aygo 1 0 At 2010     → 432
+  Aygo 1 0 At 2011     → 433
+  Beetle Dune 2017     → 434
+  Beijing U5 Plus Luxury 2022 → 435
+  Bluebird Sylphy 2 0 At 2009 → 436
+  Br V G 2023          → 437
+  Br V L 2024          → 438
+  Br V L 2025          → 439
+  Brio G 2019          → 440
+  Brio Rs 2019         → 441
+  Brio Rs 2020         → 442
+  Brio Rs 2021         → 443
+  Brz Limited 2 4 At 2022 → 444
+  Brz Se Lux 2 0 At 2012 → 445
+  Bt50 1 9L 4X2 Mt 2022 → 446
+  Bt50 2 2L 4X2 At 2015 → 447
+  Bt50 2 2L 4X2 At 2016 → 448
+  Bt50 2 2L 4X2 At 2017 → 449
+  Bt50 2 2L 4X2 At 2018 → 450
+  Bt50 2 2L 4X2 Ath 2018 → 451
+  Bt50 2 2L 4X4 Mt 2014 → 452
+  Bt50 2 2L 4X4 Mt 2015 → 453
+  Bt50 2 2L 4X4 Mt 2016 → 454
+  Bt50 2 2L 4X4 Mt 2017 → 455
+  Bt50 2 2L 4X4 Mt 2018 → 456
+  Bt50 3 0L 4X4 Mt 2011 → 457
+  Bt50 3 2L 4X4 At 2013 → 458
+  Bt50 3 2L 4X4 At 2014 → 459
+  Bt50 3 2L 4X4 At 2015 → 460
+  Bt50 3 2L 4X4 At 2018 → 461
+  Bt50 Luxury 1 9L 4X2 At 2021 → 462
+  Bt50 Luxury 1 9L 4X2 At 2022 → 463
+  Bt50 Luxury 2 2L 4X2 At 2019 → 464
+  Bt50 Luxury 2 2L 4X2 At 2020 → 465
+  Bt50 Luxury 2 2L 4X2 At 2021 → 466
+  Bt50 Premium 1 9L 4X4 At 2021 → 467
+  Bt50 Standard 2 2L 4X4 Mt 2019 → 468
+  C Class C180 2008    → 469
+  C Class C180 2019    → 470
+  C Class C180 2020    → 471
+  C Class C180 Amg 2020 → 472
+  C Class C180 Amg 2021 → 473
+  C Class C200 2011    → 474
+  C Class C200 2012    → 475
+  C Class C200 2013    → 476
+  C Class C200 2014    → 477
+  C Class C200 2015    → 478
+  C Class C200 2016    → 479
+  C Class C200 2017    → 480
+  C Class C200 2018    → 481
+  C Class C200 2019    → 482
+  C Class C200 Avantgarde 2007 → 483
+  C Class C200 Avantgarde 2022 → 484
+  C Class C200 Avantgarde 2023 → 485
+  C Class C200 Avantgarde 2025 → 486
+  C Class C200 Avantgarde Plus 2021 → 487
+  C Class C200 Avantgarde Plus 2022 → 488
+  C Class C200 Avantgarde Plus 2023 → 489
+  C Class C200 Cgi 2010 → 490
+  C Class C200 Exclusive 2018 → 491
+  C Class C200 Exclusive 2019 → 492
+  C Class C200 Exclusive 2020 → 493
+  C Class C200 Exclusive 2021 → 494
+  C Class C230 Avantgarde 2008 → 495
+  C Class C230 Avantgarde 2009 → 496
+  C Class C250 2011    → 497
+  C Class C250 2012    → 498
+  C Class C250 2013    → 499
+  C Class C250 2014    → 500
+  C Class C250 2015    → 501
+  C Class C250 Amg 2015 → 502
+  C Class C250 Cgi 2010 → 503
+  C Class C250 Exclusive 2015 → 504
+  C Class C250 Exclusive 2016 → 505
+  C Class C250 Exclusive 2017 → 506
+  C Class C250 Exclusive 2018 → 507
+  C Class C300 2009    → 508
+  C Class C300 2010    → 509
+  C Class C300 Amg 2010 → 510
+  C Class C300 Amg 2011 → 511
+  C Class C300 Amg 2012 → 512
+  C Class C300 Amg 2013 → 513
+  C Class C300 Amg 2014 → 514
+  C Class C300 Amg 2015 → 515
+  C Class C300 Amg 2016 → 516
+  C Class C300 Amg 2017 → 517
+  C Class C300 Amg 2018 → 518
+  C Class C300 Amg 2019 → 519
+  C Class C300 Amg 2020 → 520
+  C Class C300 Amg 2021 → 521
+  C Class C300 Amg 2022 → 522
+  C Class C300 Amg 2023 → 523
+  C Class C300 Amg 2024 → 524
+  C Class C300 Coupe 2016 → 525
+  C Class C300 Coupe 2017 → 526
+  C Class C43 Amg 4Matic 2023 → 527
+  C Class C43 Amg 4Matic Coupe 2017 → 528
+  C5 Flagship 1 5 Turbo 2024 → 529
+  Camaro Rs 3 6 V6 2011 → 530
+  Camaro Rs Convertible 2 0 Turbo 2019 → 531
+  Camry 2 0E 2009      → 532
+  Camry 2 0E 2010      → 533
+  Camry 2 0E 2011      → 534
+  Camry 2 0E 2012      → 535
+  Camry 2 0E 2013      → 536
+  Camry 2 0E 2014      → 537
+  Camry 2 0E 2015      → 538
+  Camry 2 0E 2016      → 539
+  Camry 2 0E 2017      → 540
+  Camry 2 0E 2018      → 541
+  Camry 2 0G 2019      → 542
+  Camry 2 0G 2020      → 543
+  Camry 2 0G 2021      → 544
+  Camry 2 0G 2022      → 545
+  Camry 2 0G 2023      → 546
+  Camry 2 0Q 2022      → 547
+  Camry 2 0Q 2023      → 548
+  Camry 2 0Q 2024      → 549
+  Camry 2 0Q 2025      → 550
+  Camry 2 4G 2007      → 551
+  Camry 2 4G 2008      → 552
+  Camry 2 4G 2009      → 553
+  Camry 2 4G 2010      → 554
+  Camry 2 4G 2011      → 555
+  Camry 2 4G 2012      → 556
+  Camry 2 5G 2013      → 557
+  Camry 2 5G 2014      → 558
+  Camry 2 5G 2015      → 559
+  Camry 2 5Hv 2022     → 560
+  Camry 2 5Hv 2023     → 561
+  Camry 2 5Q 2012      → 562
+  Camry 2 5Q 2013      → 563
+  Camry 2 5Q 2014      → 564
+  Camry 2 5Q 2015      → 565
+  Camry 2 5Q 2016      → 566
+  Camry 2 5Q 2017      → 567
+  Camry 2 5Q 2018      → 568
+  Camry 2 5Q 2019      → 569
+  Camry 2 5Q 2020      → 570
+  Camry 2 5Q 2021      → 571
+  Camry 2 5Q 2022      → 572
+  Camry 2 5Q 2023      → 573
+  Camry 2 5Q 2024      → 574
+  Camry 3 5Q 2007      → 575
+  Camry Le 2 4 2007    → 576
+  Camry Le 2 4 2008    → 577
+  Camry Le 2 5 2009    → 578
+  Camry Le 2 5 2010    → 579
+  Camry Le 2 5 2011    → 580
+  Camry Se 2 5 2011    → 581
+  Camry Se 2 5 At 2014 → 582
+  Camry Se 2 5 At 2015 → 583
+  Camry Xse 2 5 At 2014 → 584
+  Captiva Ls 2 4 Mt 2007 → 585
+  Captiva Ls 2 4 Mt 2008 → 586
+  Captiva Lt 2 4 Mt 2007 → 587
+  Captiva Lt 2 4 Mt 2008 → 588
+  Captiva Lt 2 4 Mt 2009 → 589
+  Captiva Lt Maxx 2 0 Mt 2009 → 590
+  Captiva Lt Maxx 2 4 Mt 2009 → 591
+  Captiva Lt Maxx 2 4 Mt 2010 → 592
+  Captiva Ltz 2 4 At 2007 → 593
+  Captiva Ltz 2 4 At 2012 → 594
+  Captiva Ltz 2 4 At 2013 → 595
+  Captiva Ltz 2 4 At 2015 → 596
+  Captiva Ltz Maxx 2 0 At 2011 → 597
+  Captiva Ltz Maxx 2 4 At 2009 → 598
+  Captiva Ltz Maxx 2 4 At 2011 → 599
+  Captiva Revv Ltz 2 4 At 2016 → 600
+  Captiva Revv Ltz 2 4 At 2017 → 601
+  Captiva Revv Ltz 2 4 At 2018 → 602
+  Carens 1 4T Premium 2022 → 603
+  Carens 1 4T Signature 6S 2022 → 604
+  Carens 1 4T Signature 7S 2024 → 605
+  Carens 1 5D Premium 2022 → 606
+  Carens 1 5D Signature 7S 2022 → 607
+  Carens 1 5G Ivt 2024 → 608
+  Carens 1 5G Luxury 2022 → 609
+  Carens 1 5G Luxury 2023 → 610
+  Carens 1 5G Luxury 2024 → 611
+  Carens 1 5G Luxury 2025 → 612
+  Carens 2 0 At 2007   → 613
+  Carens 2 0 At 2008   → 614
+  Carens 2 0 At 2009   → 615
+  Carens Crdi 2 0 At 2007 → 616
+  Carens Crdi 2 0 At 2008 → 617
+  Carens Ex 2 0 Mt 2009 → 618
+  Carens Ex 2 0 Mt 2010 → 619
+  Carens Exmt 2011     → 620
+  Carens Exmt 2012     → 621
+  Carens Exmt 2013     → 622
+  Carens Exmt 2014     → 623
+  Carens Exmt 2015     → 624
+  Carens Lx 1 6 Mt 2010 → 625
+  Carens S Sx 2 0 At 2014 → 626
+  Carens S Sx 2 0 At 2015 → 627
+  Carens S Sx 2 0 Mt 2014 → 628
+  Carens Sx 2 0 At 2009 → 629
+  Carens Sx 2 0 At 2010 → 630
+  Carens Sxat 2011     → 631
+  Carens Sxat 2012     → 632
+  Carens Sxat 2013     → 633
+  Carens Sxmt 2011     → 634
+  Carens Sxmt 2012     → 635
+  Carens Sxmt 2013     → 636
+  Carnival 2 7 At 2010 → 637
+  Carnival Gs 2 5 At 2008 → 638
+  Carnival Gs 2 5 At 2009 → 639
+  Carnival Gs 2 5 Mt 2007 → 640
+  Carnival Luxury 2 2D 2021 → 641
+  Carnival Luxury 2 2D 2022 → 642
+  Carnival Luxury 2 2D 2023 → 643
+  Carnival Luxury 2 2D 2024 → 644
+  Carnival Premium 2 2D 2021 → 645
+  Carnival Premium 2 2D 2022 → 646
+  Carnival Premium 2 2D 7S 2023 → 647
+  Carnival Premium 2 2D 7S 2024 → 648
+  Carnival Premium 2 2D 7S 2025 → 649
+  Carnival Premium 2 2D 8S 2023 → 650
+  Carnival Premium 2 2D 8S 2025 → 651
+  Carnival Royal 2 2D 2022 → 652
+  Carnival Royal 2 2D 2023 → 653
+  Carnival Signature 1 6 Turbo Hev 7S 2025 → 654
+  Carnival Signature 2 2D 2021 → 655
+  Carnival Signature 2 2D 2022 → 656
+  Carnival Signature 2 2D 2023 → 657
+  Carnival Signature 2 2D 2024 → 658
+  Carnival Signature 2 2D 2025 → 659
+  Carnival Signature 3 5G 2021 → 660
+  Carnival Signature 3 5G 2022 → 661
+  Carnival Signature 3 5G 2023 → 662
+  Carnival Signature 3 5G 2024 → 663
+  Carry Pro 2017       → 664
+  Carry Pro 2021       → 665
+  Carry Pro 2022       → 666
+  Cayenne 3 6 V6 2009  → 667
+  Cayenne 3 6 V6 2011  → 668
+  Cayenne 3 6 V6 2012  → 669
+  Cayenne 3 6 V6 2013  → 670
+  Cayenne 3 6 V6 2014  → 671
+  Cayenne 3 6 V6 2015  → 672
+  Cayenne S E          → 673
+  Cayenne Turbo Diesel 2010 → 674
+  Celerio 1 0 At 2019  → 675
+  Celerio 1 0 Mt 2018  → 676
+  Celerio 1 0 Mt 2019  → 677
+  Centennial 3 5 At 2007 → 678
+  Cerato 1 6 At 2009   → 679
+  Cerato 1 6 At 2010   → 680
+  Cerato 1 6 At 2011   → 681
+  Cerato 1 6 At 2012   → 682
+  Cerato 1 6 At 2016   → 683
+  Cerato 1 6 At 2017   → 684
+  Cerato 1 6 At 2018   → 685
+  Cerato 1 6 At Deluxe 2018 → 686
+  Cerato 1 6 At Deluxe 2019 → 687
+  Cerato 1 6 At Deluxe 2020 → 688
+  Cerato 1 6 At Deluxe 2021 → 689
+  Cerato 1 6 At Luxury 2018 → 690
+  Cerato 1 6 At Luxury 2019 → 691
+  Cerato 1 6 At Luxury 2020 → 692
+  Cerato 1 6 At Luxury 2021 → 693
+  Cerato 1 6 Mt 2007   → 694
+  Cerato 1 6 Mt 2009   → 695
+  Cerato 1 6 Mt 2010   → 696
+  Cerato 1 6 Mt 2016   → 697
+  Cerato 1 6 Mt 2017   → 698
+  Cerato 1 6 Mt 2018   → 699
+  Cerato 1 6 Mt 2019   → 700
+  Cerato 1 6 Mt 2020   → 701
+  Cerato 1 6 Mt 2021   → 702
+  Cerato 1 6 Smt 2018  → 703
+  Cerato 2 0 At 2016   → 704
+  Cerato 2 0 At 2017   → 705
+  Cerato 2 0 At 2018   → 706
+  Cerato 2 0 At Premium 2018 → 707
+  Cerato 2 0 At Premium 2019 → 708
+  Cerato 2 0 At Premium 2020 → 709
+  Cerato 2 0 At Premium 2021 → 710
+  Cerato Koup 2 0 At 2009 → 711
+  Cerato Koup 2 0 At 2010 → 712
+  Cerato Koup 2 0 At 2014 → 713
+  Ciaz 1 4 At 2017     → 714
+  Ciaz 1 4 At 2018     → 715
+  Ciaz 1 4 At 2019     → 716
+  Ciaz 1 4 At 2020     → 717
+  Ciaz 1 4 At 2021     → 718
+  City 1 5 2017        → 719
+  City 1 5 2018        → 720
+  City 1 5 2019        → 721
+  City 1 5 2020        → 722
+  City 1 5 At 2013     → 723
+  City 1 5 At 2014     → 724
+  City 1 5 At 2015     → 725
+  City 1 5 At 2016     → 726
+  City 1 5 At 2017     → 727
+  City 1 5 Mt 2016     → 728
+  City 1 5Top 2017     → 729
+  City 1 5Top 2018     → 730
+  City 1 5Top 2019     → 731
+  City 1 5Top 2020     → 732
+  City G 1 5 At 2022   → 733
+  City L 1 5 At 2021   → 734
+  City L 1 5 At 2022   → 735
+  City L 1 5 At 2023   → 736
+  City L 1 5 At 2024   → 737
+  City Rs 1 5 At 2021  → 738
+  City Rs 1 5 At 2022  → 739
+  City Rs 1 5 At 2023  → 740
+  City Rs 1 5 At 2024  → 741
+  City Rs 1 5 At 2025  → 742
+  Civic 1 5G Vtec Turbo 2018 → 743
+  Civic 1 5L Vtec Turbo 2017 → 744
+  Civic 1 5L Vtec Turbo 2018 → 745
+  Civic 1 8 At 2007    → 746
+  Civic 1 8 At 2008    → 747
+  Civic 1 8 At 2009    → 748
+  Civic 1 8 At 2010    → 749
+  Civic 1 8 At 2011    → 750
+  Civic 1 8 At 2012    → 751
+  Civic 1 8 E 2017     → 752
+  Civic 1 8 E 2018     → 753
+  Civic 1 8 Mt 2007    → 754
+  Civic 1 8 Mt 2008    → 755
+  Civic 1 8 Mt 2009    → 756
+  Civic 1 8 Mt 2010    → 757
+  Civic 1 8 Mt 2014    → 758
+  Civic 2 0 At 2007    → 759
+  Civic 2 0 At 2008    → 760
+  Civic 2 0 At 2009    → 761
+  Civic 2 0 At 2010    → 762
+  Civic 2 0 At 2012    → 763
+  Civic 2 0 At 2014    → 764
+  Civic 2 0 At 2015    → 765
+  Civic 2 0 At 2016    → 766
+  Civic E 1 8 At 2019  → 767
+  Civic G 1 8 At 2019  → 768
+  Civic G 1 8 At 2020  → 769
+  Civic G 1 8 At 2021  → 770
+  Civic Rs 1 5 At 2019 → 771
+  Civic Rs 1 5 At 2021 → 772
+  Civic Rs 1 5 At 2022 → 773
+  Civic Rs 1 5 At 2023 → 774
+  Civic Rs 1 5 At 2024 → 775
+  Cla Class Cla 200 2014 → 776
+  Cla Class Cla 200 2015 → 777
+  Cla Class Cla 200 2016 → 778
+  Cla Class Cla 200 2017 → 779
+  Cla Class Cla 200 2018 → 780
+  Cla Class Cla 250 2018 → 781
+  Cla Class Cla 250 4Matic 2014 → 782
+  Cla Class Cla 250 4Matic 2015 → 783
+  Cla Class Cla 250 4Matic 2016 → 784
+  Cla Class Cla 250 4Matic 2017 → 785
+  Cla Class Cla 45 Amg 4Matic 2014 → 786
+  Cla Class Cla 45 Amg 4Matic 2015 → 787
+  Cla Class Cla 45 Amg 4Matic 2016 → 788
+  Click 1 1 At 2007    → 789
+  Click 1 4 At 2007    → 790
+  Click 1 4 At 2009    → 791
+  Colorado High Country 2 5L 4X4 At 2019 → 792
+  Colorado High Country 2 8L 4X4 At 2016 → 793
+  Colorado High Country 2 8L 4X4 At 2017 → 794
+  Colorado High Country 2 8L 4X4 At 2018 → 795
+  Colorado Lt 2 5L 4X2 At 2018 → 796
+  Colorado Lt 2 5L 4X2 At 2019 → 797
+  Colorado Lt 2 5L 4X2 Mt 2018 → 798
+  Colorado Lt 2 5L 4X4 Mt 2018 → 799
+  Colorado Ltz 2 5L 4X4 At 2019 → 800
+  Colorado Ltz 2 8L 4X4 At 2015 → 801
+  Colorado Ltz 2 8L 4X4 At 2016 → 802
+  Colorado Ltz 2 8L 4X4 At 2017 → 803
+  Colorado Ltz 2 8L 4X4 Mt 2013 → 804
+  Cooper 3 Door Jcw 2023 → 805
+  Cooper 3Dr 2013      → 806
+  Cooper 3Dr 2014      → 807
+  Cooper 3Dr 2015      → 808
+  Cooper 5Dr 2014      → 809
+  Cooper Clubman S 2016 → 810
+  Cooper Clubman S 2017 → 811
+  Cooper Clubman S 2023 → 812
+  Cooper Countryman 2015 → 813
+  Cooper Countryman S 2015 → 814
+  Cooper Jcw 3Dr 2020  → 815
+  Cooper Jcw Convertible 2019 → 816
+  Cooper Jcw Convertible 2020 → 817
+  Cooper S 2008        → 818
+  Cooper S 2009        → 819
+  Cooper S 2010        → 820
+  Cooper S 3 Door 2022 → 821
+  Cooper S 3 Door 2024 → 822
+  Cooper S 3Dr 2011    → 823
+  Cooper S 5 Door 2022 → 824
+  Cooper S 5 Door 2023 → 825
+  Cooper S 5 Door 2024 → 826
+  Cooper S 5 Door 2025 → 827
+  Cooper S 5Dr 2014    → 828
+  Cooper S 5Dr 2015    → 829
+  Cooper S 5Dr 2016    → 830
+  Cooper S 5Dr 2018    → 831
+  Cooper S 5Dr 2019    → 832
+  Cooper S Convertible 2018 → 833
+  Corolla Altis 1 8E At 2017 → 834
+  Corolla Altis 1 8E At 2018 → 835
+  Corolla Altis 1 8E At 2020 → 836
+  Corolla Altis 1 8E At 2021 → 837
+  Corolla Altis 1 8E Mt 2018 → 838
+  Corolla Altis 1 8G 2022 → 839
+  Corolla Altis 1 8G At 2008 → 840
+  Corolla Altis 1 8G At 2009 → 841
+  Corolla Altis 1 8G At 2010 → 842
+  Corolla Altis 1 8G At 2011 → 843
+  Corolla Altis 1 8G At 2012 → 844
+  Corolla Altis 1 8G At 2013 → 845
+  Corolla Altis 1 8G At 2014 → 846
+  Corolla Altis 1 8G At 2015 → 847
+  Corolla Altis 1 8G At 2016 → 848
+  Corolla Altis 1 8G At 2017 → 849
+  Corolla Altis 1 8G At 2018 → 850
+  Corolla Altis 1 8G At 2019 → 851
+  Corolla Altis 1 8G At 2020 → 852
+  Corolla Altis 1 8G At 2021 → 853
+  Corolla Altis 1 8G Mt 2007 → 854
+  Corolla Altis 1 8G Mt 2008 → 855
+  Corolla Altis 1 8G Mt 2009 → 856
+  Corolla Altis 1 8G Mt 2010 → 857
+  Corolla Altis 1 8G Mt 2011 → 858
+  Corolla Altis 1 8G Mt 2014 → 859
+  Corolla Altis 1 8G Mt 2015 → 860
+  Corolla Altis 1 8G Mt 2016 → 861
+  Corolla Altis 1 8G Mt 2017 → 862
+  Corolla Altis 1 8Hev 2023 → 863
+  Corolla Altis 1 8V 2022 → 864
+  Corolla Altis 1 8V 2023 → 865
+  Corolla Altis 1 8V 2024 → 866
+  Corolla Altis 2 0 Rs 2012 → 867
+  Corolla Altis 2 0V 2009 → 868
+  Corolla Altis 2 0V 2010 → 869
+  Corolla Altis 2 0V 2011 → 870
+  Corolla Altis 2 0V 2012 → 871
+  Corolla Altis 2 0V 2013 → 872
+  Corolla Altis 2 0V 2014 → 873
+  Corolla Altis 2 0V 2015 → 874
+  Corolla Altis 2 0V 2016 → 875
+  Corolla Altis 2 0V At 2019 → 876
+  Corolla Altis 2 0V Sport 2017 → 877
+  Corolla Altis 2 0V Sport 2018 → 878
+  Corolla Altis 2 0Z 2009 → 879
+  Corolla Cross 1 8G 2020 → 880
+  Corolla Cross 1 8G 2021 → 881
+  Corolla Cross 1 8G 2022 → 882
+  Corolla Cross 1 8G 2023 → 883
+  Corolla Cross 1 8Hev 2024 → 884
+  Corolla Cross 1 8Hv 2020 → 885
+  Corolla Cross 1 8Hv 2021 → 886
+  Corolla Cross 1 8Hv 2022 → 887
+  Corolla Cross 1 8V 2020 → 888
+  Corolla Cross 1 8V 2021 → 889
+  Corolla Cross 1 8V 2022 → 890
+  Corolla Cross 1 8V 2023 → 891
+  Corolla Cross 1 8V 2024 → 892
+  Corolla Cross 1 8V 2025 → 893
+  Corolla Le 1 8 2010  → 894
+  Corolla Le 1 8 At 2008 → 895
+  Corolla S 1 8 2009   → 896
+  Corolla S 1 8 At 2008 → 897
+  Corolla Xli 1 6 2010 → 898
+  Corolla Xli 1 6 At 2009 → 899
+  Corolla Xli 1 8 At 2008 → 900
+  County 2017          → 901
+  Creta Cao Cap 1 5 At 2022 → 902
+  Creta Cao Cap 1 5 At 2023 → 903
+  Creta Dac Biet 1 5 At 2022 → 904
+  Creta Dac Biet 1 5 At 2023 → 905
+  Creta Dac Biet 1 5 At 2024 → 906
+  Creta Dac Biet 1 5 At 2025 → 907
+  Creta Tieu Chuan 1 5 At 2022 → 908
+  Creta Tieu Chuan 1 5 At 2023 → 909
+  Creta Tieu Chuan 1 5 At 2024 → 910
+  Crosstrek 2 0 I      → 911
+  Cruze Ls 1 6 Mt 2010 → 912
+  Cruze Ls 1 6 Mt 2011 → 913
+  Cruze Ls 1 6 Mt 2013 → 914
+  Cruze Ls 1 6 Mt 2014 → 915
+  Cruze Ls 1 6 Mt 2015 → 916
+  Cruze Lt 1 6 Mt 2016 → 917
+  Cruze Lt 1 6L 2017   → 918
+  Cruze Ltz 1 8 At 2011 → 919
+  Cruze Ltz 1 8 At 2012 → 920
+  Cruze Ltz 1 8 At 2013 → 921
+  Cruze Ltz 1 8 At 2014 → 922
+  Cruze Ltz 1 8 At 2015 → 923
+  Cruze Ltz 1 8 At 2016 → 924
+  Cruze Ltz 1 8L 2017  → 925
+  Cruze Ltz 1 8L 2018  → 926
+  Crv 2 0 At 2008      → 927
+  Crv 2 0 At 2009      → 928
+  Crv 2 0 At 2010      → 929
+  Crv 2 0 At 2011      → 930
+  Crv 2 0 At 2013      → 931
+  Crv 2 0 At 2014      → 932
+  Crv 2 0 At 2015      → 933
+  Crv 2 0 At 2016      → 934
+  Crv 2 0 At 2017      → 935
+  Crv 2 4 At           → 936
+  Crv 2 4 At 2009      → 937
+  Crv 2 4 At 2010      → 938
+  Crv 2 4 At 2011      → 939
+  Crv 2 4 At 2012      → 940
+  Crv 2 4 At 2013      → 941
+  Crv 2 4 At 2014      → 942
+  Crv 2 4 At 2015      → 943
+  Crv 2 4 At 2016      → 944
+  Crv 2 4 At 2017      → 945
+  Crv E 2017           → 946
+  Crv E 2018           → 947
+  Crv E 2019           → 948
+  Crv E Hev Rs 2024    → 949
+  Crv G 2017           → 950
+  Crv G 2018           → 951
+  Crv G 2019           → 952
+  Crv G 2020           → 953
+  Crv G 2021           → 954
+  Crv G 2022           → 955
+  Crv G 2023           → 956
+  Crv G 2024           → 957
+  Crv L 2018           → 958
+  Crv L 2019           → 959
+  Crv L 2020           → 960
+  Crv L 2021           → 961
+  Crv L 2022           → 962
+  Crv L 2023           → 963
+  Crv L 2024           → 964
+  Crv L 2025           → 965
+  Crv L Awd 2023       → 966
+  Crv Lse 2022         → 967
+  Crv Lse 2023         → 968
+  Custin Cao Cap 2 0T 2023 → 969
+  Custin Cao Cap 2 0T 2024 → 970
+  Custin Cao Cap 2 0T 2025 → 971
+  Custin Dac Biet 1 5T 2024 → 972
+  Custin Dac Biet 1 5T 2025 → 973
+  Custin Tieu Chuan 1 5T 2024 → 974
+  Cx 30 Luxury 2 0 At 2022 → 975
+  Cx 30 Luxury 2 0 At 2023 → 976
+  Cx 30 Luxury 2 0 At 2024 → 977
+  Cx 30 Premium 2 0 At 2021 → 978
+  Cx 30 Premium 2 0 At 2022 → 979
+  Cx 30 Premium 2 0 At 2024 → 980
+  Cx3 1 5 At 2024      → 981
+  Cx3 1 5 At 2025      → 982
+  Cx3 Deluxe 1 5 At 2021 → 983
+  Cx3 Deluxe 1 5 At 2024 → 984
+  Cx3 Luxury 1 5 At 2021 → 985
+  Cx3 Luxury 1 5 At 2022 → 986
+  Cx3 Luxury 1 5 At 2023 → 987
+  Cx3 Luxury 1 5 At 2025 → 988
+  Cx3 Premium 1 5 At 2021 → 989
+  Cx3 Premium 1 5 At 2022 → 990
+  Cx5 2 0 At 2012      → 991
+  Cx5 2 0 At 2013      → 992
+  Cx5 2 0 At 2014      → 993
+  Cx5 2 0 At 2015      → 994
+  Cx5 2 0 At 2016      → 995
+  Cx5 2 0 At 2017      → 996
+  Cx5 2 0 At 2018      → 997
+  Cx5 2 0 At 2019      → 998
+  Cx5 2 0 At Awd 2012  → 999
+  Cx5 2 0 At Awd 2013  → 1000
+  Cx5 2 0 At Awd 2015  → 1001
+  Cx5 2 0 Deluxe 2020  → 1002
+  Cx5 2 0 Luxury 2019  → 1003
+  Cx5 2 0 Luxury 2020  → 1004
+  Cx5 2 0 Premium 2019 → 1005
+  Cx5 2 0 Premium 2020 → 1006
+  Cx5 2 5 At 2016      → 1007
+  Cx5 2 5 At 2Wd 2017  → 1008
+  Cx5 2 5 At 2Wd 2018  → 1009
+  Cx5 2 5 At 2Wd 2019  → 1010
+  Cx5 2 5 At Awd 2016  → 1011
+  Cx5 2 5 At Awd 2017  → 1012
+  Cx5 2 5 At Awd 2018  → 1013
+  Cx5 2 5 At Awd 2019  → 1014
+  Cx5 2 5 Luxury 2020  → 1015
+  Cx5 2 5 Signature Premium 2Wd 2019 → 1016
+  Cx5 2 5 Signature Premium 2Wd 2020 → 1017
+  Cx5 2 5 Signature Premium 2Wd I → 1018
+  Cx5 2 5 Signature Premium Awd I → 1019
+  Cx5 Deluxe 2 0 At 2021 → 1020
+  Cx5 Deluxe 2 0 At 2022 → 1021
+  Cx5 Deluxe 2 0 At 2023 → 1022
+  Cx5 Deluxe 2 0 At 2024 → 1023
+  Cx5 Deluxe 2 0 At 2025 → 1024
+  Cx5 Luxury 2 0 At 2021 → 1025
+  Cx5 Luxury 2 0 At 2022 → 1026
+  Cx5 Luxury 2 0 At 2023 → 1027
+  Cx5 Luxury 2 0 At 2024 → 1028
+  Cx5 Luxury 2 0 At 2025 → 1029
+  Cx5 Premium 2 0 At 2021 → 1030
+  Cx5 Premium 2 0 At 2022 → 1031
+  Cx5 Premium 2 0 At 2023 → 1032
+  Cx5 Premium 2 0 At 2024 → 1033
+  Cx5 Premium 2 0 At 2025 → 1034
+  Cx5 Premium Exclusive 2 0 At 2023 → 1035
+  Cx5 Premium Exclusive 2 0 At 2024 → 1036
+  Cx5 Premium Exclusive 2 0 At 2025 → 1037
+  Cx5 Premium Sport 2 0 At 2024 → 1038
+  Cx5 Premium Sport 2 0 At 2025 → 1039
+  Cx5 Signature Exclusive 2 5 At Awd 2024 → 1040
+  Cx5 Signature Premium 2 5 At 2Wd I → 1041
+  Cx5 Signature Premium 2 5 At Awd I → 1042
+  Cx8 Deluxe 2021      → 1043
+  Cx8 Deluxe 2022      → 1044
+  Cx8 Luxury 2019      → 1045
+  Cx8 Luxury 2020      → 1046
+  Cx8 Luxury 2021      → 1047
+  Cx8 Luxury 2022      → 1048
+  Cx8 Luxury 2024      → 1049
+  Cx8 Premium 2 5 At 2024 → 1050
+  Cx8 Premium 2 5 At 2025 → 1051
+  Cx8 Premium 2019     → 1052
+  Cx8 Premium 2020     → 1053
+  Cx8 Premium 2021     → 1054
+  Cx8 Premium 2022     → 1055
+  Cx8 Premium 2023     → 1056
+  Cx8 Premium 2024     → 1057
+  Cx8 Premium Awd 2019 → 1058
+  Cx8 Premium Awd 2020 → 1059
+  Cx8 Premium Awd 2021 → 1060
+  Cx8 Premium Awd 2022 → 1061
+  Cx8 Premium Awd 2023 → 1062
+  Cx8 Premium Awd 2024 → 1063
+  Cx8 Signature 2 5 At Awd 2025 → 1064
+  Cx9 3 7 At Awd 2013  → 1065
+  Cx9 3 7 At Awd 2015  → 1066
+  Cx9 3 7 At Awd 2016  → 1067
+  Daily 3 0 Mt 2024    → 1068
+  Daily I 2 8 Mt 2008  → 1069
+  Daily Vip Premium Limosine 2020 → 1070
+  Db X30 V2S 2017      → 1071
+  Db X30 V2S 2018      → 1072
+  Db X30 V2S 2019      → 1073
+  Db X30 V5S 2018      → 1074
+  Dbt30 Bhld 2020      → 1075
+  Discovery Hse 2014   → 1076
+  Discovery Hse Luxury 2015 → 1077
+  Discovery Hse Sdv6 2014 → 1078
+  Discovery Hse Sdv6 2015 → 1079
+  Discovery Se 2018    → 1080
+  Discovery Sport Hse 2015 → 1081
+  Discovery Sport Hse Luxury 2016 → 1082
+  Discovery Sport Se 2020 → 1083
+  Dmax Hi              → 1084
+  Dmax Ls 1 9L 4X2 At 2021 → 1085
+  Dmax Ls 1 9L 4X2 Mt 2019 → 1086
+  Dmax Ls 2 5 4X2 At 2014 → 1087
+  Dmax Ls 2 5 4X2 Mt 2016 → 1088
+  Dmax Ls 3 0 4X2 Mt 2011 → 1089
+  Dmax Ls 3 0 4X4 At 2007 → 1090
+  Dmax Ls 3 0 4X4 At 2016 → 1091
+  Dmax Ls Prestige 1 9L 4X2 At 2018 → 1092
+  Ds3 1 6 At 2011      → 1093
+  Duster 2 0 At 2016   → 1094
+  E Class E180 2020    → 1095
+  E Class E180 2021    → 1096
+  E Class E180 2022    → 1097
+  E Class E180 2023    → 1098
+  E Class E200 2007    → 1099
+  E Class E200 2013    → 1100
+  E Class E200 2014    → 1101
+  E Class E200 2015    → 1102
+  E Class E200 2016    → 1103
+  E Class E200 2017    → 1104
+  E Class E200 2018    → 1105
+  E Class E200 2019    → 1106
+  E Class E200 2020    → 1107
+  E Class E200 Edition 2015 → 1108
+  E Class E200 Exclusive 2020 → 1109
+  E Class E200 Exclusive 2021 → 1110
+  E Class E200 Exclusive 2022 → 1111
+  E Class E200 Exclusive 2023 → 1112
+  E Class E200 Sport 2019 → 1113
+  E Class E250 2009    → 1114
+  E Class E250 2010    → 1115
+  E Class E250 2011    → 1116
+  E Class E250 2012    → 1117
+  E Class E250 2014    → 1118
+  E Class E250 2016    → 1119
+  E Class E250 2017    → 1120
+  E Class E250 2018    → 1121
+  E Class E250 Amg 2015 → 1122
+  E Class E300 2009    → 1123
+  E Class E300 2010    → 1124
+  E Class E300 2011    → 1125
+  E Class E300 Amg 2016 → 1126
+  E Class E300 Amg 2017 → 1127
+  E Class E300 Amg 2018 → 1128
+  E Class E300 Amg 2019 → 1129
+  E Class E300 Amg 2020 → 1130
+  E Class E300 Amg 2021 → 1131
+  E Class E300 Amg 2022 → 1132
+  E Class E300 Amg 2023 → 1133
+  E Class E300 Amg Cbu 2017 → 1134
+  E Class E400 2015    → 1135
+  E Class E400 Amg 2013 → 1136
+  E Class E400 Amg 2014 → 1137
+  E Class E400 Amg Cabriolet 2014 → 1138
+  E Class E400 Amg Cabriolet 2015 → 1139
+  Ecosport Titanium 1 0 At 2021 → 1140
+  Ecosport Titanium 1 0 Ecoboost 2018 → 1141
+  Ecosport Titanium 1 0 Ecoboost 2019 → 1142
+  Ecosport Titanium 1 0 Ecoboost 2020 → 1143
+  Ecosport Titanium 1 5 At 2020 → 1144
+  Ecosport Titanium 1 5 At 2021 → 1145
+  Ecosport Titanium 1 5L At 2014 → 1146
+  Ecosport Titanium 1 5L At 2015 → 1147
+  Ecosport Titanium 1 5L At 2016 → 1148
+  Ecosport Titanium 1 5L At 2017 → 1149
+  Ecosport Titanium 1 5L At 2018 → 1150
+  Ecosport Titanium 1 5L At 2019 → 1151
+  Ecosport Titanium 1 5L At 2020 → 1152
+  Ecosport Titanium Black 1 5L At 2016 → 1153
+  Ecosport Titanium Black 1 5L At 2017 → 1154
+  Ecosport Trend 1 5L At 2014 → 1155
+  Ecosport Trend 1 5L At 2018 → 1156
+  Ecosport Trend 1 5L Mt 2016 → 1157
+  Ecosport Trend 1 5L Mt 2017 → 1158
+  Elantra 1 6 At 2010  → 1159
+  Elantra 1 6 At 2016  → 1160
+  Elantra 1 6 At 2017  → 1161
+  Elantra 1 6 At 2018  → 1162
+  Elantra 1 6 At 2019  → 1163
+  Elantra 1 6 At 2020  → 1164
+  Elantra 1 6 At 2021  → 1165
+  Elantra 1 6 At Dac Biet 2022 → 1166
+  Elantra 1 6 At Dac Biet 2023 → 1167
+  Elantra 1 6 At Dac Biet 2024 → 1168
+  Elantra 1 6 At Tieu Chuan 2022 → 1169
+  Elantra 1 6 At Tieu Chuan 2023 → 1170
+  Elantra 1 6 At Tieu Chuan 2024 → 1171
+  Elantra 1 6 Mt 2011  → 1172
+  Elantra 1 6 Mt 2015  → 1173
+  Elantra 1 6 Mt 2017  → 1174
+  Elantra 1 6 Mt 2018  → 1175
+  Elantra 1 6 Mt 2019  → 1176
+  Elantra 1 6 Mt 2020  → 1177
+  Elantra 1 6 Mt 2021  → 1178
+  Elantra 1 8 At 2013  → 1179
+  Elantra 1 8 At 2014  → 1180
+  Elantra 2 0 At 2017  → 1181
+  Elantra 2 0 At 2018  → 1182
+  Elantra 2 0 At 2019  → 1183
+  Elantra 2 0 At 2020  → 1184
+  Elantra 2 0 At 2021  → 1185
+  Elantra 2 0 At 2022  → 1186
+  Elantra 2 0 At Cao Cap 2022 → 1187
+  Elantra N            → 1188
+  Elantra Sport 1 6 At 2018 → 1189
+  Elantra Sport 1 6 At 2019 → 1190
+  Elantra Sport 1 6 At 2020 → 1191
+  Elantra Sport 1 6 At 2021 → 1192
+  Elantra Sport 1 6 At 2022 → 1193
+  Ertiga 1 4 At 2014   → 1194
+  Ertiga 1 4 At 2016   → 1195
+  Ertiga 1 4 At 2017   → 1196
+  Ertiga Gl 1 5 Mt 2020 → 1197
+  Ertiga Glx 1 5 At 2019 → 1198
+  Ertiga Hybrid 1 5 At 2022 → 1199
+  Ertiga Hybrid 1 5 At 2023 → 1200
+  Ertiga Hybrid Sport 1 5 At 2022 → 1201
+  Ertiga Sport 1 5 At 2020 → 1202
+  Ertiga Sport 1 5 At 2021 → 1203
+  Es 250 2015          → 1204
+  Es 250 2016          → 1205
+  Es 250 2017          → 1206
+  Es 250 2018          → 1207
+  Es 250 2019          → 1208
+  Es 250 2020          → 1209
+  Es 250 2021          → 1210
+  Es 250 2022          → 1211
+  Es 250 F Sport 2021  → 1212
+  Es 350 2008          → 1213
+  Es 350 2015          → 1214
+  Es 350 2016          → 1215
+  Escape 2 3 At 2007   → 1216
+  Escape Xls 2 3L 4X2 At 2008 → 1217
+  Escape Xls 2 3L 4X2 At 2009 → 1218
+  Escape Xls 2 3L 4X2 At 2010 → 1219
+  Escape Xls 2 3L 4X2 At 2011 → 1220
+  Escape Xls 2 3L 4X2 At 2012 → 1221
+  Escape Xls 2 3L 4X2 At 2013 → 1222
+  Escape Xlt 2 3L 4X4 At 2010 → 1223
+  Escape Xlt 2 3L 4X4 At 2012 → 1224
+  Escape Xlt 2 3L 4X4 At 2013 → 1225
+  Everest 2 5L 4X2 At 2009 → 1226
+  Everest 2 5L 4X2 At 2010 → 1227
+  Everest 2 5L 4X2 At 2011 → 1228
+  Everest 2 5L 4X2 At 2012 → 1229
+  Everest 2 5L 4X2 At 2013 → 1230
+  Everest 2 5L 4X2 At 2014 → 1231
+  Everest 2 5L 4X2 At 2015 → 1232
+  Everest 2 5L 4X2 Mt 2007 → 1233
+  Everest 2 5L 4X2 Mt 2008 → 1234
+  Everest 2 5L 4X2 Mt 2009 → 1235
+  Everest 2 5L 4X2 Mt 2010 → 1236
+  Everest 2 5L 4X2 Mt 2011 → 1237
+  Everest 2 5L 4X2 Mt 2013 → 1238
+  Everest 2 5L 4X2 Mt 2014 → 1239
+  Everest 2 5L 4X2 Mt 2015 → 1240
+  Everest 2 5L 4X4 Mt 2009 → 1241
+  Everest 2 6L 4X2 Mt 2007 → 1242
+  Everest 2 6L 4X4 Mt 2011 → 1243
+  Everest Ambiente 2 0 4X2 At 2018 → 1244
+  Everest Ambiente 2 0 4X2 At 2019 → 1245
+  Everest Ambiente 2 0 4X2 Mt 2019 → 1246
+  Everest Ambiente 2 0L 4X2 At 2022 → 1247
+  Everest Ambiente 2 0L 4X2 At 2023 → 1248
+  Everest Ambiente 2 0L 4X2 At 2024 → 1249
+  Everest Platinum 2 0L 4X4 At 2024 → 1250
+  Everest Platinum 2 0L 4X4 At 2025 → 1251
+  Everest Sport 2 0L 4X2 At 2021 → 1252
+  Everest Sport 2 0L 4X2 At 2023 → 1253
+  Everest Sport 2 0L 4X2 At 2024 → 1254
+  Everest Sport 2 0L 4X2 At 2025 → 1255
+  Everest Titanium 2 0L 4X2 At 2018 → 1256
+  Everest Titanium 2 0L 4X2 At 2019 → 1257
+  Everest Titanium 2 0L 4X2 At 2020 → 1258
+  Everest Titanium 2 0L 4X2 At 2021 → 1259
+  Everest Titanium 2 0L 4X2 At 2022 → 1260
+  Everest Titanium 2 0L 4X2 At 2023 → 1261
+  Everest Titanium 2 0L 4X2 At 2024 → 1262
+  Everest Titanium 2 0L 4X2 At 2025 → 1263
+  Everest Titanium 2 0L 4X4 At 2018 → 1264
+  Everest Titanium 2 0L 4X4 At 2019 → 1265
+  Everest Titanium 2 0L 4X4 At 2020 → 1266
+  Everest Titanium 2 0L 4X4 At 2021 → 1267
+  Everest Titanium 2 0L 4X4 At 2022 → 1268
+  Everest Titanium 2 2L 4X2 At 2016 → 1269
+  Everest Titanium 2 2L 4X2 At 2017 → 1270
+  Everest Titanium 2 2L 4X2 At 2018 → 1271
+  Everest Titanium 3 2L 4X4 At 2016 → 1272
+  Everest Titanium 3 2L 4X4 At 2018 → 1273
+  Everest Titanium Plus 2 0L 4X4 At 2022 → 1274
+  Everest Titanium Plus 2 0L 4X4 At 2023 → 1275
+  Everest Titanium Plus 2 0L 4X4 At 2024 → 1276
+  Everest Titanium Plus 2 0L 4X4 At 2025 → 1277
+  Everest Trend 2 0L 4X2 At 2018 → 1278
+  Everest Trend 2 0L 4X2 At 2019 → 1279
+  Everest Trend 2 0L 4X2 At 2020 → 1280
+  Everest Trend 2 2L 4X2 At 2017 → 1281
+  Everest Wildtrak 2 0L 4X4 At 2023 → 1282
+  Everest Wildtrak 2 0L 4X4 At 2024 → 1283
+  Ex 35 2009           → 1284
+  Explorer Limited 2 3L Ecoboost 2016 → 1285
+  Explorer Limited 2 3L Ecoboost 2017 → 1286
+  Explorer Limited 2 3L Ecoboost 2018 → 1287
+  Explorer Limited 2 3L Ecoboost 2019 → 1288
+  Explorer Limited 2 3L Ecoboost 2021 → 1289
+  Explorer Limited 2 3L Ecoboost 2022 → 1290
+  Explorer Limited 2 3L Ecoboost 2023 → 1291
+  Explorer Limited 2 3L Ecoboost 2024 → 1292
+  F                    → 1293
+  F0 1 0 Mt 2010       → 1294
+  Fadil 1 4 At 2019    → 1295
+  Fadil 1 4 At 2020    → 1296
+  Fadil 1 4 At 2021    → 1297
+  Fadil 1 4 At Plus 2019 → 1298
+  Fadil 1 4 At Plus 2020 → 1299
+  Fadil 1 4 At Plus 2021 → 1300
+  Fadil 1 4 At Premium 2019 → 1301
+  Fadil 1 4 At Premium 2020 → 1302
+  Fadil 1 4 At Premium 2021 → 1303
+  Fadil Nang Cao 1 4 At 2022 → 1304
+  Fadil Tieu Chuan 1 4 At 2022 → 1305
+  Fiesta 1 4 Mt 2011   → 1306
+  Fiesta 1 6 At 2011   → 1307
+  Fiesta 1 6 At 2012   → 1308
+  Fiesta S 1 0 At Ecoboost 2014 → 1309
+  Fiesta S 1 0 At Ecoboost 2015 → 1310
+  Fiesta S 1 0 At Ecoboost 2017 → 1311
+  Fiesta S 1 0 At Ecoboost 2018 → 1312
+  Fiesta S 1 0At Ecoboost 2016 → 1313
+  Fiesta S 1 5 At 2014 → 1314
+  Fiesta S 1 5 At 2015 → 1315
+  Fiesta S 1 5 At 2016 → 1316
+  Fiesta S 1 5 At 2017 → 1317
+  Fiesta S 1 6 At 2010 → 1318
+  Fiesta S 1 6 At 2011 → 1319
+  Fiesta S 1 6 At 2012 → 1320
+  Fiesta S 1 6 At 2013 → 1321
+  Fiesta Titanium 1 5 At 2014 → 1322
+  Fiesta Titanium 1 5 At 2016 → 1323
+  Fiesta Trend 1 5 At 2014 → 1324
+  Fiesta Trend 1 5 At 2015 → 1325
+  Flex Limited Ecoboost 2014 → 1326
+  Focus 1 8 At 2007    → 1327
+  Focus 1 8 At 2009    → 1328
+  Focus 1 8 At 2010    → 1329
+  Focus 1 8 At 2011    → 1330
+  Focus 1 8 At 2012    → 1331
+  Focus 1 8 At 2013    → 1332
+  Focus 1 8 Mt 2008    → 1333
+  Focus 1 8 Mt 2009    → 1334
+  Focus 1 8 Mt 2011    → 1335
+  Focus 2 0 At 2007    → 1336
+  Focus 2 0 At Ghia 2011 → 1337
+  Focus 2 0 Mt 2007    → 1338
+  Focus S 2 0 At 2013  → 1339
+  Focus S 2 0 At 2014  → 1340
+  Focus S 2 0 At 2015  → 1341
+  Focus Sport 1 5L 2016 → 1342
+  Focus Sport 1 5L 2018 → 1343
+  Focus Titanium 1 5L 2016 → 1344
+  Focus Titanium 1 5L 2017 → 1345
+  Focus Titanium 1 5L 2018 → 1346
+  Focus Titanium 1 5L 2019 → 1347
+  Focus Titanium 2 0 At 2013 → 1348
+  Focus Titanium 2 0 At 2014 → 1349
+  Focus Titanium 2 0 At 2015 → 1350
+  Focus Trend 1 5L 2017 → 1351
+  Focus Trend 1 5L 2018 → 1352
+  Focus Trend 1 5L 2019 → 1353
+  Focus Trend 1 6 At 2014 → 1354
+  Focus Trend 1 6 At 2015 → 1355
+  Forester 2 0I        → 1356
+  Forester 2 0Xt 2014  → 1357
+  Forester 2 0Xt 2016  → 1358
+  Forland 2011         → 1359
+  Forte Ex 1 6 Mt 2010 → 1360
+  Forte Ex 1 6 Mt 2011 → 1361
+  Forte Ex 1 6 Mt 2013 → 1362
+  Forte Koup 1 6 Gdi 2011 → 1363
+  Forte Si 1 6 At 2010 → 1364
+  Forte Sli 1 6 At 2009 → 1365
+  Forte Sx 1 6 At 2010 → 1366
+  Forte Sx 1 6 At 2011 → 1367
+  Forte Sx 1 6 At 2012 → 1368
+  Forte Sx 1 6 At 2013 → 1369
+  Forte Sx 1 6 Mt 2010 → 1370
+  Forte Sx 1 6 Mt 2011 → 1371
+  Forte Sx 1 6 Mt 2012 → 1372
+  Fortuner 2 4G 4X2 At 2018 → 1373
+  Fortuner 2 4G 4X2 At 2019 → 1374
+  Fortuner 2 4G 4X2 At 2020 → 1375
+  Fortuner 2 4G 4X2 At 2021 → 1376
+  Fortuner 2 4G 4X2 At Legender 2020 → 1377
+  Fortuner 2 4G 4X2 At Legender 2021 → 1378
+  Fortuner 2 4G 4X2 Mt 2016 → 1379
+  Fortuner 2 4G 4X2 Mt 2017 → 1380
+  Fortuner 2 4G 4X2 Mt 2018 → 1381
+  Fortuner 2 4G 4X2 Mt 2019 → 1382
+  Fortuner 2 4G 4X2 Mt 2020 → 1383
+  Fortuner 2 4G 4X2 Mt 2021 → 1384
+  Fortuner 2 4L 4X2 At 2022 → 1385
+  Fortuner 2 4L 4X2 At 2023 → 1386
+  Fortuner 2 4L 4X2 At 2024 → 1387
+  Fortuner 2 4L 4X2 At 2025 → 1388
+  Fortuner 2 4L 4X2 Mt 2022 → 1389
+  Fortuner 2 5G 2009   → 1390
+  Fortuner 2 5G 2010   → 1391
+  Fortuner 2 5G 2011   → 1392
+  Fortuner 2 5G 2012   → 1393
+  Fortuner 2 5G 2013   → 1394
+  Fortuner 2 5G 2014   → 1395
+  Fortuner 2 5G 2015   → 1396
+  Fortuner 2 5G 2016   → 1397
+  Fortuner 2 7L 4X2 At 2022 → 1398
+  Fortuner 2 7L 4X2 At 2023 → 1399
+  Fortuner 2 7L 4X2 At 2024 → 1400
+  Fortuner 2 7V 4X2 At 2012 → 1401
+  Fortuner 2 7V 4X2 At 2013 → 1402
+  Fortuner 2 7V 4X2 At 2014 → 1403
+  Fortuner 2 7V 4X2 At 2015 → 1404
+  Fortuner 2 7V 4X2 At 2016 → 1405
+  Fortuner 2 7V 4X2 At 2017 → 1406
+  Fortuner 2 7V 4X2 At 2018 → 1407
+  Fortuner 2 7V 4X2 At 2019 → 1408
+  Fortuner 2 7V 4X2 At 2020 → 1409
+  Fortuner 2 7V 4X2 At 2021 → 1410
+  Fortuner 2 7V 4X2 At Trd 2019 → 1411
+  Fortuner 2 7V 4X4 At 2009 → 1412
+  Fortuner 2 7V 4X4 At 2010 → 1413
+  Fortuner 2 7V 4X4 At 2011 → 1414
+  Fortuner 2 7V 4X4 At 2012 → 1415
+  Fortuner 2 7V 4X4 At 2013 → 1416
+  Fortuner 2 7V 4X4 At 2014 → 1417
+  Fortuner 2 7V 4X4 At 2015 → 1418
+  Fortuner 2 7V 4X4 At 2016 → 1419
+  Fortuner 2 7V 4X4 At 2017 → 1420
+  Fortuner 2 8V 4X4 At 2018 → 1421
+  Fortuner 2 8V 4X4 At 2019 → 1422
+  Fortuner 2 8V 4X4 At 2021 → 1423
+  Fortuner 2 8V 4X4 At Legender 2021 → 1424
+  Fortuner Legender 2 4L 4X2 At 2022 → 1425
+  Fortuner Legender 2 4L 4X2 At 2025 → 1426
+  Fortuner Legender 2 8L 4X4 At 2022 → 1427
+  Fortuner Sr5 2 7 At 2007 → 1428
+  Fortuner Sr5 2 7 At 2011 → 1429
+  Fortuner Trd Sportivo 4X2 At 2014 → 1430
+  Fortuner Trd Sportivo 4X2 At 2015 → 1431
+  Fortuner Trd Sportivo 4X2 At 2016 → 1432
+  Fortuner Trd Sportivo 4X4 At 2011 → 1433
+  Fortuner Trd Sportivo 4X4 At 2014 → 1434
+  Fortuner Trd Sportivo 4X4 At 2016 → 1435
+  Fortwo 0 9L At 2015  → 1436
+  Fortwo 1 0 At 2008   → 1437
+  Freelander Lr2 Hse 2008 → 1438
+  Freelander Lr2 Hse Td4 2008 → 1439
+  Frontier 2016        → 1440
+  Frontier K140 2015   → 1441
+  Frontier K165 2016   → 1442
+  Frontier K165 2017   → 1443
+  Frontier K200 Thung Kin 2020 → 1444
+  Frontier K250 Thung Bat 2021 → 1445
+  Frontier Van 5S 2023 → 1446
+  Frontier Van Tf480V 2S 2024 → 1447
+  G35 3 5 At 2007      → 1448
+  G50 1 5 Mt Com 2025  → 1449
+  Gazelle Next Minibus 2 8 Mt 2023 → 1450
+  Gazelle Next Van 2 8 Mt 2019 → 1451
+  Gazelle Next Van 2 8 Mt 2021 → 1452
+  Genesis 2 0 At 2009  → 1453
+  Genesis 2 0 At 2010  → 1454
+  Genesis 2 0 At 2011  → 1455
+  Gentra Sx 1 2 At 2009 → 1456
+  Gentra Sx 1 5 Mt 2007 → 1457
+  Gentra Sx 1 5 Mt 2008 → 1458
+  Gentra Sx 1 5 Mt 2009 → 1459
+  Gentra Sx 1 5 Mt 2010 → 1460
+  Gentra Sx 1 5 Mt 2011 → 1461
+  Gentrax Sx 1 2 At 2008 → 1462
+  Gentrax Sx 1 2 At 2009 → 1463
+  Getz 1 1 Mt 2009     → 1464
+  Getz 1 1 Mt 2010     → 1465
+  Getz 1 4 At 2008     → 1466
+  Gl 350 Bluetec 4Matic 2009 → 1467
+  Gl 350 Bluetec 4Matic 2010 → 1468
+  Gl 350 Bluetec 4Matic 2011 → 1469
+  Gl 350 Cdi 4Matic 2014 → 1470
+  Gl 350 Cdi 4Matic 2015 → 1471
+  Gl 400 4Matic 2014   → 1472
+  Gl 400 4Matic 2015   → 1473
+  Gla Class Gla 200 2014 → 1474
+  Gla Class Gla 200 2015 → 1475
+  Gla Class Gla 200 2019 → 1476
+  Gla Class Gla 250 4Matic 2014 → 1477
+  Gla Class Gla 250 4Matic 2015 → 1478
+  Gla Class Gla 250 4Matic 2016 → 1479
+  Gla Class Gla 250 4Matic 2019 → 1480
+  Gla Class Gla 45 Amg 4Matic 2014 → 1481
+  Gla Class Gla 45 Amg 4Matic 2015 → 1482
+  Gla Class Gla 45 Amg 4Matic 2016 → 1483
+  Gla Class Gla 45 Amg 4Matic 2018 → 1484
+  Gla Class Gla 45 S Amg 4Matic 2022 → 1485
+  Gla Class Gla 45 S Amg 4Matic 2025 → 1486
+  Glb 200 Amg 2020     → 1487
+  Glb 200 Amg 2021     → 1488
+  Glb 200 Amg 2022     → 1489
+  Glb 35 4Matic 2021   → 1490
+  Glb 35 4Matic 2022   → 1491
+  Glb 35 4Matic 2023   → 1492
+  Glc 200 2018         → 1493
+  Glc 200 2019         → 1494
+  Glc 200 2020         → 1495
+  Glc 200 2021         → 1496
+  Glc 200 2022         → 1497
+  Glc 200 4Matic 2019  → 1498
+  Glc 200 4Matic 2020  → 1499
+  Glc 200 4Matic 2021  → 1500
+  Glc 200 4Matic 2022  → 1501
+  Glc 200 4Matic 2023  → 1502
+  Glc 200 4Matic 2024  → 1503
+  Glc 200 4Matic 2025  → 1504
+  Glc 250 4Matic 2016  → 1505
+  Glc 250 4Matic 2017  → 1506
+  Glc 250 4Matic 2018  → 1507
+  Glc 250 4Matic 2019  → 1508
+  Glc 300 4Matic 2016  → 1509
+  Glc 300 4Matic 2017  → 1510
+  Glc 300 4Matic 2018  → 1511
+  Glc 300 4Matic 2019  → 1512
+  Glc 300 4Matic 2020  → 1513
+  Glc 300 4Matic 2021  → 1514
+  Glc 300 4Matic 2022  → 1515
+  Glc 300 4Matic 2023  → 1516
+  Glc 300 4Matic 2024  → 1517
+  Glc 300 4Matic Coupe 2020 → 1518
+  Glc 300 4Matic Coupe 2021 → 1519
+  Glc 300 Coupe 4Matic 2016 → 1520
+  Glc 300 Coupe 4Matic 2017 → 1521
+  Glc 300 Coupe 4Matic 2019 → 1522
+  Gle Class Gle 400 4Matic 2015 → 1523
+  Gle Class Gle 400 4Matic Coupe 2015 → 1524
+  Gle Class Gle 400 4Matic Coupe 2016 → 1525
+  Gle Class Gle 400 4Matic Coupe 2018 → 1526
+  Gle Class Gle 400 4Matic Coupe 2019 → 1527
+  Gle Class Gle 43 Amg 4Matic Coupe 2017 → 1528
+  Gle Class Gle 43 Amg 4Matic Coupe 2018 → 1529
+  Gle Class Gle 450 4Matic 2019 → 1530
+  Glk Class Glk220 Cdi 4Matic 2013 → 1531
+  Glk Class Glk220 Cdi 4Matic 2014 → 1532
+  Glk Class Glk250 4Matic 2014 → 1533
+  Glk Class Glk250 Amg 4Matic 2013 → 1534
+  Glk Class Glk250 Amg 4Matic 2014 → 1535
+  Glk Class Glk280 4Matic 2009 → 1536
+  Glk Class Glk300 4Matic 2009 → 1537
+  Glk Class Glk300 4Matic 2010 → 1538
+  Glk Class Glk300 4Matic 2011 → 1539
+  Glk Class Glk300 4Matic 2012 → 1540
+  Glk Class Glk300 Amg 4Matic 2012 → 1541
+  Gls 350D 4Matic 2016 → 1542
+  Gls 350D 4Matic 2017 → 1543
+  Gls 400 4Matic 2016  → 1544
+  Gls 400 4Matic 2017  → 1545
+  Gls 400 4Matic 2018  → 1546
+  Grand Livina 1 8 At 2010 → 1547
+  Grand Starex 2 4 At 2016 → 1548
+  Grand Starex 2 4 At 2017 → 1549
+  Grand Starex 2 4 Mt 2010 → 1550
+  Grand Starex 2 4 Mt 2014 → 1551
+  Grand Starex 2 4 Mt 2015 → 1552
+  Grand Starex 2 4 Mt 2016 → 1553
+  Grand Starex 2 5 Mt 2008 → 1554
+  Grand Starex 2 5 Mt 2010 → 1555
+  Grand Starex 2 5 Mt 2012 → 1556
+  Grand Starex 2 5 Mt 2013 → 1557
+  Grand Starex 2 5 Mt 2015 → 1558
+  Grand Starex 2 5 Mt 2016 → 1559
+  Grand Starex 2 5 Mt 2017 → 1560
+  Grand Starex Cuu Thuong 2 5 Mt 2017 → 1561
+  Grand Starex Van 2 4 Mt 2011 → 1562
+  Grand Starex Van 2 4 Mt 2013 → 1563
+  Grand Starex Van 2 4 Mt 2015 → 1564
+  Grand Starex Van 2 4 Mt 2017 → 1565
+  Grand Starex Van 2 5 At 2014 → 1566
+  Grand Starex Van 2 5 Mt 2008 → 1567
+  Grand Starex Van 2 5 Mt 2009 → 1568
+  Grand Starex Van 2 5 Mt 2010 → 1569
+  Grand Starex Van 2 5 Mt 2011 → 1570
+  Grand Starex Van 2 5 Mt 2015 → 1571
+  Grand Starex Van 2 5 Mt 2016 → 1572
+  Grand Starex Van 2 5 Mt 2017 → 1573
+  Grand Vitara 2 0 At 2014 → 1574
+  Grand Vitara 2 0 At 2017 → 1575
+  Grandis 2 4 At 2008  → 1576
+  Grandis 2 4 At 2009  → 1577
+  Gs 350 2007          → 1578
+  Gs 350 2008          → 1579
+  Gs 350 2010          → 1580
+  Gs 350 2012          → 1581
+  Gs 350 Awd 2008      → 1582
+  Gs 350 Awd 2010      → 1583
+  Hi Lander V          → 1584
+  Hi Lander X          → 1585
+  Hiace 2 5 2008       → 1586
+  Hiace 2 5 2013       → 1587
+  Hiace 2 7 2008       → 1588
+  Hiace 2 7 2010       → 1589
+  Hiace 2 7 2017       → 1590
+  Hiace 2 8 Mt 2021    → 1591
+  Hiace 3 0 2018       → 1592
+  Hiace Van 2 5 2010   → 1593
+  Highlander 2 7 2009  → 1594
+  Highlander 3 5 2008  → 1595
+  Highlander Le 2 7 2011 → 1596
+  Highlander Le 2 7 2014 → 1597
+  Highlander Limited 3 5 Awd 2015 → 1598
+  Highlander Se 2 7 2010 → 1599
+  Highlander Se 2 7 2011 → 1600
+  Hilux 2 4E 4X2 At 2018 → 1601
+  Hilux 2 4E 4X2 At 2019 → 1602
+  Hilux 2 4E 4X2 At 2020 → 1603
+  Hilux 2 4E 4X2 Mt 2019 → 1604
+  Hilux 2 4L 4X2 At 2020 → 1605
+  Hilux 2 4L 4X2 At 2021 → 1606
+  Hilux 2 4L 4X2 Mt 2020 → 1607
+  Hilux 2 5E 4X2 Mt 2010 → 1608
+  Hilux 2 5E 4X2 Mt 2011 → 1609
+  Hilux 2 5E 4X2 Mt 2012 → 1610
+  Hilux 2 5E 4X2 Mt 2013 → 1611
+  Hilux 2 5E 4X2 Mt 2015 → 1612
+  Hilux 2 8G 4X4 At 2018 → 1613
+  Hilux 3 0G 4X4 At 2015 → 1614
+  Hilux 3 0G 4X4 At 2016 → 1615
+  Hilux 3 0G 4X4 Mt 2009 → 1616
+  Hilux 3 0G 4X4 Mt 2016 → 1617
+  Hilux Adventure 2 8L 4X4 At 2024 → 1618
+  Hilux Adventure 2 8L 4X4 At 2025 → 1619
+  Hilux Gr Sport 2 8L 4X4 At 2021 → 1620
+  Hongyan 2016         → 1621
+  Hrv G 2018           → 1622
+  Hrv G 2019           → 1623
+  Hrv G 2020           → 1624
+  Hrv G 2021           → 1625
+  Hrv G 2023           → 1626
+  Hrv G 2024           → 1627
+  Hrv G 2025           → 1628
+  Hrv L 2018           → 1629
+  Hrv L 2019           → 1630
+  Hrv L 2021           → 1631
+  Hrv Rs 2022          → 1632
+  Hrv Rs 2023          → 1633
+  Hrv Rs 2024          → 1634
+  Hs 1 5T Lux 2023     → 1635
+  Hs 1 5T Lux 2024     → 1636
+  I10 1 1 At 2009      → 1637
+  I10 1 2 At 2010      → 1638
+  I10 1 2 At 2021      → 1639
+  I10 1 2 At 2022      → 1640
+  I10 1 2 At 2023      → 1641
+  I10 1 2 At 2024      → 1642
+  I10 1 2 At 2025      → 1643
+  I10 1 2 At Tieu Chuan 2022 → 1644
+  I10 1 2 At Tieu Chuan 2023 → 1645
+  I10 1 2 Mt 2021      → 1646
+  I10 1 2 Mt 2022      → 1647
+  I10 1 2 Mt Tieu Chuan 2021 → 1648
+  I10 1 2 Mt Tieu Chuan 2022 → 1649
+  I10 1 2 Mt Tieu Chuan 2023 → 1650
+  I10 Grand 1 0 At 2014 → 1651
+  I10 Grand 1 0 At 2015 → 1652
+  I10 Grand 1 0 At 2016 → 1653
+  I10 Grand 1 0 At 2017 → 1654
+  I10 Grand 1 0 Mt 2013 → 1655
+  I10 Grand 1 0 Mt 2014 → 1656
+  I10 Grand 1 0 Mt 2015 → 1657
+  I10 Grand 1 0 Mt 2018 → 1658
+  I10 Grand 1 0 Mt Base 2014 → 1659
+  I10 Grand 1 0 Mt Base 2015 → 1660
+  I10 Grand 1 0 Mt Base 2016 → 1661
+  I10 Grand 1 0 Mt Base 2017 → 1662
+  I10 Grand 1 0 Mt Base 2018 → 1663
+  I10 Grand 1 2 At 2014 → 1664
+  I10 Grand 1 2 At 2015 → 1665
+  I10 Grand 1 2 At 2016 → 1666
+  I10 Grand 1 2 At 2017 → 1667
+  I10 Grand 1 2 At 2018 → 1668
+  I10 Grand 1 2 At 2019 → 1669
+  I10 Grand 1 2 At 2020 → 1670
+  I10 Grand 1 2 At 2021 → 1671
+  I10 Grand 1 2 Mt 2014 → 1672
+  I10 Grand 1 2 Mt 2015 → 1673
+  I10 Grand 1 2 Mt 2016 → 1674
+  I10 Grand 1 2 Mt 2017 → 1675
+  I10 Grand 1 2 Mt 2018 → 1676
+  I10 Grand 1 2 Mt 2019 → 1677
+  I10 Grand 1 2 Mt 2020 → 1678
+  I10 Grand 1 2 Mt 2021 → 1679
+  I10 Grand 1 2 Mt Base 2015 → 1680
+  I10 Grand 1 2 Mt Base 2016 → 1681
+  I10 Grand 1 2 Mt Base 2017 → 1682
+  I10 Grand 1 2 Mt Base 2018 → 1683
+  I10 Grand 1 2 Mt Base 2019 → 1684
+  I10 Grand 1 2 Mt Base 2020 → 1685
+  I20 1 4 At 2009      → 1686
+  I20 1 4 At 2010      → 1687
+  I20 1 4 At 2011      → 1688
+  I20 1 4 At 2013      → 1689
+  I20 Active 1 4 At 2015 → 1690
+  I20 Active 1 4 At 2017 → 1691
+  I30 1 6 At 2008      → 1692
+  I30 1 6 At 2009      → 1693
+  I30 1 6 At 2013      → 1694
+  I30 Cw 1 6 At 2008   → 1695
+  I30 Cw 1 6 At 2009   → 1696
+  I30 Cw 1 6 At 2010   → 1697
+  I30 Cw 1 6 At 2011   → 1698
+  I30 Cw 1 6 At 2012   → 1699
+  Innova 2 0 Venturer 2018 → 1700
+  Innova 2 0 Venturer 2019 → 1701
+  Innova 2 0 Venturer 2020 → 1702
+  Innova 2 0E 2012     → 1703
+  Innova 2 0E 2013     → 1704
+  Innova 2 0E 2014     → 1705
+  Innova 2 0E 2015     → 1706
+  Innova 2 0E 2016     → 1707
+  Innova 2 0E 2017     → 1708
+  Innova 2 0E 2018     → 1709
+  Innova 2 0E 2019     → 1710
+  Innova 2 0E 2020     → 1711
+  Innova 2 0G 2012     → 1712
+  Innova 2 0G 2013     → 1713
+  Innova 2 0G 2014     → 1714
+  Innova 2 0G 2015     → 1715
+  Innova 2 0G 2016     → 1716
+  Innova 2 0G 2017     → 1717
+  Innova 2 0G 2018     → 1718
+  Innova 2 0G 2019     → 1719
+  Innova 2 0J 2014     → 1720
+  Innova 2 0J 2015     → 1721
+  Innova 2 0J 2020     → 1722
+  Innova 2 0V 2012     → 1723
+  Innova 2 0V 2013     → 1724
+  Innova 2 0V 2015     → 1725
+  Innova 2 0V 2016     → 1726
+  Innova 2 0V 2017     → 1727
+  Innova Cross 2 0 Cvt 2024 → 1728
+  Innova Cross 2 0 Cvt 2025 → 1729
+  Innova Cross Hev 2 0 Cvt 2023 → 1730
+  Innova Cross Hev 2 0 Cvt 2024 → 1731
+  Innova Cross Hev 2 0 Cvt 2025 → 1732
+  Innova E 2 0 Mt 2020 → 1733
+  Innova E 2 0 Mt 2021 → 1734
+  Innova E 2 0 Mt 2022 → 1735
+  Innova E 2 0 Mt 2023 → 1736
+  Innova E 2 0 Mt 2024 → 1737
+  Innova G 2 0 At 2021 → 1738
+  Innova G 2 0 At 2022 → 1739
+  Innova G 2007        → 1740
+  Innova G 2008        → 1741
+  Innova G 2009        → 1742
+  Innova G 2010        → 1743
+  Innova G 2011        → 1744
+  Innova G 2012        → 1745
+  Innova J 2008        → 1746
+  Innova V 2009        → 1747
+  Innova V 2012        → 1748
+  Innova Venturer 2 0 At 2020 → 1749
+  Innova Venturer 2 0 At 2021 → 1750
+  Innova Venturer 2 0 At 2022 → 1751
+  Iq 1 0 At 2009       → 1752
+  Iq 1 0 At 2012       → 1753
+  Is 250 2009          → 1754
+  Is 250 F             → 1755
+  Is 250C 2009         → 1756
+  Is 250C 2010         → 1757
+  Is 250C 2011         → 1758
+  Jazz V 2018          → 1759
+  Jazz Vx 2018         → 1760
+  Jimny 1 5L 4X4 At 2023 → 1761
+  Jimny 1 5L 4X4 At 2024 → 1762
+  Jolie Ss 2007        → 1763
+  Journey R T 2 7 V6 2008 → 1764
+  Juke 1 6 At 2013     → 1765
+  Juke 1 6 At 2014     → 1766
+  Juke 1 6 At 2015     → 1767
+  K165 2016            → 1768
+  K2700 2021           → 1769
+  K3 1 6 At 2013       → 1770
+  K3 1 6 At 2014       → 1771
+  K3 1 6 At 2015       → 1772
+  K3 1 6 At 2016       → 1773
+  K3 1 6 Mt 2014       → 1774
+  K3 1 6 Mt 2016       → 1775
+  K3 2 0 At 2013       → 1776
+  K3 2 0 At 2014       → 1777
+  K3 2 0 At 2015       → 1778
+  K3 2 0 At 2016       → 1779
+  K3 Deluxe 1 6 Mt 2022 → 1780
+  K3 Gt 1 6 At Turbo 2022 → 1781
+  K3 Luxury 1 6 At 2021 → 1782
+  K3 Luxury 1 6 At 2022 → 1783
+  K3 Luxury 1 6 At 2023 → 1784
+  K3 Luxury 1 6 At 2024 → 1785
+  K3 Luxury 1 6 At 2025 → 1786
+  K3 Premium 1 6 At 2021 → 1787
+  K3 Premium 1 6 At 2022 → 1788
+  K3 Premium 1 6 At 2023 → 1789
+  K3 Premium 1 6 At 2024 → 1790
+  K3 Premium 2 0 At 2022 → 1791
+  K3 Premium 2 0 At 2024 → 1792
+  K3 Premium 2 0 At 2025 → 1793
+  K5 Gt                → 1794
+  K5 Luxury 2 0 At 2022 → 1795
+  K5 Premium 2 0 At 2022 → 1796
+  K5 Premium 2 0 At 2024 → 1797
+  Kicks E              → 1798
+  Kona 1 6 Turbo 2018  → 1799
+  Kona 1 6 Turbo 2019  → 1800
+  Kona 1 6 Turbo 2020  → 1801
+  Kona 1 6 Turbo 2021  → 1802
+  Kona 2 0 At 2018     → 1803
+  Kona 2 0 At 2019     → 1804
+  Kona 2 0 At 2020     → 1805
+  Kona 2 0 At 2021     → 1806
+  Kona 2 0 Ath 2018    → 1807
+  Kona 2 0 Ath 2019    → 1808
+  Kona 2 0 Ath 2020    → 1809
+  Kona 2 0 Ath 2021    → 1810
+  Lacetti 1 6 2011     → 1811
+  Lacetti 1 6 2012     → 1812
+  Lacetti 1 6 2013     → 1813
+  Lacetti Cdx 1 6 At 2009 → 1814
+  Lacetti Cdx 1 6 At 2010 → 1815
+  Lacetti Cdx 1 6 At 2011 → 1816
+  Lacetti Ex 1 6 Mt 2007 → 1817
+  Lacetti Ex 1 6 Mt 2008 → 1818
+  Lacetti Ex 2009      → 1819
+  Lacetti Ex 2010      → 1820
+  Lacetti Ex 2011      → 1821
+  Lacetti Se 2010      → 1822
+  Lacetti Se 2011      → 1823
+  Levante 3 0 V6 2016  → 1824
+  Levante S 3 0 V6 2019 → 1825
+  Ls 600Hl 2007        → 1826
+  Ls 600Hl 2008        → 1827
+  Ls 600Hl 2010        → 1828
+  Macan 2 0 2014       → 1829
+  Macan 2 0 2015       → 1830
+  Macan 2 0 2016       → 1831
+  Macan 2 0 2017       → 1832
+  Macan 2 0 2018       → 1833
+  Macan 2 0 2019       → 1834
+  Macan 2 0 2021       → 1835
+  Macan Gts 2016       → 1836
+  Matiz Groove 1 0 At 2009 → 1837
+  Matiz Jazz 1 0 At 2010 → 1838
+  Matiz Joy 0 8 At 2008 → 1839
+  Matiz Se 0 8 Mt 2007 → 1840
+  Matiz Se 0 8 Mt 2008 → 1841
+  Matiz Super 0 8 At 2008 → 1842
+  Matiz Van 0 8 At 2009 → 1843
+  Matiz Van 0 8 At 2011 → 1844
+  Matrix 1 8 At 2007   → 1845
+  Matrix 1 8 At 2009   → 1846
+  Maxima 3 0 At 2008   → 1847
+  Mcar 1 3 At 2010     → 1848
+  Mdx 3 7L 2008        → 1849
+  Mdx Sh               → 1850
+  Megane 1 6 At 2015   → 1851
+  Micra 1 2 At 2010    → 1852
+  Mighty Ex8 2020      → 1853
+  Mighty N250 2021     → 1854
+  Mighty New 110Sp Tti 2018 → 1855
+  Mirage 1 2 At 2014   → 1856
+  Mirage 1 2 At 2016   → 1857
+  Mirage 1 2 Cvt 2018  → 1858
+  Mirage 1 2 Cvt 2019  → 1859
+  Mirage 1 2 Cvt Eco 2019 → 1860
+  Mirage 1 2Cvt 2017   → 1861
+  Mirage 1 2Mt 2017    → 1862
+  Ml Class Ml350 2007  → 1863
+  Ml Class Ml350 2009  → 1864
+  Ml Class Ml350 4Matic 2012 → 1865
+  Ml Class Ml350 4Matic 2013 → 1866
+  Ml Class Ml400 Amg 4Matic 2014 → 1867
+  Mondeo 2 3 At 2009   → 1868
+  Mondeo 2 3 At 2012   → 1869
+  Morning 1 0 At 2011  → 1870
+  Morning 1 0 At 2013  → 1871
+  Morning 1 0 At 2014  → 1872
+  Morning 1 0 At Sport 2011 → 1873
+  Morning 1 0 At Sport 2012 → 1874
+  Morning 1 0 At Sport 2013 → 1875
+  Morning 1 0 Mt 2011  → 1876
+  Morning 1 0 Mt 2012  → 1877
+  Morning 1 0 Mt 2013  → 1878
+  Morning 1 0 Mt 2014  → 1879
+  Morning 1 0 Mt 2015  → 1880
+  Morning 1 0 Mt 2016  → 1881
+  Morning 1 0 Mt 2017  → 1882
+  Morning 1 0 Mt 2018  → 1883
+  Morning 1 0 Mt 2019  → 1884
+  Morning 1 25 At 2022 → 1885
+  Morning 1 25 Mt 2022 → 1886
+  Morning At 2014      → 1887
+  Morning At 2015      → 1888
+  Morning At 2019      → 1889
+  Morning At 2020      → 1890
+  Morning At 2021      → 1891
+  Morning At 2023      → 1892
+  Morning At 2024      → 1893
+  Morning Deluxe 2019  → 1894
+  Morning Deluxe 2020  → 1895
+  Morning Deluxe 2021  → 1896
+  Morning Ex 1 1 Mt 2008 → 1897
+  Morning Ex 2013      → 1898
+  Morning Ex 2014      → 1899
+  Morning Ex 2015      → 1900
+  Morning Ex 2016      → 1901
+  Morning Ex 2017      → 1902
+  Morning Ex 2018      → 1903
+  Morning Ex Mt 2012   → 1904
+  Morning Ex Mth 2013  → 1905
+  Morning Gt           → 1906
+  Morning Luxury 2019  → 1907
+  Morning Luxury 2020  → 1908
+  Morning Luxury 2021  → 1909
+  Morning Luxury 2022  → 1910
+  Morning Lx 1 0 At 2007 → 1911
+  Morning Lx 1 0 At 2008 → 1912
+  Morning Lx 1 0 At 2010 → 1913
+  Morning Lx 1 0 Mt 2011 → 1914
+  Morning Lx 1 1 Mt 2009 → 1915
+  Morning Lx 1 1 Mt 2010 → 1916
+  Morning Lx 2016      → 1917
+  Morning Mt 2014      → 1918
+  Morning Mt 2015      → 1919
+  Morning Mt 2018      → 1920
+  Morning Mt 2019      → 1921
+  Morning Mt 2020      → 1922
+  Morning Mt 2021      → 1923
+  Morning Mt 2025      → 1924
+  Morning Premium At 2022 → 1925
+  Morning S At 2014    → 1926
+  Morning S At 2015    → 1927
+  Morning S At 2017    → 1928
+  Morning S At 2018    → 1929
+  Morning S Mt 2014    → 1930
+  Morning Si At 2014   → 1931
+  Morning Si At 2015   → 1932
+  Morning Si At 2016   → 1933
+  Morning Si At 2017   → 1934
+  Morning Si At 2018   → 1935
+  Morning Si Mt 2016   → 1936
+  Morning Si Mt 2017   → 1937
+  Morning Si Mt 2018   → 1938
+  Morning Slx 1 0 At 2007 → 1939
+  Morning Slx 1 0 At 2008 → 1940
+  Morning Slx 1 0 At 2009 → 1941
+  Morning Slx 1 0 At 2010 → 1942
+  Morning Slx 1 0 Mt 2007 → 1943
+  Morning Slx 1 0 Mt 2009 → 1944
+  Morning Slx 1 0 Mt 2010 → 1945
+  Morning Sx 1 1 At 2009 → 1946
+  Morning Sx 1 1 At 2011 → 1947
+  Morning Sx 1 1 At Sport 2011 → 1948
+  Morning Sx 1 1 At Sport 2012 → 1949
+  Morning Sx 1 1 At Sportpack 2010 → 1950
+  Morning Sx 1 1 At Sportpack 2011 → 1951
+  Morning Sx 1 1 Mt Sport 2012 → 1952
+  Morning Van 1 0 At 2009 → 1953
+  Morning Van 1 0 At 2010 → 1954
+  Morning Van 1 0 At 2011 → 1955
+  Morning Van 1 0 At 2012 → 1956
+  Morning Van 1 0 At 2013 → 1957
+  Morning Van 1 0 At 2014 → 1958
+  Morning Van 1 0 At 2015 → 1959
+  Morning Van 1 0 At 2016 → 1960
+  Morning Van 1 0 Mt 2010 → 1961
+  Morning Van 1 0 Mt 2012 → 1962
+  Morning X            → 1963
+  Mu                   → 1964
+  Murano Sl 3 5 2009   → 1965
+  Mustang Ecoboost Fastback 2018 → 1966
+  Navara E 2 5Mt 2Wd 2015 → 1967
+  Navara El 2 3 At 2Wd 2023 → 1968
+  Navara El 2 3 At 2Wd Cao Cap 2022 → 1969
+  Navara El 2 5 At 2Wd 2017 → 1970
+  Navara El 2 5 At 2Wd 2018 → 1971
+  Navara El 2 5 At 2Wd 2019 → 1972
+  Navara El 2 5At 2Wd 2016 → 1973
+  Navara El A          → 1974
+  Navara El Premium R 2018 → 1975
+  Navara El Premium R 2019 → 1976
+  Navara El Premium Z 2019 → 1977
+  Navara Le 2 5Mt 4Wd 2011 → 1978
+  Navara Le 2 5Mt 4Wd 2013 → 1979
+  Navara Pro           → 1980
+  Navara Sl 2 5 Mt 4Wd 2019 → 1981
+  Navara Ve 2 5 At 2Wd 2021 → 1982
+  Navara Vl 2 3 At 4Wd 2023 → 1983
+  Navara Vl 2 3 At 4Wd Cao Cap 2022 → 1984
+  Navara Vl 2 5 At 2Wd 2021 → 1985
+  Navara Vl 2 5 At 4Wd 2015 → 1986
+  Navara Vl 2 5 At 4Wd 2016 → 1987
+  Navara Vl 2 5 At 4Wd 2017 → 1988
+  Navara Vl 2 5 At 4Wd 2021 → 1989
+  Navara Vl Premium R 2019 → 1990
+  Navara Xe 2 5At 4Wd 2012 → 1991
+  Navara Xe 2 5At 4Wd 2013 → 1992
+  New Beetle 1 6 At 2009 → 1993
+  New Beetle 2 5 At 2007 → 1994
+  New Beetle 2 5 At 2009 → 1995
+  Nx 200T 2015         → 1996
+  Nx 200T 2016         → 1997
+  Nx 200T F            → 1998
+  Nx 300 2017          → 1999
+  Nx 300 2018          → 2000
+  Nx 300 2019          → 2001
+  Odyssey 2 4 At 2016  → 2002
+  One 1 5 At 2022      → 2003
+  Opirus 3 5 At 2009   → 2004
+  Optima 2 0 At 2013   → 2005
+  Optima 2 0 At 2014   → 2006
+  Optima 2 0 At 2015   → 2007
+  Optima 2 0 At 2018   → 2008
+  Optima 2 0 At Luxury 2020 → 2009
+  Optima 2 4 Gt Line 2016 → 2010
+  Optima 2 4 Gt Line 2018 → 2011
+  Orlando Lt 1 8 Mt 2012 → 2012
+  Orlando Ltz 1 8 2017 → 2013
+  Orlando Ltz 1 8 At 2014 → 2014
+  Orlando Ltz 1 8 At 2016 → 2015
+  Outback 2 5I 2010    → 2016
+  Outback 2 5I 2016    → 2017
+  Outback 3 6R 2015    → 2018
+  Outlander 2 0 Cvt 2016 → 2019
+  Outlander 2 0 Cvt 2017 → 2020
+  Outlander 2 0 Cvt 2018 → 2021
+  Outlander 2 0 Cvt 2019 → 2022
+  Outlander 2 0 Cvt 2020 → 2023
+  Outlander 2 0 Cvt 2021 → 2024
+  Outlander 2 0 Cvt 2022 → 2025
+  Outlander 2 0 Cvt 2023 → 2026
+  Outlander 2 0 Cvt 2024 → 2027
+  Outlander 2 0 Cvt Premium 2018 → 2028
+  Outlander 2 0 Cvt Premium 2019 → 2029
+  Outlander 2 0 Cvt Premium 2020 → 2030
+  Outlander 2 0 Cvt Special Edition 2019 → 2031
+  Outlander 2 4 Cvt 2017 → 2032
+  Outlander 2 4 Cvt Premium 2018 → 2033
+  Outlander 2 4 Cvt Premium 2019 → 2034
+  Outlander Premium 2 0 Cvt 2021 → 2035
+  Outlander Premium 2 0 Cvt 2022 → 2036
+  Outlander Premium 2 0 Cvt 2023 → 2037
+  Outlander Premium 2 0 Cvt 2024 → 2038
+  Outlander Premium 2 4 Cvt 2021 → 2039
+  Outlander Sport 2 0 Cvt Premium 2015 → 2040
+  Pajero 3 0 2010      → 2041
+  Pajero 3 0 2011      → 2042
+  Pajero 3 0 4X4 At 2017 → 2043
+  Pajero 3 0 4X4 At 2018 → 2044
+  Pajero Sport 2 4D 4X2 At 2018 → 2045
+  Pajero Sport 2 4D 4X2 At 2019 → 2046
+  Pajero Sport 2 4D 4X2 At 2021 → 2047
+  Pajero Sport 2 4D 4X2 At 2022 → 2048
+  Pajero Sport 2 4D 4X2 At 2023 → 2049
+  Pajero Sport 2 4D 4X2 Mt 2019 → 2050
+  Pajero Sport 2 4D 4X4 At 2021 → 2051
+  Pajero Sport 2 4D 4X4 At 2022 → 2052
+  Pajero Sport 2 4D 4X4 At 2023 → 2053
+  Pajero Sport 3 0G 4X2 At 2016 → 2054
+  Pajero Sport 3 0G 4X2 At 2017 → 2055
+  Pajero Sport 3 0G 4X4 At 2016 → 2056
+  Pajero Sport 3 0G 4X4 At Premium 2018 → 2057
+  Pajero Sport D 4X2 At 2011 → 2058
+  Pajero Sport D 4X2 At 2012 → 2059
+  Pajero Sport D 4X2 At 2014 → 2060
+  Pajero Sport D 4X2 Mt 2015 → 2061
+  Pajero Sport D 4X2 Mt 2016 → 2062
+  Pajero Sport D 4X2 Mt 2017 → 2063
+  Pajero Sport D 4X4 Mt 2013 → 2064
+  Pajero Sport G 4X2 At 2014 → 2065
+  Pajero Sport G 4X2 At 2015 → 2066
+  Pajero Sport G 4X4 At 2015 → 2067
+  Palisade Prestige 2 2 At Htrac 2023 → 2068
+  Palisade Prestige 2 2 At Htrac 2024 → 2069
+  Panamera 3 6 V6 2010 → 2070
+  Panamera 3 6 V6 2011 → 2071
+  Panamera 3 6 V6 2013 → 2072
+  Panamera 3 6 V6 2014 → 2073
+  Panamera 4 2010      → 2074
+  Passat 1 8 Bluemotion 2017 → 2075
+  Passat 1 8 Tsi 2018  → 2076
+  Passat 1 8Tsi 2016   → 2077
+  Passat Cc 2 0 At 2009 → 2078
+  Passat Cc 2 0 At 2011 → 2079
+  Picanto 1 1 At 2007  → 2080
+  Picanto 1 25 At 2012 → 2081
+  Picanto 1 25 At 2013 → 2082
+  Picanto S 1 25 At 2013 → 2083
+  Picanto S 1 25 At 2014 → 2084
+  Picanto S 1 25 Mt 2014 → 2085
+  Pilot 3 5 V6 Awd 2010 → 2086
+  Polo 1 6 At 2015     → 2087
+  Polo 1 6 At 2016     → 2088
+  Polo 1 6 At 2017     → 2089
+  Polo 1 6 At 2018     → 2090
+  Polo 1 6 At 2020     → 2091
+  Polo 1 6 At 2021     → 2092
+  Porter Ii Thung Lanh 2009 → 2093
+  Porter Ii Thung Lanh 2015 → 2094
+  Prado Gx 2 7 At 2007 → 2095
+  Prado Gx 2 7 At 2008 → 2096
+  Prado Gx 2 7 At 2009 → 2097
+  Prado Txl 2 7L 2009  → 2098
+  Prado Txl 2 7L 2010  → 2099
+  Prado Txl 2 7L 2011  → 2100
+  Prado Txl 2 7L 2012  → 2101
+  Prado Txl 2 7L 2013  → 2102
+  Prado Txl 2 7L 2014  → 2103
+  Prado Txl 2 7L 2015  → 2104
+  Prado Txl 2 7L 2016  → 2105
+  Prado Txl 2 7L 2017  → 2106
+  Prado Vx 2 7L 2017   → 2107
+  Prado Vx 2 7L 2018   → 2108
+  Prado Vx 2 7L 2019   → 2109
+  Prado Vx 2 7L 2020   → 2110
+  Prado Vx 2 7L 2021   → 2111
+  Previa Gl 2 4 At 2009 → 2112
+  Previa Gl 2 4 At 2010 → 2113
+  Q2 1 0 Tfsi 2019     → 2114
+  Q2 1 4 Tfsi 2017     → 2115
+  Q2 1 4 Tfsi 2018     → 2116
+  Q2 1 4 Tfsi 2019     → 2117
+  Q3 2 0 Quattro 2013  → 2118
+  Q3 2 0 Quattro 2016  → 2119
+  Q3 35 Tfsi 2020      → 2120
+  Q3 35 Tfsi 2021      → 2121
+  Q3 35 Tfsi Advanced Black Edition 2024 → 2122
+  Q3 Exclusive 2 0 Tfsi Quattro 2018 → 2123
+  Q3 Sportback 35 Tfsi 2021 → 2124
+  Q5 2 0 At 2010       → 2125
+  Q5 2 0 At 2011       → 2126
+  Q5 2 0 At 2013       → 2127
+  Q5 2 0 At 2014       → 2128
+  Q5 2 0 At 2015       → 2129
+  Q5 2 0 At 2016       → 2130
+  Q5 2 0 At 2017       → 2131
+  Q5 2 0 At 2018       → 2132
+  Q5 45 Tfsi Quattro 2021 → 2133
+  Q5 45 Tfsi Quattro 2022 → 2134
+  Q5 Black Edition 45 Tfsi Quattro 2024 → 2135
+  Q5 Sline 45 Tfsi Quattro 2022 → 2136
+  Q5 Sline 45 Tfsi Quattro 2023 → 2137
+  Q5 Sline 45 Tfsi Quattro 2024 → 2138
+  Q5 Sportback Sline 45 Tfsi Quattro 2021 → 2139
+  Q7 1 5 At 2019       → 2140
+  Q7 2 0 At 2016       → 2141
+  Q7 2 0 At 2018       → 2142
+  Q7 3 0 At 2007       → 2143
+  Q7 3 0 At 2010       → 2144
+  Q7 3 0 At 2011       → 2145
+  Q7 3 0 At 2012       → 2146
+  Q7 3 0 At 2014       → 2147
+  Q7 3 0 At 2015       → 2148
+  Q7 3 0 At 2016       → 2149
+  Q7 3 6 At 2007       → 2150
+  Q7 3 6 At 2011       → 2151
+  Q7 45 Tfsi Quattro 2019 → 2152
+  Q7 55 Tfsi Quattro 2019 → 2153
+  Q7 55 Tfsi Quattro 2020 → 2154
+  Qashqai Le Awd 2011  → 2155
+  Qkr Qmr77He4 2020    → 2156
+  Qm5 2 0 At 2014      → 2157
+  Quattroporte 3 0 V6 2016 → 2158
+  Qx 60 3 5 Awd 2014   → 2159
+  Qx 60 3 5 Awd 2016   → 2160
+  Qx 70 3 7 Awd 2015   → 2161
+  R Class R300 2011    → 2162
+  Raize G 1 0 Cvt 2021 → 2163
+  Raize G 1 0 Cvt 2022 → 2164
+  Raize G 1 0 Cvt 2023 → 2165
+  Raize G 1 0 Cvt 2024 → 2166
+  Raize G 1 0 Cvt 2025 → 2167
+  Range Rover Autobiography 3 0 2013 → 2168
+  Range Rover Autobiography Lwb 3 0 2014 → 2169
+  Range Rover Autobiography Lwb 3 0 2015 → 2170
+  Range Rover Evoque 2 0 At 2021 → 2171
+  Range Rover Evoque Autobiography 2016 → 2172
+  Range Rover Evoque Black Edition 2014 → 2173
+  Range Rover Evoque Dynamic 2012 → 2174
+  Range Rover Evoque Dynamic 2013 → 2175
+  Range Rover Evoque Dynamic 2014 → 2176
+  Range Rover Evoque Dynamic 2015 → 2177
+  Range Rover Evoque Hse 2015 → 2178
+  Range Rover Evoque Hse 2017 → 2179
+  Range Rover Evoque Hse Dynamic 2015 → 2180
+  Range Rover Evoque Prestige 2012 → 2181
+  Range Rover Evoque Pure Premium 2012 → 2182
+  Range Rover Evoque Pure Premium 2013 → 2183
+  Range Rover Evoque R → 2184
+  Range Rover Evoque Se 2022 → 2185
+  Range Rover Hse 3 0 2013 → 2186
+  Range Rover Hse 3 0 2014 → 2187
+  Range Rover Hse 3 0 2015 → 2188
+  Range Rover Hse Lwb 3 0 2015 → 2189
+  Range Rover Hse Td6 3 0 2016 → 2190
+  Range Rover Sport Autobiography 2015 → 2191
+  Range Rover Sport Hse 2013 → 2192
+  Range Rover Sport Hse 2014 → 2193
+  Range Rover Sport Hse Dynamic 2014 → 2194
+  Range Rover Sport Hse Dynamic 3 0 Sdv6 2015 → 2195
+  Range Rover Velar Se R → 2196
+  Range Rover Vogue 3 6 2010 → 2197
+  Ranger Limited 2 0L 4X4 At 2020 → 2198
+  Ranger Limited 2 0L 4X4 At 2021 → 2199
+  Ranger Raptor 2 0L 4X4 At 2018 → 2200
+  Ranger Raptor 2 0L 4X4 At 2019 → 2201
+  Ranger Raptor 2 0L 4X4 At 2020 → 2202
+  Ranger Raptor 2 0L 4X4 At 2021 → 2203
+  Ranger Raptor 2 0L 4X4 At 2022 → 2204
+  Ranger Raptor 2 0L 4X4 At 2023 → 2205
+  Ranger Raptor 2 0L 4X4 At 2024 → 2206
+  Ranger Raptor 2 0L 4X4 At 2025 → 2207
+  Ranger Sport 2 0L 4X4 At 2023 → 2208
+  Ranger Stormtrak 2 0L 4X4 At 2024 → 2209
+  Ranger Stormtrak 2 0L 4X4 At 2025 → 2210
+  Ranger Wildtrak 2 0L 4X2 At 2018 → 2211
+  Ranger Wildtrak 2 0L 4X2 At 2019 → 2212
+  Ranger Wildtrak 2 0L 4X2 At 2020 → 2213
+  Ranger Wildtrak 2 0L 4X4 At 2018 → 2214
+  Ranger Wildtrak 2 0L 4X4 At 2019 → 2215
+  Ranger Wildtrak 2 0L 4X4 At 2020 → 2216
+  Ranger Wildtrak 2 0L 4X4 At 2021 → 2217
+  Ranger Wildtrak 2 0L 4X4 At 2022 → 2218
+  Ranger Wildtrak 2 0L 4X4 At 2023 → 2219
+  Ranger Wildtrak 2 0L 4X4 At 2024 → 2220
+  Ranger Wildtrak 2 0L 4X4 At 2025 → 2221
+  Ranger Wildtrak 2 2L 4X2 At 2014 → 2222
+  Ranger Wildtrak 2 2L 4X2 At 2016 → 2223
+  Ranger Wildtrak 2 2L 4X2 At 2017 → 2224
+  Ranger Wildtrak 3 2L 4X4 At 2014 → 2225
+  Ranger Wildtrak 3 2L 4X4 At 2015 → 2226
+  Ranger Wildtrak 3 2L 4X4 At 2016 → 2227
+  Ranger Wildtrak 3 2L 4X4 At 2017 → 2228
+  Ranger Wildtrak 3 2L 4X4 At 2018 → 2229
+  Ranger Xl 2 0L 4X4 Mt 2022 → 2230
+  Ranger Xl 2 2L 4X4 Mt 2016 → 2231
+  Ranger Xl 2 2L 4X4 Mt 2017 → 2232
+  Ranger Xl 2 2L 4X4 Mt 2021 → 2233
+  Ranger Xl 2 5L 4X2 Mt 2007 → 2234
+  Ranger Xl 4X4 Mt 2008 → 2235
+  Ranger Xls 2 0L 4X2 At 2022 → 2236
+  Ranger Xls 2 0L 4X2 At 2023 → 2237
+  Ranger Xls 2 0L 4X2 At 2024 → 2238
+  Ranger Xls 2 0L 4X2 At 2025 → 2239
+  Ranger Xls 2 0L 4X2 Mt 2022 → 2240
+  Ranger Xls 2 0L 4X2 Mt 2023 → 2241
+  Ranger Xls 2 0L 4X4 At 2022 → 2242
+  Ranger Xls 2 0L 4X4 At 2023 → 2243
+  Ranger Xls 2 0L 4X4 At 2024 → 2244
+  Ranger Xls 2 0L 4X4 At 2025 → 2245
+  Ranger Xls 2 2L 4X2 At 2014 → 2246
+  Ranger Xls 2 2L 4X2 At 2015 → 2247
+  Ranger Xls 2 2L 4X2 At 2016 → 2248
+  Ranger Xls 2 2L 4X2 At 2017 → 2249
+  Ranger Xls 2 2L 4X2 At 2018 → 2250
+  Ranger Xls 2 2L 4X2 At 2019 → 2251
+  Ranger Xls 2 2L 4X2 At 2020 → 2252
+  Ranger Xls 2 2L 4X2 At 2021 → 2253
+  Ranger Xls 2 2L 4X2 At 2022 → 2254
+  Ranger Xls 2 2L 4X2 Mt 2012 → 2255
+  Ranger Xls 2 2L 4X2 Mt 2015 → 2256
+  Ranger Xls 2 2L 4X2 Mt 2016 → 2257
+  Ranger Xls 2 2L 4X2 Mt 2017 → 2258
+  Ranger Xls 2 2L 4X2 Mt 2018 → 2259
+  Ranger Xls 2 2L 4X2 Mt 2019 → 2260
+  Ranger Xls 2 2L 4X2 Mt 2020 → 2261
+  Ranger Xls 2 2L 4X2 Mt 2021 → 2262
+  Ranger Xls 2 2L 4X2 Mt 2022 → 2263
+  Ranger Xlt 2 2L 4X4 At 2019 → 2264
+  Ranger Xlt 2 2L 4X4 Mt 2014 → 2265
+  Ranger Xlt 2 2L 4X4 Mt 2015 → 2266
+  Ranger Xlt 2 2L 4X4 Mt 2016 → 2267
+  Ranger Xlt 2 2L 4X4 Mt 2017 → 2268
+  Ranger Xlt 2 2L 4X4 Mt 2018 → 2269
+  Ranger Xlt 2 2L 4X4 Mt 2019 → 2270
+  Rav4 2 4 At 2007     → 2271
+  Rav4 2 4 At 2008     → 2272
+  Rav4 2 4 At Awd 2008 → 2273
+  Rav4 2 5 At 2008     → 2274
+  Rav4 Le 2 5 Awd 2014 → 2275
+  Ray 1 0 At 2012      → 2276
+  Rc 200T 2016         → 2277
+  Rc 300 2019          → 2278
+  Rio 1 4 At 2012      → 2279
+  Rio 1 4 At 2013      → 2280
+  Rio 1 4 At 2014      → 2281
+  Rio 1 4 At 2015      → 2282
+  Rio 1 4 At 2016      → 2283
+  Rio 1 4 Mt 2014      → 2284
+  Rio 1 4 Mt 2015      → 2285
+  Rio 1 4 Mt 2016      → 2286
+  Rio Ex 1 4 Mt 2009   → 2287
+  Rogue Sl 2007        → 2288
+  Rondo Dat 2015       → 2289
+  Rondo Dat 2016       → 2290
+  Rondo Gat 2015       → 2291
+  Rondo Gat 2016       → 2292
+  Rondo Gat Deluxe 2019 → 2293
+  Rondo Gat Deluxe 2020 → 2294
+  Rondo Gat Deluxe 2022 → 2295
+  Rondo Gath 2019      → 2296
+  Rondo Gmt 2016       → 2297
+  Rondo Gmt 2017       → 2298
+  Rondo Gmt 2018       → 2299
+  Rondo Gmt 2019       → 2300
+  Rondo Gmt 2020       → 2301
+  Rondo Gmt 2021       → 2302
+  Rondo Gmt Deluxe 2020 → 2303
+  Rush 1 5S At 2018    → 2304
+  Rush 1 5S At 2019    → 2305
+  Rush 1 5S At 2020    → 2306
+  Rush 1 5S At 2021    → 2307
+  Rx 200T 2015         → 2308
+  Rx 200T 2016         → 2309
+  Rx 200T 2017         → 2310
+  Rx 300 2018          → 2311
+  Rx 300 2019          → 2312
+  Rx 350 2007          → 2313
+  Rx 350 2008          → 2314
+  Rx 350 2009          → 2315
+  Rx 350 2010          → 2316
+  Rx 350 2011          → 2317
+  Rx 350 2012          → 2318
+  Rx 350 2013          → 2319
+  Rx 350 2016          → 2320
+  Rx 350 2017          → 2321
+  Rx 350 Awd 2009      → 2322
+  Rx 350 Awd 2010      → 2323
+  Rx 350 Awd 2011      → 2324
+  Rx 350 Awd 2012      → 2325
+  Rx 350 Awd 2013      → 2326
+  Rx 350 Awd 2014      → 2327
+  Rx 350 Awd 2015      → 2328
+  Rx 350 F             → 2329
+  Rx 400H 2008         → 2330
+  Rx 450H 2010         → 2331
+  Rx5 1 5T Lux 2023    → 2332
+  Rx5 1 5T Lux 2024    → 2333
+  Rx5 1 5T Std 2023    → 2334
+  S Class S350 2008    → 2335
+  S Class S400L 2014   → 2336
+  S Class S400L 2015   → 2337
+  S Class S400L 2016   → 2338
+  S Class S400L 2017   → 2339
+  S Class S450L 2017   → 2340
+  S Class S450L 2018   → 2341
+  S Class S450L 2019   → 2342
+  S Class S450L 2020   → 2343
+  S Class S450L Luxury 2017 → 2344
+  S Class S450L Luxury 2018 → 2345
+  S60 B5 R             → 2346
+  S90 Inscription Lwb B6 Awd 2021 → 2347
+  S90 Inscription Lwb B6 Awd 2022 → 2348
+  S90 Inscription T6 2020 → 2349
+  S90 Inscription T6 Awd 2021 → 2350
+  S90 Lwb Ultimate B6 Awd 2022 → 2351
+  S90 Lwb Ultimate B6 Awd 2023 → 2352
+  S90 T5 Inscription 2017 → 2353
+  S90 Ultra B6 Awd 2025 → 2354
+  Samco 29C 2016       → 2355
+  Santafe 2 0L 2011    → 2356
+  Santafe 2 0L 2012    → 2357
+  Santafe 2 2 Mt 2008  → 2358
+  Santafe 2 2 Mt 4Wd 2008 → 2359
+  Santafe 2 2L 2015    → 2360
+  Santafe 2 2L 2017    → 2361
+  Santafe 2 2L 2018    → 2362
+  Santafe 2 2L 2019    → 2363
+  Santafe 2 2L 2020    → 2364
+  Santafe 2 2L 2021    → 2365
+  Santafe 2 2L 4Wd 2011 → 2366
+  Santafe 2 2L 4Wd 2015 → 2367
+  Santafe 2 2L 4Wd 2016 → 2368
+  Santafe 2 2L 4Wd 2017 → 2369
+  Santafe 2 2L 4Wd 2018 → 2370
+  Santafe 2 2L Htrac 2019 → 2371
+  Santafe 2 2L Htrac 2020 → 2372
+  Santafe 2 4L 2012    → 2373
+  Santafe 2 4L 2013    → 2374
+  Santafe 2 4L 2015    → 2375
+  Santafe 2 4L 2016    → 2376
+  Santafe 2 4L 2017    → 2377
+  Santafe 2 4L 2018    → 2378
+  Santafe 2 4L 2019    → 2379
+  Santafe 2 4L 2020    → 2380
+  Santafe 2 4L 2021    → 2381
+  Santafe 2 4L 4Wd 2014 → 2382
+  Santafe 2 4L 4Wd 2015 → 2383
+  Santafe 2 4L 4Wd 2016 → 2384
+  Santafe 2 4L 4Wd 2017 → 2385
+  Santafe 2 4L 4Wd 2018 → 2386
+  Santafe 2 4L Htrac 2019 → 2387
+  Santafe 2 7L 4Wd 2007 → 2388
+  Santafe Calligraphy 2 5L Turbo Htrac 2024 → 2389
+  Santafe Calligraphy 2 5L Turbo Htrac 2025 → 2390
+  Santafe Cao Cap 2 2L Htrac 2021 → 2391
+  Santafe Cao Cap 2 2L Htrac 2022 → 2392
+  Santafe Cao Cap 2 2L Htrac 2023 → 2393
+  Santafe Cao Cap 2 2L Htrac 2024 → 2394
+  Santafe Cao Cap 2 4L Htrac 2021 → 2395
+  Santafe Cao Cap 2 5L Htrac 2021 → 2396
+  Santafe Cao Cap 2 5L Htrac 2022 → 2397
+  Santafe Cao Cap 2 5L Htrac 2023 → 2398
+  Santafe Cao Cap 2 5L Htrac 2024 → 2399
+  Santafe Dac Biet 2 2L Htrac 2021 → 2400
+  Santafe Dac Biet 2 2L Htrac 2022 → 2401
+  Santafe Dac Biet 2 5L Htrac 2021 → 2402
+  Santafe Dac Biet 2 5L Htrac 2022 → 2403
+  Santafe Mlx 2 0L 2009 → 2404
+  Santafe Mlx 2 2L 2007 → 2405
+  Santafe Mlx 2 2L 2008 → 2406
+  Santafe Mlx 2 2L 4Wd 2008 → 2407
+  Santafe Premium 2 2L Htrac 2019 → 2408
+  Santafe Premium 2 2L Htrac 2020 → 2409
+  Santafe Premium 2 4L Htrac 2019 → 2410
+  Santafe Premium 2 4L Htrac 2020 → 2411
+  Santafe Prestige 2 5L Htrac 2024 → 2412
+  Santafe Slx 2 0L 4Wd 2007 → 2413
+  Santafe Slx 2008     → 2414
+  Santafe Slx 2009     → 2415
+  Santafe Slx 2010     → 2416
+  Santafe Tieu Chuan 2 2L 2021 → 2417
+  Santafe Tieu Chuan 2 2L 2022 → 2418
+  Santafe Tieu Chuan 2 2L 2023 → 2419
+  Santafe Tieu Chuan 2 5L 2021 → 2420
+  Santafe Tieu Chuan 2 5L 2022 → 2421
+  Santafe Tieu Chuan 2 5L 2023 → 2422
+  Savrin 2 4 At 2007   → 2423
+  Scirocco 1 4 At 2010 → 2424
+  Scirocco 1 4 At 2011 → 2425
+  Scirocco 2 0 At 2010 → 2426
+  Sealion 6 Premium 2025 → 2427
+  Sedona 2 2 Dat Deluxe 2021 → 2428
+  Sedona 2 2 Dat Luxury 2019 → 2429
+  Sedona 2 2 Dat Luxury 2020 → 2430
+  Sedona 2 2 Dat Luxury 2021 → 2431
+  Sedona 2 2L Dat 2016 → 2432
+  Sedona 2 2L Dat 2018 → 2433
+  Sedona 2 2L Dath 2015 → 2434
+  Sedona 2 2L Dath 2016 → 2435
+  Sedona 2 2L Dath 2017 → 2436
+  Sedona 2 2L Dath 2018 → 2437
+  Sedona 3 3 Gat Premium 2019 → 2438
+  Sedona 3 3 Gat Premium 2020 → 2439
+  Sedona 3 3L Gat 2016 → 2440
+  Sedona 3 3L Gath 2016 → 2441
+  Sedona 3 3L Gath 2017 → 2442
+  Sedona 3 3L Gath 2018 → 2443
+  Sedona Luxury 2018   → 2444
+  Sedona Platinum D 2018 → 2445
+  Sedona Platinum G 2018 → 2446
+  Seltos Deluxe 1 4 At 2020 → 2447
+  Seltos Deluxe 1 4 At 2021 → 2448
+  Seltos Deluxe 1 4 At 2022 → 2449
+  Seltos Deluxe 1 4 At 2023 → 2450
+  Seltos Deluxe 1 5 At 2024 → 2451
+  Seltos Deluxe 1 5 At 2025 → 2452
+  Seltos Deluxe 1 6 At 2023 → 2453
+  Seltos Gt            → 2454
+  Seltos Luxury 1 4 At 2020 → 2455
+  Seltos Luxury 1 4 At 2021 → 2456
+  Seltos Luxury 1 4 At 2022 → 2457
+  Seltos Luxury 1 4 At 2023 → 2458
+  Seltos Luxury 1 4 At 2024 → 2459
+  Seltos Luxury 1 5 At 2024 → 2460
+  Seltos Luxury 1 5 At 2025 → 2461
+  Seltos Luxury 1 6 At 2023 → 2462
+  Seltos Premium 1 4 At 2020 → 2463
+  Seltos Premium 1 4 At 2021 → 2464
+  Seltos Premium 1 4 At 2022 → 2465
+  Seltos Premium 1 4 At 2023 → 2466
+  Seltos Premium 1 5 At 2024 → 2467
+  Seltos Premium 1 5 At 2025 → 2468
+  Seltos Premium 1 6 At 2020 → 2469
+  Seltos Premium 1 6 At 2021 → 2470
+  Seltos Premium 1 6 At 2022 → 2471
+  Seltos Premium 1 6 At 2023 → 2472
+  Sienna Le 2 7 2010   → 2473
+  Sienna Le 3 5 2007   → 2474
+  Sienna Le 3 5 2008   → 2475
+  Sienna Le 3 5 2009   → 2476
+  Sienna Le 3 5 2010   → 2477
+  Sienna Le 3 5 2015   → 2478
+  Sienna Limited 3 5 2011 → 2479
+  Sienna Limited 3 5 2012 → 2480
+  Sienna Limited 3 5 2013 → 2481
+  Sienna Limited 3 5 2014 → 2482
+  Sienna Limited 3 5 2015 → 2483
+  Sienna Limited 3 5 2016 → 2484
+  Sienna Limited 3 5 Awd 2007 → 2485
+  Sienna Limited 3 5 Awd 2013 → 2486
+  Sienna Limited 3 5 Awd 2014 → 2487
+  Sienna Xle 3 5 2007  → 2488
+  Sm3 1 6 At 2014      → 2489
+  Solati 2 5 Mt 2022   → 2490
+  Solati H350 2 5 Mt 2019 → 2491
+  Solati Limousine 2 5 Mt 2017 → 2492
+  Solati Limousine 2 5 Mt 2018 → 2493
+  Solati Limousine 2 5 Mt 2019 → 2494
+  Solati Limousine 2 5 Mt 2020 → 2495
+  Solati Limousine 2 5 Mt 2021 → 2496
+  Soluto 1 4 At Deluxe 2019 → 2497
+  Soluto 1 4 At Deluxe 2020 → 2498
+  Soluto 1 4 At Deluxe 2021 → 2499
+  Soluto 1 4 At Deluxe 2022 → 2500
+  Soluto 1 4 At Deluxe 2024 → 2501
+  Soluto 1 4 At Luxury 2020 → 2502
+  Soluto 1 4 At Luxury 2021 → 2503
+  Soluto 1 4 At Luxury 2022 → 2504
+  Soluto 1 4 Mt 2019   → 2505
+  Soluto 1 4 Mt 2020   → 2506
+  Soluto 1 4 Mt 2022   → 2507
+  Soluto 1 4 Mt Deluxe 2020 → 2508
+  Soluto 1 4 Mt Deluxe 2021 → 2509
+  Soluto 1 4 Mt Deluxe 2022 → 2510
+  Soluto 1 4 Mt Deluxe 2023 → 2511
+  Soluto 1 4 Mt Deluxe 2024 → 2512
+  Sonata 2 0 At 2009   → 2513
+  Sonata 2 0 At 2010   → 2514
+  Sonata Y20 2 0 At 2010 → 2515
+  Sonet Deluxe 1 5 At 2021 → 2516
+  Sonet Deluxe 1 5 At 2022 → 2517
+  Sonet Deluxe 1 5 At 2023 → 2518
+  Sonet Deluxe 1 5 At 2024 → 2519
+  Sonet Deluxe 1 5 At 2025 → 2520
+  Sonet Deluxe 1 5 Mt 2021 → 2521
+  Sonet Deluxe 1 5 Mt 2022 → 2522
+  Sonet Luxury 1 5 At 2021 → 2523
+  Sonet Luxury 1 5 At 2022 → 2524
+  Sonet Luxury 1 5 At 2023 → 2525
+  Sonet Luxury 1 5 At 2024 → 2526
+  Sonet Luxury 1 5 At 2025 → 2527
+  Sonet Premium 1 5 At 2021 → 2528
+  Sonet Premium 1 5 At 2022 → 2529
+  Sonet Premium 1 5 At 2023 → 2530
+  Sonet Premium 1 5 At 2024 → 2531
+  Sonet Premium 1 5 At 2025 → 2532
+  Sorento 2 2 Dat Premium 2019 → 2533
+  Sorento 2 2 Dat Premium 2020 → 2534
+  Sorento 2 4 Gat Deluxe 2020 → 2535
+  Sorento 2 4 Gat Premium 2019 → 2536
+  Sorento 2 4 Gat Premium 2021 → 2537
+  Sorento 2 5 At Crdi 2008 → 2538
+  Sorento Dath 2 2L 2Wd 2014 → 2539
+  Sorento Dath 2015    → 2540
+  Sorento Dath 2016    → 2541
+  Sorento Dath 2017    → 2542
+  Sorento Dath 2018    → 2543
+  Sorento Dmt 2 2L 2Wd 2014 → 2544
+  Sorento Gat 2 4L 2Wd 2011 → 2545
+  Sorento Gat 2 4L 2Wd 2012 → 2546
+  Sorento Gat 2 4L 2Wd 2013 → 2547
+  Sorento Gat 2 4L 4Wd 2010 → 2548
+  Sorento Gat 2 4L 4Wd 2013 → 2549
+  Sorento Gat 2015     → 2550
+  Sorento Gat 2016     → 2551
+  Sorento Gat 2017     → 2552
+  Sorento Gat 2018     → 2553
+  Sorento Gath 2 4L 2Wd 2014 → 2554
+  Sorento Gath 2015    → 2555
+  Sorento Gath 2016    → 2556
+  Sorento Gath 2017    → 2557
+  Sorento Gath 2018    → 2558
+  Sorento Premium 2 2 At Awd 2021 → 2559
+  Sorento Premium 2 5 At 2022 → 2560
+  Sorento S Gat 2 4L 4Wd 2015 → 2561
+  Sorento Signature 1 6 At Awd Hybrid 2022 → 2562
+  Sorento Signature 2 2 At Awd 2020 → 2563
+  Sorento Signature 2 2 At Awd 2021 → 2564
+  Sorento Signature 2 2 At Awd 2022 → 2565
+  Sorento Signature 2 2 At Awd 2023 → 2566
+  Sorento Signature 2 2 At Awd 2024 → 2567
+  Sorento Signature 2 5 At Awd 2021 → 2568
+  Sorento Signature 2 5 At Awd 2022 → 2569
+  Sorento Signature 2 5 At Awd 2024 → 2570
+  Soul 1 6 At 2014     → 2571
+  Soul 2 0 At 2014     → 2572
+  Soul 4U 1 6 At 2009  → 2573
+  Soul 4U 1 6 At 2011  → 2574
+  Spark Duo Van 1 2 Mt 2016 → 2575
+  Spark Duo Van 1 2 Mt 2017 → 2576
+  Spark Duo Van 1 2 Mt 2018 → 2577
+  Spark Lite Van 0 8 Mt 2012 → 2578
+  Spark Lite Van 0 8 Mt 2013 → 2579
+  Spark Lite Van 0 8 Mt 2014 → 2580
+  Spark Lite Van 0 8 Mt 2015 → 2581
+  Spark Ls 0 8 Mt 2008 → 2582
+  Spark Ls 0 8 Mt 2009 → 2583
+  Spark Ls 1 0 Mt 2012 → 2584
+  Spark Ls 1 0 Mt 2014 → 2585
+  Spark Ls 1 2 Mt 2012 → 2586
+  Spark Ls 1 2 Mt 2018 → 2587
+  Spark Lt 0 8 At 2008 → 2588
+  Spark Lt 0 8 At 2009 → 2589
+  Spark Lt 0 8 Mt 2008 → 2590
+  Spark Lt 0 8 Mt 2009 → 2591
+  Spark Lt 0 8 Mt 2011 → 2592
+  Spark Lt 1 0 Mt 2016 → 2593
+  Spark Lt 1 0 Mt Super 2009 → 2594
+  Spark Lt 1 2 Mt 2011 → 2595
+  Spark Lt 1 2 Mt 2013 → 2596
+  Spark Lt 1 2 Mt 2016 → 2597
+  Spark Lt 1 2 Mt 2017 → 2598
+  Spark Lt 1 2 Mt 2018 → 2599
+  Spark Ltz 1 0 At Zest 2015 → 2600
+  Spark Van 0 8 Mt 2008 → 2601
+  Spark Van 0 8 Mt 2011 → 2602
+  Spark Van 1 0 At 2011 → 2603
+  Spark Van 1 0 At 2012 → 2604
+  Spark Van 1 0 At 2013 → 2605
+  Spark Van 1 0 At 2016 → 2606
+  Spark Van 1 0 Mt 2017 → 2607
+  Sportage 2 0 At 2013 → 2608
+  Sportage 2 0 At 2014 → 2609
+  Sportage 2 0 At 2015 → 2610
+  Sportage Gt Line 2015 → 2611
+  Sportage Premium 2 0G 2022 → 2612
+  Sportage Premium 2 0G 2024 → 2613
+  Sportage Premium 2 0G 2025 → 2614
+  Sportage Signature 1 6T Awd 2022 → 2615
+  Sportage Signature 1 6T Awd 2023 → 2616
+  Sportage Signature 1 6T Awd 2024 → 2617
+  Sportage Signature 1 6T Awd 2025 → 2618
+  Sportage Signature 2 0D 2022 → 2619
+  Sportage Signature 2 0D 2023 → 2620
+  Sportage Signature 2 0G 2022 → 2621
+  Sportage Signature 2 0G 2023 → 2622
+  Sportage Signature 2 0G 2024 → 2623
+  Sportage Signature X → 2624
+  Sprinter 311 Cdi 2 2L 2007 → 2625
+  Sprinter 311 Cdi 2 2L 2008 → 2626
+  Sprinter 311 Esp 2010 → 2627
+  Sprinter 313 Esp 2010 → 2628
+  Sprinter 313 Esp 2012 → 2629
+  Sprinter Executive 313 2010 → 2630
+  Sprinter Panel Van 311 2009 → 2631
+  Sprinter Van 311 Cdi 2 2L 2008 → 2632
+  Srm T20 2023         → 2633
+  Srm X30 V2S 2024     → 2634
+  Srm X30 Van 2018     → 2635
+  Stargazer Cao Cap 1 5 At 2022 → 2636
+  Stargazer Cao Cap 1 5 At 2023 → 2637
+  Stargazer Dac Biet 1 5 At 2022 → 2638
+  Stargazer Tieu Chuan 1 5 At 2022 → 2639
+  Stargazer Tieu Chuan 1 5 At 2024 → 2640
+  Stargazer X 1 5 At 2024 → 2641
+  Stargazer X 1 5 At 2025 → 2642
+  Stargazer X Cao Cap 1 5 At 2024 → 2643
+  Stavic 2 7 Mt 2009   → 2644
+  Sunny 1 5Mt 2015     → 2645
+  Sunny Classic 1 6 At 2009 → 2646
+  Sunny Q Series Xt Premium 2018 → 2647
+  Sunny Xl 2013        → 2648
+  Sunny Xl 2016        → 2649
+  Sunny Xl 2017        → 2650
+  Sunny Xl 2019        → 2651
+  Sunny Xl 2020        → 2652
+  Sunny Xt Premium 2019 → 2653
+  Sunny Xv 2013        → 2654
+  Sunny Xv 2014        → 2655
+  Sunny Xv 2015        → 2656
+  Sunny Xv 2016        → 2657
+  Sunny Xv 2017        → 2658
+  Sunny Xv Premium 2019 → 2659
+  Sunny Xv Premium 2020 → 2660
+  Sunny Xv Premium S 2017 → 2661
+  Sunny Xv Premium S 2018 → 2662
+  Super Carry Truck 1 0 Mt 2011 → 2663
+  Super Carry Truck 1 0 Mt 2013 → 2664
+  Super Carry Van Blind Van 2014 → 2665
+  Super Carry Van Blind Van 2015 → 2666
+  Super Carry Van Blind Van 2016 → 2667
+  Super Carry Van Blind Van 2017 → 2668
+  Super Carry Van Blind Van 2019 → 2669
+  Super Carry Van Blind Van 2020 → 2670
+  Super Carry Van Blind Van 2021 → 2671
+  Super Carry Van Blind Van 2022 → 2672
+  Swift 1 4 At 2013    → 2673
+  Swift 1 4 At 2014    → 2674
+  Swift 1 4 At 2015    → 2675
+  Swift 1 4 At 2016    → 2676
+  Swift 1 4 At 2017    → 2677
+  Swift Gl 1 2 At 2019 → 2678
+  Swift Glx 1 2 At 2018 → 2679
+  Swift Glx 1 2 At 2019 → 2680
+  Swift Glx 1 2 At 2020 → 2681
+  Swift Glx 1 2 At 2021 → 2682
+  Swift Glx 1 2 At 2022 → 2683
+  Swift Glx 1 2 At 2023 → 2684
+  Swift Rs 2017        → 2685
+  Swift Special 1 2 At 2019 → 2686
+  Swift Special 2016   → 2687
+  T                    → 2688
+  T30I 2025            → 2689
+  Tb79S 2020           → 2690
+  Teana 2 0 At 2009    → 2691
+  Teana 2 0 At 2010    → 2692
+  Teana 2 0 At 2011    → 2693
+  Teana 2 5 Sl 2013    → 2694
+  Tera                 → 2695
+  Tera100 S Thung Bat 2022 → 2696
+  Tera100 S Thung Bat 2023 → 2697
+  Tera180 1 75 Tan 2022 → 2698
+  Tera245L 2017        → 2699
+  Teramont 2 0 At 2021 → 2700
+  Teramont 2 0 At 2022 → 2701
+  Teramont 2 0 At 2023 → 2702
+  Teramont Limited Edition 2 0 At 2022 → 2703
+  Teramont X Luxury 2 0 At 2024 → 2704
+  Teramont X Platinum 2 0 At 2025 → 2705
+  Terra E 2 5 At 2Wd 2018 → 2706
+  Terra E 2 5 At 2Wd 2019 → 2707
+  Terra S 2 5 Mt 2Wd 2018 → 2708
+  Terra V 2 5 At 4Wd 2018 → 2709
+  Terra V 2 5 At 4Wd 2019 → 2710
+  Territory Sport 1 5 At 2025 → 2711
+  Territory Titanium 1 5 At 2022 → 2712
+  Territory Titanium 1 5 At 2023 → 2713
+  Territory Titanium 1 5 At 2024 → 2714
+  Territory Titanium 1 5 At 2025 → 2715
+  Territory Titanium X 1 5 At 2022 → 2716
+  Territory Titanium X 1 5 At 2023 → 2717
+  Territory Titanium X 1 5 At 2024 → 2718
+  Territory Titanium X 1 5 At 2025 → 2719
+  Territory Trend 1 5 At 2024 → 2720
+  Tiguan 2 0 At 2012   → 2721
+  Tiguan 2 0 At 2013   → 2722
+  Tiguan 2 0 At 2016   → 2723
+  Tiguan Allspace 2017 → 2724
+  Tiguan Allspace 2018 → 2725
+  Tiguan Allspace 2021 → 2726
+  Tiguan Allspace 2022 → 2727
+  Tiguan Allspace 2023 → 2728
+  Tiguan Allspace Luxury 2019 → 2729
+  Tiguan Allspace Luxury 2020 → 2730
+  Tiguan Allspace Luxury S 2019 → 2731
+  Tiguan Elegance 2022 → 2732
+  Tiguan Luxury S 2021 → 2733
+  Tiida 1 6 At 2007    → 2734
+  Tiida 1 6 At 2009    → 2735
+  Tiida 1 8 At 2010    → 2736
+  Tivoli 1 6 At 2Wd 2015 → 2737
+  Tivoli 1 6 At 2Wd 2016 → 2738
+  Touareg 3 6 At 2016  → 2739
+  Touareg Elegance 2 0 Tsi 2023 → 2740
+  Tourneo Limousine 2 0 At 2019 → 2741
+  Tourneo Limousine 2 0 At 2021 → 2742
+  Tourneo Titanium 2 0 At 2019 → 2743
+  Tourneo Titanium 2 0 At 2020 → 2744
+  Tourneo Trend 2 0 At 2019 → 2745
+  Towner 990 2019      → 2746
+  Towner Van 2S 2022   → 2747
+  Trailblazer Lt 2 5L 4X2 Mt 2018 → 2748
+  Trailblazer Lt 2 5L Vgt 4X2 At 2018 → 2749
+  Trailblazer Ltz 2 5L Vgt 4X4 At 2018 → 2750
+  Trailblazer Ltz 2 5L Vgt 4X4 At 2019 → 2751
+  Transit 2 4L 2011    → 2752
+  Transit 2 4L 2013    → 2753
+  Transit Limousine 10S 2024 → 2754
+  Transit Limousine 2015 → 2755
+  Transit Limousine 2016 → 2756
+  Transit Limousine 2017 → 2757
+  Transit Limousine 2018 → 2758
+  Transit Limousine 2019 → 2759
+  Transit Limousine 2020 → 2760
+  Transit Limousine 2021 → 2761
+  Transit Limousine 2022 → 2762
+  Transit Luxury 2014  → 2763
+  Transit Luxury 2017  → 2764
+  Transit Luxury 2019  → 2765
+  Transit Luxury 2020  → 2766
+  Transit Premium 2024 → 2767
+  Transit Standard Mid 2014 → 2768
+  Transit Standard Mid 2015 → 2769
+  Transit Standard Mid 2016 → 2770
+  Transit Standard Mid 2017 → 2771
+  Transit Standard Mid 2018 → 2772
+  Transit Svp 2017     → 2773
+  Transit Svp 2018     → 2774
+  Transit Svp 2019     → 2775
+  Transit Svp 2021     → 2776
+  Transit Tieu Chuan 2022 → 2777
+  Transit Tieu Chuan 2023 → 2778
+  Transit Tieu Chuan 2024 → 2779
+  Transit Trend 2025   → 2780
+  Transit Van 2 4L 2009 → 2781
+  Transit Van 2 4L 2011 → 2782
+  Transit Van 2014     → 2783
+  Transit Van 2016     → 2784
+  Transit Van 2017     → 2785
+  Transit Van 2018     → 2786
+  Transit Van 2019     → 2787
+  Traveller Luxury 2019 → 2788
+  Triton 4X2 At 2015   → 2789
+  Triton 4X2 At 2016   → 2790
+  Triton 4X2 At 2017   → 2791
+  Triton 4X2 At 2018   → 2792
+  Triton 4X2 At 2019   → 2793
+  Triton 4X2 At 2022   → 2794
+  Triton 4X2 At 2023   → 2795
+  Triton 4X2 At Mivec 2019 → 2796
+  Triton 4X2 At Mivec 2020 → 2797
+  Triton 4X2 At Mivec 2021 → 2798
+  Triton 4X2 At Mivec Base 2019 → 2799
+  Triton 4X2 At Mivec Premium 2019 → 2800
+  Triton 4X2 At Mivec Premium 2020 → 2801
+  Triton 4X2 At Mivec Premium 2021 → 2802
+  Triton 4X2 Mt 2019   → 2803
+  Triton 4X4 At Mivec 2017 → 2804
+  Triton 4X4 At Mivec 2018 → 2805
+  Triton 4X4 At Mivec Premium 2019 → 2806
+  Triton 4X4 At Mivec Premium 2020 → 2807
+  Triton 4X4 At Mivec Premium 2021 → 2808
+  Triton 4X4 Mt 2017   → 2809
+  Triton 4X4 Mt 2019   → 2810
+  Triton 4X4 Mt 2023   → 2811
+  Triton Athlete 4Wd At 2024 → 2812
+  Triton Athlete 4X2 At 2022 → 2813
+  Triton Athlete 4X2 At 2023 → 2814
+  Triton Athlete 4X2 At Mivec 2021 → 2815
+  Triton Athlete 4X4 At 2022 → 2816
+  Triton Athlete 4X4 At 2023 → 2817
+  Triton Gl 4X4 Mt 2014 → 2818
+  Triton Gls 4X4 At 2011 → 2819
+  Triton Gls 4X4 At 2013 → 2820
+  Triton Gls 4X4 At 2014 → 2821
+  Triton Gls 4X4 Mt 2009 → 2822
+  Triton Gls 4X4 Mt 2011 → 2823
+  Triton Glx 2Wd At 2024 → 2824
+  Triton Glx 2Wd At 2025 → 2825
+  Tt 2 0 Tfsi 2015     → 2826
+  Tt 2 0 Tfsi 2016     → 2827
+  Tt 2 0 Tfsi 2017     → 2828
+  Tt S 2 0 At 2008     → 2829
+  Tt S 2 0 At 2010     → 2830
+  Tucson 1 6 At Turbo 2018 → 2831
+  Tucson 1 6 At Turbo 2019 → 2832
+  Tucson 1 6 At Turbo 2020 → 2833
+  Tucson 1 6 At Turbo Dac Biet 2021 → 2834
+  Tucson 1 6 At Turbo Htrac Dac Biet 2022 → 2835
+  Tucson 1 6 At Turbo Htrac Dac Biet 2023 → 2836
+  Tucson 1 6 At Turbo Htrac Dac Biet 2024 → 2837
+  Tucson 1 6 At Turbo Htrac Dac Biet 2025 → 2838
+  Tucson 2 0 At 2013   → 2839
+  Tucson 2 0 At 2014   → 2840
+  Tucson 2 0 At 2015   → 2841
+  Tucson 2 0 At 2018   → 2842
+  Tucson 2 0 At 2019   → 2843
+  Tucson 2 0 At 2020   → 2844
+  Tucson 2 0 At 4Wd 2009 → 2845
+  Tucson 2 0 At 4Wd 2011 → 2846
+  Tucson 2 0 At Crdi 2018 → 2847
+  Tucson 2 0 At Crdi 2019 → 2848
+  Tucson 2 0 At Crdi 2020 → 2849
+  Tucson 2 0 At Crdi Dac Biet 2021 → 2850
+  Tucson 2 0 At Crdi Dac Biet 2022 → 2851
+  Tucson 2 0 At Crdi Dac Biet 2023 → 2852
+  Tucson 2 0 At Crdi Dac Biet 2024 → 2853
+  Tucson 2 0 At Dac Biet 2021 → 2854
+  Tucson 2 0 At Dac Biet 2022 → 2855
+  Tucson 2 0 At Dac Biet 2023 → 2856
+  Tucson 2 0 At Dac Biet 2024 → 2857
+  Tucson 2 0 At Tieu Chuan 2021 → 2858
+  Tucson 2 0 At Tieu Chuan 2022 → 2859
+  Tucson 2 0 At Tieu Chuan 2023 → 2860
+  Tucson 2 0 At Tieu Chuan 2025 → 2861
+  Tucson 2 0 Ath 2015  → 2862
+  Tucson 2 0 Ath 2016  → 2863
+  Tucson 2 0 Ath 2018  → 2864
+  Tucson 2 0 Ath 2019  → 2865
+  Tucson 2 0 Ath 2020  → 2866
+  Tucson 2 4 At Limited 2013 → 2867
+  U7 2 2T 2011         → 2868
+  Universe Xpress Luxury 2009 → 2869
+  V Class V220D Cdi 2015 → 2870
+  V Class V250 Avantgarde 2016 → 2871
+  V Class V250 Luxury 2019 → 2872
+  V Class V250 Luxury 2020 → 2873
+  V Class V250 Luxury 2021 → 2874
+  V5 1 5 Mt 2012       → 2875
+  V60 Cross Country B5 Awd 2022 → 2876
+  V90 Cross County T6 Awd 2018 → 2877
+  Van 650Kg 2019       → 2878
+  Veloster 1 6 At 2011 → 2879
+  Veloster 1 6 At Gdi 2011 → 2880
+  Veloz Cross 1 5 Cvt 2022 → 2881
+  Veloz Cross 1 5 Cvt 2023 → 2882
+  Veloz Cross 1 5 Cvt 2024 → 2883
+  Veloz Cross Top 1 5 Cvt 2022 → 2884
+  Veloz Cross Top 1 5 Cvt 2023 → 2885
+  Veloz Cross Top 1 5 Cvt 2024 → 2886
+  Veloz Cross Top 1 5 Cvt 2025 → 2887
+  Venue 1 0 T          → 2888
+  Venza 2 7 2009       → 2889
+  Venza 2 7 2010       → 2890
+  Venza 2 7 Awd 2009   → 2891
+  Venza 3 5 Awd 2009   → 2892
+  Veracruz 3 0 V6 2007 → 2893
+  Verna 1 4 Mt 2009    → 2894
+  Verna 1 4 Mt 2010    → 2895
+  Viloran Luxury 2023  → 2896
+  Viloran Luxury 2024  → 2897
+  Viloran Premium 2023 → 2898
+  Viloran Premium 2024 → 2899
+  Vios 1 3 Limo 2014   → 2900
+  Vios 1 3 Limo 2016   → 2901
+  Vios 1 3 Mt 2016     → 2902
+  Vios 1 3J 2015       → 2903
+  Vios 1 5 Limo 2014   → 2904
+  Vios 1 5 Trd 2017    → 2905
+  Vios 1 5 Trd 2018    → 2906
+  Vios 1 5E 2008       → 2907
+  Vios 1 5E 2009       → 2908
+  Vios 1 5E 2010       → 2909
+  Vios 1 5E 2011       → 2910
+  Vios 1 5E 2012       → 2911
+  Vios 1 5E 2013       → 2912
+  Vios 1 5E 2014       → 2913
+  Vios 1 5E 2015       → 2914
+  Vios 1 5E 2016       → 2915
+  Vios 1 5E 2017       → 2916
+  Vios 1 5E 2018       → 2917
+  Vios 1 5E At 2009    → 2918
+  Vios 1 5E Cvt 2016   → 2919
+  Vios 1 5E Cvt 2017   → 2920
+  Vios 1 5E Cvt 2018   → 2921
+  Vios 1 5E Cvt 2019   → 2922
+  Vios 1 5E Cvt 2020   → 2923
+  Vios 1 5E Cvt 2021   → 2924
+  Vios 1 5E Mt 2018    → 2925
+  Vios 1 5E Mt 2019    → 2926
+  Vios 1 5E Mt 2020    → 2927
+  Vios 1 5G 2008       → 2928
+  Vios 1 5G 2009       → 2929
+  Vios 1 5G 2010       → 2930
+  Vios 1 5G 2011       → 2931
+  Vios 1 5G 2012       → 2932
+  Vios 1 5G 2013       → 2933
+  Vios 1 5G 2014       → 2934
+  Vios 1 5G 2015       → 2935
+  Vios 1 5G 2016       → 2936
+  Vios 1 5G 2017       → 2937
+  Vios 1 5G 2018       → 2938
+  Vios 1 5G 2019       → 2939
+  Vios 1 5G 2020       → 2940
+  Vios 1 5G Cvt 2021   → 2941
+  Vios 1 5Mt 2009      → 2942
+  Vios 2009            → 2943
+  Vios E 1 5 Mt 2021   → 2944
+  Vios E 1 5 Mt 2022   → 2945
+  Vios E 1 5 Mt 2023   → 2946
+  Vios E 1 5 Mt 2024   → 2947
+  Vios E Cvt 2021      → 2948
+  Vios E Cvt 2022      → 2949
+  Vios E Cvt 2023      → 2950
+  Vios E Cvt 2024      → 2951
+  Vios G 1 5 Cvt 2021  → 2952
+  Vios G 1 5 Cvt 2022  → 2953
+  Vios G 1 5 Cvt 2023  → 2954
+  Vios G 1 5 Cvt 2024  → 2955
+  Vios G 1 5 Cvt 2025  → 2956
+  Vios G 2007          → 2957
+  Vios Gr              → 2958
+  Vios Limo 2010       → 2959
+  Vios Limo 2013       → 2960
+  Vios Mt 2012         → 2961
+  Vios Mt 2015         → 2962
+  Vitara 1 6 At 2015   → 2963
+  Vitara 1 6 At 2016   → 2964
+  Vitara 1 6 At 2017   → 2965
+  Vito Tourer 121 2016 → 2966
+  Vivant Cdx At 2007   → 2967
+  Vivant Cdx At 2008   → 2968
+  Vivant Cdx At 2009   → 2969
+  Vivant Cdx Mt 2008   → 2970
+  Vivant Cdx Mt 2009   → 2971
+  Vivant Se 2008       → 2972
+  Wigo 1 2 At 2020     → 2973
+  Wigo 1 2 At 2021     → 2974
+  Wigo 1 2G At 2018    → 2975
+  Wigo 1 2G At 2019    → 2976
+  Wigo 1 2G At 2020    → 2977
+  Wigo 1 2G Mt 2018    → 2978
+  Wigo 1 2G Mt 2019    → 2979
+  Wigo G 1 2 At 2023   → 2980
+  Wigo G 1 2 At 2024   → 2981
+  Wigo G 1 2 At 2025   → 2982
+  Wrangler Rubicon Unlimited 2016 → 2983
+  X Trail 2 0 2Wd 2016 → 2984
+  X Trail 2 0 2Wd Premium 2018 → 2985
+  X Trail 2 0 At 2020  → 2986
+  X Trail 2 0 Sl 2Wd Premium 2018 → 2987
+  X Trail 2 0 Sl Luxury 2020 → 2988
+  X Trail 2 5 At 2007  → 2989
+  X Trail 2 5 At 2008  → 2990
+  X Trail 2 5 Sv 4Wd 2016 → 2991
+  X Trail 2 5 Sv 4Wd 2017 → 2992
+  X Trail 2 5 Sv 4Wd Premium 2017 → 2993
+  X Trail 2 5 Sv 4Wd Premium 2018 → 2994
+  X Trail 2 5 Sv Luxury 2020 → 2995
+  X Trail 2 5 Sv Premium 2020 → 2996
+  X Trail V Series 2 0 Sl Luxury 2019 → 2997
+  X Trail V Series 2 0 Sl Premium 2019 → 2998
+  X Trail V Series 2 5 Sv Luxury 4Wd 2019 → 2999
+  X Trail V Series 2 5 Sv Premium 4Wd 2019 → 3000
+  X1 Sdrive18I 2011    → 3001
+  X1 Sdrive18I 2016    → 3002
+  X1 Sdrive18I 2018    → 3003
+  X1 Sdrive20I 2016    → 3004
+  X1 Xdrive28I 2010    → 3005
+  X2 Sdrive18I 2018    → 3006
+  X3 Sdrive20I 2022    → 3007
+  X3 Sdrive20I 2023    → 3008
+  X3 Sdrive20I 2024    → 3009
+  X3 Sdrive20I M Sport 2024 → 3010
+  X3 Xdrive20I 2016    → 3011
+  X3 Xdrive20I 2017    → 3012
+  X3 Xdrive20I 2020    → 3013
+  X3 Xdrive20I 2021    → 3014
+  X3 Xdrive20I 2025    → 3015
+  X3 Xdrive20I M Sport 2022 → 3016
+  X3 Xdrive20I M Sport 2025 → 3017
+  X3 Xdrive20I Xline 2021 → 3018
+  X3 Xdrive30I M Sport 2022 → 3019
+  X3 Xdrive30I M Sport 2023 → 3020
+  X3 Xdrive30I M Sport 2024 → 3021
+  X4 Xdrive20I 2016    → 3022
+  X4 Xdrive20I 2017    → 3023
+  X4 Xdrive20I 2018    → 3024
+  X4 Xdrive20I 2019    → 3025
+  X4 Xdrive20I 2020    → 3026
+  X4 Xdrive20I 2021    → 3027
+  X4 Xdrive20I M Sport 2020 → 3028
+  X4 Xdrive20I M Sport 2022 → 3029
+  X5 Xdrive35I 2011    → 3030
+  X5 Xdrive35I 2016    → 3031
+  X5 Xdrive40I 2019    → 3032
+  X5 Xdrive40I Xline 2019 → 3033
+  X6 Xdrive30D 2014    → 3034
+  X6 Xdrive35I 2008    → 3035
+  X6 Xdrive35I 2009    → 3036
+  X6 Xdrive35I 2011    → 3037
+  X6 Xdrive35I 2012    → 3038
+  X6 Xdrive35I 2014    → 3039
+  X6 Xdrive35I 2016    → 3040
+  Xb 2 4 At 2007       → 3041
+  Xc40 T5 Awd R        → 3042
+  Xc40 Ultimate B5 Awd 2022 → 3043
+  Xc40 Ultimate B5 Awd 2023 → 3044
+  Xc40 Ultimate B5 Awd 2024 → 3045
+  Xc60 Inscription 2018 → 3046
+  Xc60 Inscription B6 Awd 2021 → 3047
+  Xc60 Inscription B6 Awd 2022 → 3048
+  Xc60 R               → 3049
+  Xc60 T5 2014         → 3050
+  Xc60 T6 Awd Inscription 2019 → 3051
+  Xc60 T6 Awd Inscription 2020 → 3052
+  Xc60 T6 Awd Inscription 2021 → 3053
+  Xc60 Ultimate Bright B6 Awd 2022 → 3054
+  Xc60 Ultimate Bright B6 Awd 2023 → 3055
+  Xc60 Ultimate Bright B6 Awd 2024 → 3056
+  Xc60 Ultimate Dark B6 Awd 2023 → 3057
+  Xc60 Ultra B6 Awd 2025 → 3058
+  Xc90 Inscription 2019 → 3059
+  Xc90 Inscription 2020 → 3060
+  Xc90 T6 2 0 At 2015  → 3061
+  Xc90 T6 Inscription 2016 → 3062
+  Xc90 T6 Inscription 2017 → 3063
+  Xc90 T6 Inscription 2018 → 3064
+  Xd 1 8 At 2010       → 3065
+  Xe 2 0 T 2015        → 3066
+  Xe 25T Prestige 2015 → 3067
+  Xe S 3 0At 2016      → 3068
+  Xf 2 0 At 2014       → 3069
+  Xf 2 0 At 2015       → 3070
+  Xf Prestige 2019     → 3071
+  Xforce Exceed 2024   → 3072
+  Xforce Exceed 2025   → 3073
+  Xforce Glx 2024      → 3074
+  Xforce Premium 2024  → 3075
+  Xforce Premium 2025  → 3076
+  Xforce Ultimate 2024 → 3077
+  Xforce Ultimate 2025 → 3078
+  Xj Series Xjl 2 0 Portfolio 2015 → 3079
+  Xj Series Xjl 2 0 Portfolio 2016 → 3080
+  Xj Series Xjl 3 0 Portfolio 2016 → 3081
+  Xj Series Xjl 3 0 Supercharged 2014 → 3082
+  Xj Series Xjl 3 0D 2010 → 3083
+  Xl7 1 5 At 2020      → 3084
+  Xl7 1 5 At 2021      → 3085
+  Xl7 1 5 At 2022      → 3086
+  Xl7 1 5 At 2023      → 3087
+  Xl7 Hybrid 1 5 At 2024 → 3088
+  Xl7 Hybrid 1 5 At 2025 → 3089
+  Xpander 1 5 At 2018  → 3090
+  Xpander 1 5 At 2019  → 3091
+  Xpander 1 5 At 2020  → 3092
+  Xpander 1 5 At 2021  → 3093
+  Xpander 1 5 At 2022  → 3094
+  Xpander 1 5 At 2023  → 3095
+  Xpander 1 5 At 2024  → 3096
+  Xpander 1 5 At Special Edition 2019 → 3097
+  Xpander 1 5 Mt 2019  → 3098
+  Xpander 1 5 Mt 2020  → 3099
+  Xpander 1 5 Mt 2021  → 3100
+  Xpander 1 5 Mt 2022  → 3101
+  Xpander 1 5 Mt 2023  → 3102
+  Xpander 1 5 Mt 2024  → 3103
+  Xpander Cross 1 5 At 2020 → 3104
+  Xpander Cross 1 5 At 2021 → 3105
+  Xpander Cross 1 5 At 2022 → 3106
+  Xpander Cross 1 5 At 2023 → 3107
+  Xpander Cross 1 5 At 2024 → 3108
+  Xpander Cross 1 5 At 2025 → 3109
+  Xpander Cross 1 5 At Dac Biet 2021 → 3110
+  Xpander Premium 1 5 At 2022 → 3111
+  Xpander Premium 1 5 At 2023 → 3112
+  Xpander Premium 1 5 At 2024 → 3113
+  Xpander Premium 1 5 At 2025 → 3114
+  Yaris 1 0 Mt 2010    → 3115
+  Yaris 1 3 At 2007    → 3116
+  Yaris 1 3 At 2008    → 3117
+  Yaris 1 3 At 2009    → 3118
+  Yaris 1 3 At 2010    → 3119
+  Yaris 1 3 At 2011    → 3120
+  Yaris 1 3E 2014      → 3121
+  Yaris 1 3G 2014      → 3122
+  Yaris 1 3G 2015      → 3123
+  Yaris 1 3G 2016      → 3124
+  Yaris 1 5 At 2009    → 3125
+  Yaris 1 5 At 2011    → 3126
+  Yaris 1 5 At 2012    → 3127
+  Yaris 1 5 At 2013    → 3128
+  Yaris 1 5E 2016      → 3129
+  Yaris 1 5E 2019      → 3130
+  Yaris 1 5G 2015      → 3131
+  Yaris 1 5G 2016      → 3132
+  Yaris 1 5G 2017      → 3133
+  Yaris 1 5G 2018      → 3134
+  Yaris 1 5G 2019      → 3135
+  Yaris 1 5G 2020      → 3136
+  Yaris Cross 1 5 D    → 3137
+  Yaris G 1 5 At 2020  → 3138
+  Yaris G 1 5 At 2021  → 3139
+  Yaris Rs 1 5 At 2013 → 3140
+  Z4 Sdrive20I 2015    → 3141
+  Z4 Sdrive30I 2011    → 3142
+  Z4 Sdrive30I M Sport 2021 → 3143
+  Z8 2 0 At 2018       → 3144
+  Zdx Sh               → 3145
+  Zinger Gls 2 4 At 2009 → 3146
+  Zinger Gls 2 4 Mt 2008 → 3147
+  Zinger Gls 2 4 Mt 2009 → 3148
+  Zs Comfort 1 5 At 2Wd 2020 → 3149
+  Zs Comfort 1 5 At 2Wd 2022 → 3150
+  Zs Comfort 1 5 At 2Wd 2024 → 3151
+  Zs Luxury 1 5 At 2Wd 2020 → 3152
+  Zs Luxury 1 5 At 2Wd 2021 → 3153
+  Zs Luxury 1 5 At 2Wd 2022 → 3154
+  Zs Luxury 1 5 At 2Wd 2023 → 3155
+  Zs Luxury 1 5 At 2Wd 2024 → 3156
+  Zs Luxury 1 5 At 2Wd 2025 → 3157
+  Zs Standard 1 5 At 2Wd 2021 → 3158
+  Zs Standard 1 5 At 2Wd 2022 → 3159
+  Zs Standard 1 5 At 2Wd 2023 → 3160
+  Zs Standard 1 5 At 2Wd 2024 → 3161
+  Zs Standard 1 5 At 2Wd 2025 → 3162
+
+Mapping cho cột 'Xuất xứ':
+  Lắp ráp trong nước   → 0
+  Nhập khẩu            → 1
+
+Mapping cho cột 'Kiểu dáng':
+  Bán tải / Pickup   → 0
+  Convertible/Cabriolet → 1
+  Coupe                → 2
+  Crossover            → 3
+  Hatchback            → 4
+  SUV                  → 5
+  Sedan                → 6
+  Truck                → 7
+  Van/Minivan          → 8
+  Wagon                → 9
+
+Mapping cho cột 'Hộp số':
+  Số tay               → 0
+  Số tự động           → 1
+
+Mapping cho cột 'Loại động cơ':
+  dầu                  → 0
+  khác                 → 1
+  xăng                 → 2

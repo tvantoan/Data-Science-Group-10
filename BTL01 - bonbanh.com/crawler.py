@@ -207,13 +207,26 @@ def save_to_csv(results, out_csv="results.csv"):
 def parse_listing_page(html, url, download_images=False, img_dir="images"):
     soup = BeautifulSoup(html, "lxml")
     text = soup.get_text("\n")
-    title_tag = soup.find(["h1", "h2"])
+
+    title_tag = soup.select_one("div.title h1")
     raw_title = title_tag.get_text(" ", strip=True) if title_tag else ""
-    raw_title = re.sub(r"[\n\t]+", " ", raw_title).strip()
-    parts = [p.strip() for p in raw_title.split("-", 1)]
-    title = parts[0] if parts else raw_title
-    title = " ".join(title.split())
-    price = parts[1] if len(parts) > 1 else None
+    # Xóa các ký tự xuống dòng, tab, và chuẩn hóa khoảng trắng
+    raw_title = re.sub(r"[\n\t]+", " ", raw_title)
+    raw_title = re.sub(
+        r"\s{2,}", " ", raw_title
+    ).strip()  # gộp nhiều khoảng trắng thành 1
+
+    # Chuẩn hóa dấu gạch ngang
+    raw_title = re.sub(r"\s*-\s*", " - ", raw_title)
+
+    parts = [p.strip() for p in raw_title.split(" - ")]
+    if len(parts) >= 2:
+        title = " - ".join(parts[:-1])
+        price = parts[-1]
+    else:
+        title = raw_title
+    price = None
+    price = parts[-1] if len(parts) > 1 else None
     m = re.search(r"Mã tin\s*[:：]?\s*(\d+)", text)
     listing_id = m.group(1) if m else re.search(r"-([0-9]{5,10})$", url).group(1)
     mdate = re.search(r"Đăng ngày\s*([\d/]{6,12})", text)
@@ -234,26 +247,15 @@ def parse_listing_page(html, url, download_images=False, img_dir="images"):
         src = img.get("data-src") or img.get("src") or ""
         if re.match(r"https://s\.bonbanh\.com/uploads/users/.+/m_\d+\.\d+\.jpg", src):
             imgs.append(src)
-    imgs = list(dict.fromkeys(imgs))
-    if download_images:
-        os.makedirs(img_dir, exist_ok=True)
-        for i, src in enumerate(imgs, 1):
-            ext = os.path.splitext(urlparse(src).path)[1] or ".jpg"
-            fname = f"{listing_id}_{i}{ext}"
-            fpath = os.path.join(img_dir, fname)
-            try:
-                r = fetch_with_retry(requests.Session(), src)
-                if r.status_code == 200:
-                    with open(fpath, "wb") as f:
-                        f.write(r.content)
-            except Exception as e:
-                logging.warning("Could not download image %s: %s", src, e)
+
     return {
         "url": url,
         "id": listing_id,
         "title": title,
         "price": price,
         "posted_date": posted_date,
+        "specs": specs,
+        "images": imgs,
         "specs": specs,
         "images": imgs,
     }
