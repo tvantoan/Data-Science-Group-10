@@ -1,4 +1,3 @@
-#!/usr/bin/env python3
 """
 Filename: bonbanh_crawler.py
 
@@ -33,7 +32,7 @@ DEFAULT_USER_AGENT = (
     "Chrome/120.0 Safari/537.36"
 )
 
-# tốc độ hợp lý: ~0.5s/request
+# Be polite with server
 SLEEP_MIN = 0.3
 SLEEP_MAX = 0.8
 
@@ -47,7 +46,7 @@ USER_AGENTS = [
     "Gecko/20100101 Firefox/120.0",
 ]
 
-YEAR_NOW = time.localtime().tm_year  # filter cars older than this year
+YEAR_NOW = time.localtime().tm_year  # Filter cars older than this year
 
 
 def polite_sleep():
@@ -148,6 +147,21 @@ def fetch_with_retry(session, url, timeout=18, max_retries=6, backoff_base=2.0):
     )
 
 
+def save_to_csv(results, out_csv="results.csv"):
+    if not results:
+        return
+    keys = list(results[0].keys())
+    with open(out_csv, "w", newline="", encoding="utf-8") as f:
+        writer = csv.DictWriter(f, fieldnames=keys)
+        writer.writeheader()
+        for row in results:
+            row_copy = row.copy()
+            if isinstance(row_copy.get("images"), list):
+                row_copy["images"] = ", ".join(row_copy["images"])
+            writer.writerow(row_copy)
+    print(f"[DONE] Saved {len(results)} listings to {out_csv}")
+
+
 def extract_listing_links_from_category(html, base_url):
     soup = BeautifulSoup(html, "lxml")
     anchors = soup.find_all("a", href=True)
@@ -189,34 +203,15 @@ def parse_key_values_from_section(text):
     return kv
 
 
-def save_to_csv(results, out_csv="results.csv"):
-    if not results:
-        return
-    keys = list(results[0].keys())
-    with open(out_csv, "w", newline="", encoding="utf-8") as f:
-        writer = csv.DictWriter(f, fieldnames=keys)
-        writer.writeheader()
-        for row in results:
-            row_copy = row.copy()
-            if isinstance(row_copy.get("images"), list):
-                row_copy["images"] = ", ".join(row_copy["images"])
-            writer.writerow(row_copy)
-    print(f"[DONE] Saved {len(results)} listings to {out_csv}")
-
-
 def parse_listing_page(html, url, download_images=False, img_dir="images"):
     soup = BeautifulSoup(html, "lxml")
     text = soup.get_text("\n")
 
     title_tag = soup.select_one("div.title h1")
     raw_title = title_tag.get_text(" ", strip=True) if title_tag else ""
-    # Xóa các ký tự xuống dòng, tab, và chuẩn hóa khoảng trắng
     raw_title = re.sub(r"[\n\t]+", " ", raw_title)
-    raw_title = re.sub(
-        r"\s{2,}", " ", raw_title
-    ).strip()  # gộp nhiều khoảng trắng thành 1
+    raw_title = re.sub(r"\s{2,}", " ", raw_title).strip()
 
-    # Chuẩn hóa dấu gạch ngang
     raw_title = re.sub(r"\s*-\s*", " - ", raw_title)
 
     parts = [p.strip() for p in raw_title.split(" - ")]
@@ -314,7 +309,7 @@ def crawl_category(
         try:
             r = fetch_with_retry(session, url)
             data = parse_listing_page(r.text, url)
-            year = int(data["specs"].get("Năm sản xuất", 0))
+            # year = int(data["specs"].get("Năm sản xuất", 0))
             # if year < YEAR_NOW - 3:
             #     continue
             results.append(data)

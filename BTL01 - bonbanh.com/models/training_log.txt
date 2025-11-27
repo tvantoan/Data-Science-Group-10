@@ -1,14 +1,15 @@
-Best params: {'regressor__solver': 'adam', 'regressor__learning_rate_init': 0.0001, 'regressor__hidden_layer_sizes': (128, 64), 'regressor__alpha': 0.01, 'regressor__activation': 'tanh'}
-Best CV score (neg MAE): -0.06890829197015702
+=== Train metrics ===
+MAE : 28.19
+MSE: 2,610.33
+R2: 0.9893
+RMSE: 51.09
+MAPE: 0.0466
 
-CV results (top 10):
-rank=1 mean_test=-0.068908 params={'regressor__solver': 'adam', 'regressor__learning_rate_init': 0.0001, 'regressor__hidden_layer_sizes': (128, 64), 'regressor__alpha': 0.01, 'regressor__activation': 'tanh'}
-rank=2 mean_test=-0.069559 params={'regressor__solver': 'adam', 'regressor__learning_rate_init': 0.0005, 'regressor__hidden_layer_sizes': (128, 64, 32), 'regressor__alpha': 1e-05, 'regressor__activation': 'tanh'}
-rank=3 mean_test=-0.072352 params={'regressor__solver': 'adam', 'regressor__learning_rate_init': 0.0001, 'regressor__hidden_layer_sizes': (128, 64), 'regressor__alpha': 0.01, 'regressor__activation': 'relu'}
-rank=4 mean_test=-0.078677 params={'regressor__solver': 'adam', 'regressor__learning_rate_init': 0.0001, 'regressor__hidden_layer_sizes': (128, 64), 'regressor__alpha': 1e-05, 'regressor__activation': 'tanh'}
-rank=5 mean_test=-0.079139 params={'regressor__solver': 'adam', 'regressor__learning_rate_init': 0.0005, 'regressor__hidden_layer_sizes': (512, 256), 'regressor__alpha': 0.01, 'regressor__activation': 'relu'}
-rank=6 mean_test=-0.083748 params={'regressor__solver': 'adam', 'regressor__learning_rate_init': 0.0005, 'regressor__hidden_layer_sizes': (256, 128), 'regressor__alpha': 1e-05, 'regressor__activation': 'tanh'}
-rank=7 mean_test=-0.087099 params={'regressor__solver': 'adam', 'regressor__learning_rate_init': 0.0005, 'regressor__hidden_layer_sizes': (512, 256), 'regressor__alpha': 0.001, 'regressor__activation': 'relu'}
-rank=8 mean_test=-0.098670 params={'regressor__solver': 'adam', 'regressor__learning_rate_init': 0.0001, 'regressor__hidden_layer_sizes': (128, 64, 32), 'regressor__alpha': 0.001, 'regressor__activation': 'relu'}
-rank=9 mean_test=-0.130152 params={'regressor__solver': 'adam', 'regressor__learning_rate_init': 0.0005, 'regressor__hidden_layer_sizes': (512, 256), 'regressor__alpha': 1e-05, 'regressor__activation': 'relu'}
-rank=10 mean_test=-0.146917 params={'regressor__solver': 'adam', 'regressor__learning_rate_init': 0.0005, 'regressor__hidden_layer_sizes': (256, 128), 'regressor__alpha': 1e-05, 'regressor__activation': 'relu'}
+=== Test metrics ===
+MAE : 39.45
+MSE: 6,267.13
+R2: 0.9731
+RMSE: 79.17
+MAPE: 0.0676
+
+Train time: 683.2s

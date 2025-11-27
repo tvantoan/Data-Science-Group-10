@@ -1,13 +1,3 @@
-# mlp.py
-"""
-Script huấn luyện MLP để dự đoán giá xe (dữ liệu đã log cho Số Km và Giá thành).
-- OneHot cho categorical (handle_unknown='ignore')
-- Imputer + StandardScaler cho numeric
-- Pipeline + ColumnTransformer
-- RandomizedSearchCV để tìm cấu hình MLP tốt hơn
-- Khi dự đoán, chuyển ngược log bằng np.expm1
-"""
-
 import os
 import time
 
@@ -44,11 +34,16 @@ categorical_cols = [
     "Hộp số",
     "Loại động cơ",
 ]
-numeric_cols = ["Năm sản xuất", "Số Km đã đi", "Tuổi thọ", "Dung tích động cơ"]
+numeric_cols = [
+    "Năm sản xuất",
+    "Số Km đã đi",
+    "Số ngày bài đã đăng",
+    "Dung tích động cơ",
+]
 
-missing_cols = set(categorical_cols + numeric_cols + ["Giá thành"]) - set(df.columns)
-if missing_cols:
-    raise ValueError(f"Thiếu cột trong dữ liệu: {missing_cols}")
+# missing_cols = set(categorical_cols + numeric_cols + ["Giá thành"]) - set(df.columns)
+# if missing_cols:
+#     raise ValueError(f"Thiếu cột trong dữ liệu: {missing_cols}")
 
 X = df[categorical_cols + numeric_cols].copy()
 y = df["Giá thành"].astype(float).copy()
